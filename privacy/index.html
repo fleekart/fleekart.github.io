@@ -114,18 +114,18 @@
 
   <h2 id="why">3. Why we use it</h2>
   <div class="table-wrap">
-  <table>
+  <table class="stack">
     <thead><tr><th>Purpose</th><th>What it needs</th><th>Basis</th></tr></thead>
     <tbody>
-      <tr><td>Create and secure your account, sign you in, verify your number</td><td>Email, password hash, mobile number, OTP events, device signals</td><td>Your consent when you sign up; our legitimate need to keep accounts secure</td></tr>
-      <tr><td>Show your listings to people nearby and let you find theirs</td><td>Listings, media, area, distance band, your chosen location</td><td>Consent; performing the service you asked for</td></tr>
-      <tr><td>Run exchanges: requests, chat, calls, pickup codes, confirmations, ratings</td><td>Exchange records, messages, pickup point, ledger entries</td><td>Performing the service; keeping a fair record for both parties</td></tr>
-      <tr><td>Operate the Plinks ledger, referrals, gifts and penalties</td><td>Ledger entries, referral links, device/IP pairs</td><td>Performing the service; preventing abuse</td></tr>
-      <tr><td>Keep the community safe: moderation, reports, blocks, disputes</td><td>Reports, listings, messages in the disputed exchange, audit records</td><td>Legal duty to act on unlawful content; our legitimate need to protect users</td></tr>
-      <tr><td>Send you notifications about your requests, exchanges and safety</td><td>Push token, email</td><td>Consent (you can turn notifications off)</td></tr>
-      <tr><td>Understand how the app is used and fix problems</td><td>Anonymised usage events, crash reports</td><td>Consent, recorded with the notice version you saw; you can withdraw it</td></tr>
-      <tr><td>Show estimated environmental impact</td><td>Category and count of completed exchanges</td><td>Performing the service</td></tr>
-      <tr><td>Answer legal requests and defend claims</td><td>Whatever the request lawfully requires</td><td>Legal obligation</td></tr>
+      <tr><td data-label="Purpose">Create and secure your account, sign you in, verify your number</td><td data-label="What it needs">Email, password hash, mobile number, OTP events, device signals</td><td data-label="Basis">Your consent when you sign up; our legitimate need to keep accounts secure</td></tr>
+      <tr><td data-label="Purpose">Show your listings to people nearby and let you find theirs</td><td data-label="What it needs">Listings, media, area, distance band, your chosen location</td><td data-label="Basis">Consent; performing the service you asked for</td></tr>
+      <tr><td data-label="Purpose">Run exchanges: requests, chat, calls, pickup codes, confirmations, ratings</td><td data-label="What it needs">Exchange records, messages, pickup point, ledger entries</td><td data-label="Basis">Performing the service; keeping a fair record for both parties</td></tr>
+      <tr><td data-label="Purpose">Operate the Plinks ledger, referrals, gifts and penalties</td><td data-label="What it needs">Ledger entries, referral links, device/IP pairs</td><td data-label="Basis">Performing the service; preventing abuse</td></tr>
+      <tr><td data-label="Purpose">Keep the community safe: moderation, reports, blocks, disputes</td><td data-label="What it needs">Reports, listings, messages in the disputed exchange, audit records</td><td data-label="Basis">Legal duty to act on unlawful content; our legitimate need to protect users</td></tr>
+      <tr><td data-label="Purpose">Send you notifications about your requests, exchanges and safety</td><td data-label="What it needs">Push token, email</td><td data-label="Basis">Consent (you can turn notifications off)</td></tr>
+      <tr><td data-label="Purpose">Understand how the app is used and fix problems</td><td data-label="What it needs">Anonymised usage events, crash reports</td><td data-label="Basis">Consent, recorded with the notice version you saw; you can withdraw it</td></tr>
+      <tr><td data-label="Purpose">Show estimated environmental impact</td><td data-label="What it needs">Category and count of completed exchanges</td><td data-label="Basis">Performing the service</td></tr>
+      <tr><td data-label="Purpose">Answer legal requests and defend claims</td><td data-label="What it needs">Whatever the request lawfully requires</td><td data-label="Basis">Legal obligation</td></tr>
     </tbody>
   </table>
   </div>
@@ -151,15 +151,15 @@
   <h2 id="share">6. Who we share data with</h2>
   <p>We share only what each provider needs to do its job, under contract, and they may not use it for their own purposes.</p>
   <div class="table-wrap">
-  <table>
+  <table class="stack">
     <thead><tr><th>Provider type</th><th>What they receive</th><th>Why</th></tr></thead>
     <tbody>
-      <tr><td>Cloud hosting and storage</td><td>All service data, encrypted in transit and at rest</td><td>Running the app and storing media</td></tr>
-      <tr><td>WhatsApp Business messaging (via Meta and our messaging provider)</td><td>Your mobile number and the one-time code</td><td>Sending verification codes</td></tr>
-      <tr><td>Telephony provider (masked calling)</td><td>Both parties' mobile numbers, for the duration of the exchange</td><td>Connecting calls without revealing numbers. No call recording</td></tr>
-      <tr><td>Google Firebase Cloud Messaging</td><td>Push token, notification content</td><td>Delivering push notifications</td></tr>
-      <tr><td>Email delivery provider</td><td>Email address, message content</td><td>Password resets, account notices</td></tr>
-      <tr><td>Google, LinkedIn, Meta (sign-in)</td><td>The sign-in request</td><td>Only if you choose to sign in with them. Their own privacy policies apply on their side</td></tr>
+      <tr><td data-label="Provider type">Cloud hosting and storage</td><td data-label="What they receive">All service data, encrypted in transit and at rest</td><td data-label="Why">Running the app and storing media</td></tr>
+      <tr><td data-label="Provider type">WhatsApp Business messaging (via Meta and our messaging provider)</td><td data-label="What they receive">Your mobile number and the one-time code</td><td data-label="Why">Sending verification codes</td></tr>
+      <tr><td data-label="Provider type">Telephony provider (masked calling)</td><td data-label="What they receive">Both parties' mobile numbers, for the duration of the exchange</td><td data-label="Why">Connecting calls without revealing numbers. No call recording</td></tr>
+      <tr><td data-label="Provider type">Google Firebase Cloud Messaging</td><td data-label="What they receive">Push token, notification content</td><td data-label="Why">Delivering push notifications</td></tr>
+      <tr><td data-label="Provider type">Email delivery provider</td><td data-label="What they receive">Email address, message content</td><td data-label="Why">Password resets, account notices</td></tr>
+      <tr><td data-label="Provider type">Google, LinkedIn, Meta (sign-in)</td><td data-label="What they receive">The sign-in request</td><td data-label="Why">Only if you choose to sign in with them. Their own privacy policies apply on their side</td></tr>
     </tbody>
   </table>
   </div>
@@ -169,18 +169,18 @@
 
   <h2 id="retention">7. How long we keep it</h2>
   <div class="table-wrap">
-  <table>
+  <table class="stack">
     <thead><tr><th>Data</th><th>Kept for</th><th>Why</th></tr></thead>
     <tbody>
-      <tr><td>Account profile (name, email, phone, avatar, date of birth)</td><td>Until you delete your account</td><td>Running your account</td></tr>
-      <tr><td>Listing photos and video</td><td>While the listing is live, then purged 30 days after it expires or is removed</td><td>Kept briefly so you can relist; kept longer only for an open dispute or legal hold</td></tr>
-      <tr><td>Chat messages</td><td>12 months</td><td>Resolving disputes and reports</td></tr>
-      <tr><td>One-time code (OTP) events</td><td>12 months</td><td>Detecting abuse</td></tr>
-      <tr><td>Agreed pickup point</td><td>90 days after the exchange closes</td><td>Disputes; then deleted unless a dispute is open</td></tr>
-      <tr><td>Plinks ledger entries, exchanges, disputes, penalties, ratings, audit records</td><td>8 years</td><td>These are shared records with another person, and are kept for accounting and legal reasons</td></tr>
-      <tr><td>Ban records</td><td>Indefinitely</td><td>So a banned person cannot simply return</td></tr>
-      <tr><td>Anonymised usage events</td><td>Indefinitely</td><td>They do not identify you</td></tr>
-      <tr><td>Database backups</td><td>30 days rolling</td><td>Disaster recovery; deleted data leaves backups as they roll over</td></tr>
+      <tr><td data-label="Data">Account profile (name, email, phone, avatar, date of birth)</td><td data-label="Kept for">Until you delete your account</td><td data-label="Why">Running your account</td></tr>
+      <tr><td data-label="Data">Listing photos and video</td><td data-label="Kept for">While the listing is live, then purged 30 days after it expires or is removed</td><td data-label="Why">Kept briefly so you can relist; kept longer only for an open dispute or legal hold</td></tr>
+      <tr><td data-label="Data">Chat messages</td><td data-label="Kept for">12 months</td><td data-label="Why">Resolving disputes and reports</td></tr>
+      <tr><td data-label="Data">One-time code (OTP) events</td><td data-label="Kept for">12 months</td><td data-label="Why">Detecting abuse</td></tr>
+      <tr><td data-label="Data">Agreed pickup point</td><td data-label="Kept for">90 days after the exchange closes</td><td data-label="Why">Disputes; then deleted unless a dispute is open</td></tr>
+      <tr><td data-label="Data">Plinks ledger entries, exchanges, disputes, penalties, ratings, audit records</td><td data-label="Kept for">8 years</td><td data-label="Why">These are shared records with another person, and are kept for accounting and legal reasons</td></tr>
+      <tr><td data-label="Data">Ban records</td><td data-label="Kept for">Indefinitely</td><td data-label="Why">So a banned person cannot simply return</td></tr>
+      <tr><td data-label="Data">Anonymised usage events</td><td data-label="Kept for">Indefinitely</td><td data-label="Why">They do not identify you</td></tr>
+      <tr><td data-label="Data">Database backups</td><td data-label="Kept for">30 days rolling</td><td data-label="Why">Disaster recovery; deleted data leaves backups as they roll over</td></tr>
     </tbody>
   </table>
   </div>
