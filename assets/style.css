@@ -1,0 +1,86 @@
+/* Fleekart public site - shared styles. Tokens copied from apps/mobile/lib/core/tokens.dart. */
+:root {
+  --ink: #0B0B0C; --ink2: #2B2B2C; --ink3: #575753; --ink4: #6F6F6B;
+  --bg: #F3F3F0; --card: #FFFFFF; --visual: #EEECE6;
+  --border: rgba(11,11,12,0.07); --border-strong: rgba(11,11,12,0.10);
+  --lime: #C8FF00; --lime-dk: #8FB300; --teal: #009E94; --teal-dk: #00655E; --coral: #C73C49;
+  --max: 760px;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+a { color: var(--teal-dk); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+a:hover { color: var(--teal); }
+.skip { position: absolute; left: -999px; }
+.skip:focus { left: 8px; top: 8px; background: var(--lime); padding: 8px 12px; z-index: 10; }
+
+/* Header */
+.site-header { background: var(--ink); color: #fff; }
+.site-header .bar { max-width: 1040px; margin: 0 auto; padding: 14px 20px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.wordmark { color: #fff; text-decoration: none; font-weight: 800; letter-spacing: -0.02em; font-size: 20px; display: inline-flex; align-items: center; gap: 8px; }
+.wordmark .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--lime); display: inline-block; }
+.site-nav a { color: rgba(255,255,255,0.78); text-decoration: none; margin-left: 18px; font-size: 14px; }
+.site-nav a:hover, .site-nav a[aria-current="page"] { color: var(--lime); }
+
+/* Legal page layout */
+.page { max-width: var(--max); margin: 0 auto; padding: 40px 20px 64px; }
+.page h1 { font-size: 34px; line-height: 1.15; letter-spacing: -0.02em; margin: 0 0 8px; }
+.meta { color: var(--ink4); font-size: 14px; margin: 0 0 28px; }
+.lead { font-size: 18px; color: var(--ink2); }
+.page h2 { font-size: 22px; margin: 36px 0 10px; letter-spacing: -0.01em; }
+.page h3 { font-size: 17px; margin: 24px 0 6px; }
+.page p, .page li { color: var(--ink2); }
+.page ul, .page ol { padding-left: 22px; }
+.page li { margin: 4px 0; }
+.callout { background: var(--card); border: 1px solid var(--border-strong); border-left: 4px solid var(--teal); border-radius: 10px; padding: 14px 16px; margin: 18px 0; }
+.callout.warn { border-left-color: var(--coral); }
+.callout.lime { border-left-color: var(--lime-dk); }
+.callout p:first-child { margin-top: 0; } .callout p:last-child { margin-bottom: 0; }
+.toc { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 14px 18px; margin: 0 0 8px; }
+.toc ol { margin: 6px 0 0; padding-left: 20px; columns: 2; column-gap: 24px; }
+.toc li { break-inside: avoid; margin: 2px 0; }
+@media (max-width: 560px) { .toc ol { columns: 1; } }
+.table-wrap { overflow-x: auto; margin: 12px 0; }
+table { border-collapse: collapse; width: 100%; font-size: 15px; background: var(--card); }
+th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border-strong); vertical-align: top; }
+th { background: var(--visual); font-weight: 600; }
+.legal-nav { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 24px; }
+.legal-nav a { font-size: 13px; padding: 6px 12px; border-radius: 999px; border: 1px solid var(--border-strong); background: var(--card); text-decoration: none; color: var(--ink2); }
+.legal-nav a[aria-current="page"] { background: var(--ink); color: var(--lime); border-color: var(--ink); }
+
+/* Footer */
+.site-footer { border-top: 1px solid var(--border-strong); margin-top: 32px; }
+.site-footer .bar { max-width: 1040px; margin: 0 auto; padding: 24px 20px 40px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 24px; font-size: 14px; color: var(--ink4); }
+.site-footer a { color: var(--ink3); text-decoration: none; margin-right: 16px; }
+.site-footer a:hover { color: var(--teal-dk); text-decoration: underline; }
+
+/* Landing */
+.hero { background: var(--ink); color: #fff; padding: 72px 20px 64px; }
+.hero .inner { max-width: 1040px; margin: 0 auto; }
+.eyebrow { display: inline-block; font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--lime); margin-bottom: 18px; }
+.hero h1 { font-size: clamp(38px, 6vw, 64px); line-height: 1.02; letter-spacing: -0.03em; margin: 0 0 20px; max-width: 14ch; }
+.hero h1 em { font-style: normal; color: var(--lime); }
+.hero p { font-size: 19px; color: rgba(255,255,255,0.78); max-width: 52ch; margin: 0 0 30px; }
+.cta { display: inline-flex; align-items: center; gap: 10px; background: var(--lime); color: var(--ink); font-weight: 700; padding: 14px 22px; border-radius: 999px; text-decoration: none; }
+.cta.ghost { background: transparent; color: #fff; border: 1px solid rgba(255,255,255,0.28); margin-left: 8px; }
+.cta:hover { filter: brightness(0.95); color: var(--ink); }
+.cta.ghost:hover { color: var(--lime); border-color: var(--lime); }
+.section { max-width: 1040px; margin: 0 auto; padding: 56px 20px; }
+.section h2 { font-size: clamp(26px, 3.6vw, 36px); letter-spacing: -0.02em; line-height: 1.1; margin: 0 0 8px; }
+.section .sub { color: var(--ink3); font-size: 17px; margin: 0 0 32px; max-width: 60ch; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; }
+.card { background: var(--card); border: 1px solid var(--border-strong); border-radius: 14px; padding: 22px; }
+.card .n { display: inline-flex; width: 32px; height: 32px; align-items: center; justify-content: center; border-radius: 50%; background: var(--lime); color: var(--ink); font-weight: 800; font-size: 14px; margin-bottom: 14px; }
+.card h3 { margin: 0 0 6px; font-size: 18px; }
+.card p { margin: 0; color: var(--ink3); font-size: 15px; }
+.band { background: var(--visual); }
+.plinks { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: start; }
+@media (max-width: 720px) { .plinks { grid-template-columns: 1fr; } }
+.plinks ul { padding-left: 20px; color: var(--ink2); }
+.stat { display: flex; gap: 14px; align-items: baseline; }
+.stat b { font-size: 40px; letter-spacing: -0.03em; color: var(--teal-dk); }
+.stat span { color: var(--ink3); }
+.notice { font-size: 14px; color: var(--ink4); }
