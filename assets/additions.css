@@ -1,0 +1,25 @@
+/* Anything added after design sign-off lives here, never in v2.css.
+   v2.css is the delivered stylesheet byte for byte; keeping additions out of it
+   is what makes "did the approved design change?" a question with an answer. */
+
+/* The download note gained a Terms/Privacy sentence during the port. It sits in
+   muted body text, so without this the two links are invisible as links. */
+#dlNote a {
+  color: var(--ink-2);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1px;
+  text-decoration-color: var(--line);
+  transition: color 0.22s, text-decoration-color 0.22s;
+}
+#dlNote a:hover,
+#dlNote a:focus-visible {
+  color: var(--teal-deep);
+  text-decoration-color: currentColor;
+}
+
+/* Same reason, for the address in the footer bar. */
+.foot__bot a[href^='mailto:'] {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
