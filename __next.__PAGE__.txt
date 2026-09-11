@@ -1,5 +1,5 @@
 1:"$Sreact.fragment"
-2:T9946,<a class="skip" href="#main">Skip to content</a>
+2:T9c08,<a class="skip" href="#main">Skip to content</a>
 <!-- ══ INK ILLUSTRATION LIBRARY ══════════════════════════════════ -->
 <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute;pointer-events:none">
 <defs>
@@ -169,15 +169,27 @@
     <div class="stage" id="heroStage">
       <figure class="shot shot--reel" id="heroShot">
         <div class="shot__frame">
-          <video class="shot__reel" autoplay muted loop playsinline preload="auto" poster="/assets/hero-street.webp"
-                 aria-label="Two people meeting on a street outside a Fleekart shop and passing something between them through the app"
+          <video class="shot__reel" autoplay muted loop playsinline preload="auto" poster="/assets/hero-fleekart.webp"
+                 aria-label="A pair of worn sneakers left by the door, carried out through the neighbourhood, and given a second life with someone else"
                  data-inview>
-            <source src="/assets/hero-street.mp4" type="video/mp4">
+            <source src="/assets/hero-fleekart.mp4" type="video/mp4">
           </video>
         </div>
 
       </figure>
     </div>
+  </div>
+</section>
+
+<!-- ══ FILM BAND ════════════════════════════════════════════════ -->
+<section class="filmband" id="street" aria-label="A handover on the street, filmed">
+  <div class="filmband__clip">
+    <video class="filmband__vid" muted loop playsinline preload="none" poster="/assets/hero-street.webp"
+           aria-hidden="true" data-inview>
+      <source data-src="/assets/hero-street.mp4" type="video/mp4">
+    </video>
+    <div class="filmband__veil" aria-hidden="true"></div>
+    <p class="filmband__cap">Ten minutes away. One handover. Nothing sold.</p>
   </div>
 </section>
 
@@ -627,7 +639,7 @@
 </footer>
 </main>
 5:X
-0:{"buildId":"yOtj33svfJ_hWbnSaKqXL","data":[{"rsc":["$","$1","c",{"children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],null,"$L3"]}],"isPartial":"$@4","staleTime":"$5","varyParams":null},{"rsc":"$L6","isPartial":"$@7","staleTime":"$5","varyParams":null},{"rsc":"$L8","isPartial":"$@9","staleTime":"$5","varyParams":null}],"isUpgradeableISRFallback":false,"a":"$@a","rootVaryParams":null,"needsRuntimeRequest":"$@b"}
+0:{"buildId":"6usOlwRJnurtTRDxJ4cIR","data":[{"rsc":["$","$1","c",{"children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],null,"$L3"]}],"isPartial":"$@4","staleTime":"$5","varyParams":null},{"rsc":"$L6","isPartial":"$@7","staleTime":"$5","varyParams":null},{"rsc":"$L8","isPartial":"$@9","staleTime":"$5","varyParams":null}],"isUpgradeableISRFallback":false,"a":"$@a","rootVaryParams":null,"needsRuntimeRequest":"$@b"}
 c:I[97367,["/_next/static/chunks/3fntmmi971322.js"],"OutletBoundary"]
 d:"$Sreact.suspense"
 f:I[97367,["/_next/static/chunks/3fntmmi971322.js"],"ViewportBoundary"]
