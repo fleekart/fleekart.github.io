@@ -551,6 +551,40 @@
     });
   }
 
+  /* ── story: the app, in sequence ─────────────────────────── */
+  var story = doc.getElementById('story');
+  if (story && hasGSAP && window.ScrollTrigger && !REDUCED) {
+    var storyWide = window.matchMedia('(min-width:881px)');
+    var beats = Array.prototype.slice.call(story.querySelectorAll('.story__beat'));
+    var shots = Array.prototype.slice.call(story.querySelectorAll('.story__shot'));
+    var storyTriggers = [];
+    function storyOn(i) {
+      beats.forEach(function (b, k) { b.classList.toggle('is-on', k === i); });
+      shots.forEach(function (s, k) { s.classList.toggle('is-on', k === i); });
+    }
+    function storyArm() {
+      if (!storyWide.matches || storyTriggers.length) return;
+      story.classList.add('is-live');
+      beats.forEach(function (b, i) {
+        storyTriggers.push(ScrollTrigger.create({
+          trigger: b, start: 'top 60%', end: 'bottom 40%',
+          onEnter: function () { storyOn(i); },
+          onEnterBack: function () { storyOn(i); }
+        }));
+      });
+    }
+    function storyDisarm() {
+      storyTriggers.forEach(function (t) { t.kill(); });
+      storyTriggers = [];
+      story.classList.remove('is-live');
+      storyOn(0);
+    }
+    storyArm();
+    var onStoryMQ = function (e) { if (e.matches) storyArm(); else storyDisarm(); };
+    if (storyWide.addEventListener) storyWide.addEventListener('change', onStoryMQ);
+    else storyWide.addListener(onStoryMQ);
+  }
+
   /* keep triggers honest when layout changes */
   var rt, lastW = window.innerWidth;
   window.addEventListener('resize', function () {

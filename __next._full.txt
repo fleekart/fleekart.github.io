@@ -5,7 +5,7 @@
 :HL["/assets/Manrope.woff2","font",{"crossOrigin":"anonymous","type":"font/woff2"}]
 :HL["/assets/v2.css","style"]
 :HL["/assets/additions.css","style"]
-4:T96b4,<a class="skip" href="#main">Skip to content</a>
+4:Tc987,<a class="skip" href="#main">Skip to content</a>
 <!-- ══ INK ILLUSTRATION LIBRARY ══════════════════════════════════ -->
 <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute;pointer-events:none">
 <defs>
@@ -110,6 +110,22 @@
     <path d="M20 23.4v10M28 23.4v10" fill="none" stroke="currentColor" stroke-width="1.35" opacity=".5" stroke-linecap="round"/>
   </symbol>
 
+  <symbol id="l-shirt" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/></g></symbol>
+  <symbol id="l-camera" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></g></symbol>
+  <symbol id="l-message" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></g></symbol>
+  <symbol id="l-package-check" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m16 16 2 2 4-4"/><path d="M21 10V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l2-1.14"/><path d="m7.5 4.27 9 5.15"/><path d="M3.29 7 12 12l8.71-5"/><path d="M12 22V12"/></g></symbol>
+  <symbol id="l-wallet" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"/><path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"/></g></symbol>
+  <symbol id="l-search" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></g></symbol>
+  <symbol id="l-coins" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6"/><path d="M18.09 10.37A6 6 0 1 1 10.34 18"/><path d="M7 6h1v4"/><path d="m16.71 13.88.7.71-2.82 2.82"/></g></symbol>
+  <symbol id="l-map-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></g></symbol>
+  <symbol id="l-home" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></g></symbol>
+  <symbol id="l-refresh" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"/><path d="M16 16h5v5"/></g></symbol>
+  <symbol id="l-gift" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13"/><path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5"/></g></symbol>
+  <symbol id="l-bag" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></g></symbol>
+  <symbol id="l-trash" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/><path d="M10 11v6"/><path d="M14 11v6"/></g></symbol>
+  <symbol id="l-layers" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></g></symbol>
+  <symbol id="l-box" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></g></symbol>
+  <symbol id="l-hourglass" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 22h14"/><path d="M5 2h14"/><path d="M17 22v-4.172a2 2 0 0 0-.586-1.414L12 12l-4.414 4.414A2 2 0 0 0 7 17.828V22"/><path d="M7 2v4.172a2 2 0 0 0 .586 1.414L12 12l4.414-4.414A2 2 0 0 0 17 6.172V2"/></g></symbol>
 </defs>
 </svg>
 
@@ -182,6 +198,70 @@
         </div>
 
       </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ══ STORY ═══════════════════════════════════════════════════ -->
+<section class="sec story" id="story" aria-labelledby="storyH">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow rv">How it works</p>
+      <h2 class="d2 rv" id="storyH">See it happen</h2>
+    </div>
+    <div class="story__grid" id="story-grid">
+      <ol class="story__beats" id="story-beats">
+        <li class="story__beat is-on" data-beat="0">
+          <div class="story__inline">
+            <div class="phone phone--inline"><div class="phone__screen"><img src="/assets/story-1.webp" alt="The Fleekart app's create-listing form, showing the Plinks you ask for" width="780" height="1688" decoding="async"></div></div>
+          </div>
+          <div class="story__text">
+            <span class="story__n num" aria-hidden="true">01</span>
+            <h3 class="d3">List It in Seconds</h3>
+            <p>Snap a few photos and upload the item to the Fleekart app with a reasonable Plinks (credits) required for the product.</p>
+          </div>
+        </li>
+        <li class="story__beat" data-beat="1">
+          <div class="story__inline">
+            <div class="phone phone--inline"><div class="phone__screen"><img src="/assets/story-2.webp" alt="A listing in the Fleekart app with its Request Exchange button" width="780" height="1688" loading="lazy" decoding="async"></div></div>
+          </div>
+          <div class="story__text">
+            <span class="story__n num" aria-hidden="true">02</span>
+            <h3 class="d3">Connect &amp; Confirm</h3>
+            <p>A neighbour or beneficiary requests your item. Accept the request and agree on a simple local pickup time and place.</p>
+          </div>
+        </li>
+        <li class="story__beat" data-beat="2">
+          <div class="story__inline">
+            <div class="phone phone--inline"><div class="phone__screen"><img src="/assets/story-3.webp" alt="An exchange in the Fleekart app, its steps Request, Accept, Handover and Done all complete" width="780" height="1688" loading="lazy" decoding="async"></div></div>
+          </div>
+          <div class="story__text">
+            <span class="story__n num" aria-hidden="true">03</span>
+            <h3 class="d3">Hand It Over &amp; Earn Plinks</h3>
+            <p>Share the secure pickup code at handover. You instantly earn Plinks for giving your item a second life.</p>
+          </div>
+        </li>
+        <li class="story__beat" data-beat="3">
+          <div class="story__inline">
+            <div class="phone phone--inline"><div class="phone__screen"><img src="/assets/story-4.webp" alt="The Plinks wallet in the Fleekart app, with the available balance" width="780" height="1688" loading="lazy" decoding="async"></div></div>
+          </div>
+          <div class="story__text">
+            <span class="story__n num" aria-hidden="true">04</span>
+            <h3 class="d3">Use Your Plinks Anytime</h3>
+            <p>Spend your earned Plinks whenever you find something for yourself in Fleekart. Plinks never expire.</p>
+          </div>
+        </li>
+      </ol>
+      <div class="story__pin" aria-hidden="true">
+        <div class="phone" id="story-phone">
+          <div class="phone__screen">
+          <img class="story__shot is-on" data-beat="0" src="/assets/story-1.webp" alt="" width="780" height="1688" loading="lazy" decoding="async">
+          <img class="story__shot" data-beat="1" src="/assets/story-2.webp" alt="" width="780" height="1688" loading="lazy" decoding="async">
+          <img class="story__shot" data-beat="2" src="/assets/story-3.webp" alt="" width="780" height="1688" loading="lazy" decoding="async">
+          <img class="story__shot" data-beat="3" src="/assets/story-4.webp" alt="" width="780" height="1688" loading="lazy" decoding="async">
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -259,7 +339,7 @@
       <ol class="ladder__rows" id="ladderRows">
       <li class="rung">
         <div class="rung__side rung__side--donor">
-          <span class="rung__ico"><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#i-shirt"/></svg></span>
+          <span class="rung__ico"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#l-shirt"/></svg></span>
           <div class="rung__txt">
             <span class="rung__tag">Donor</span>
             <h3>Find What You Don't Use</h3>
@@ -268,7 +348,7 @@
         </div>
         <div class="rung__node" aria-hidden="true">01</div>
         <div class="rung__side rung__side--ben">
-          <span class="rung__ico"><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#i-discover"/></svg></span>
+          <span class="rung__ico"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#l-search"/></svg></span>
           <div class="rung__txt">
             <span class="rung__tag">Beneficiary</span>
             <h3>Discover Useful Items</h3>
@@ -278,7 +358,7 @@
       </li>
       <li class="rung">
         <div class="rung__side rung__side--donor">
-          <span class="rung__ico"><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#i-drop"/></svg></span>
+          <span class="rung__ico"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#l-camera"/></svg></span>
           <div class="rung__txt">
             <span class="rung__tag">Donor</span>
             <h3>List It in Seconds</h3>
@@ -287,7 +367,7 @@
         </div>
         <div class="rung__node" aria-hidden="true">02</div>
         <div class="rung__side rung__side--ben">
-          <span class="rung__ico"><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#i-spend"/></svg></span>
+          <span class="rung__ico"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#l-coins"/></svg></span>
           <div class="rung__txt">
             <span class="rung__tag">Beneficiary</span>
             <h3>Claim with Plinks</h3>
@@ -297,7 +377,7 @@
       </li>
       <li class="rung">
         <div class="rung__side rung__side--donor">
-          <span class="rung__ico"><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#i-loop"/></svg></span>
+          <span class="rung__ico"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#l-message"/></svg></span>
           <div class="rung__txt">
             <span class="rung__tag">Donor</span>
             <h3>Connect &amp; Confirm</h3>
@@ -306,7 +386,7 @@
         </div>
         <div class="rung__node" aria-hidden="true">03</div>
         <div class="rung__side rung__side--ben">
-          <span class="rung__ico"><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#i-loop"/></svg></span>
+          <span class="rung__ico"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#l-map-pin"/></svg></span>
           <div class="rung__txt">
             <span class="rung__tag">Beneficiary</span>
             <h3>Coordinate the Pickup</h3>
@@ -316,7 +396,7 @@
       </li>
       <li class="rung">
         <div class="rung__side rung__side--donor">
-          <span class="rung__ico"><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#i-verify"/></svg></span>
+          <span class="rung__ico"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#l-package-check"/></svg></span>
           <div class="rung__txt">
             <span class="rung__tag">Donor</span>
             <h3>Hand It Over &amp; Earn Plinks</h3>
@@ -325,7 +405,7 @@
         </div>
         <div class="rung__node" aria-hidden="true">04</div>
         <div class="rung__side rung__side--ben">
-          <span class="rung__ico"><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#i-receive"/></svg></span>
+          <span class="rung__ico"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#l-home"/></svg></span>
           <div class="rung__txt">
             <span class="rung__tag">Beneficiary</span>
             <h3>Collect &amp; Confirm</h3>
@@ -335,7 +415,7 @@
       </li>
       <li class="rung">
         <div class="rung__side rung__side--donor">
-          <span class="rung__ico"><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#i-plink"/></svg></span>
+          <span class="rung__ico"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#l-wallet"/></svg></span>
           <div class="rung__txt">
             <span class="rung__tag">Donor</span>
             <h3>Use Your Plinks Anytime</h3>
@@ -344,7 +424,7 @@
         </div>
         <div class="rung__node" aria-hidden="true">05</div>
         <div class="rung__side rung__side--ben">
-          <span class="rung__ico"><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#i-again"/></svg></span>
+          <span class="rung__ico"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#l-refresh"/></svg></span>
           <div class="rung__txt">
             <span class="rung__tag">Beneficiary</span>
             <h3>Keep the Loop Going &amp; Make an Impact</h3>
@@ -468,31 +548,47 @@
     </div>
 
     <div class="plinks__art rv">
-      <video class="plinks__vid" muted loop playsinline preload="none" poster="/assets/plinks-coins.webp"
-             aria-label="Animation of Fleekart's mascot holding a Plink coin as more coins spin around it"
-             data-lazyvid data-inview>
-        <source data-src="/assets/plinks-coins.webm" type="video/webm">
-      </video>
+      <svg class="plinks__ill" viewBox="0 0 208 168" role="img" aria-label="Three Plink coins, the credits that move between a Donor and a Beneficiary">
+        <g fill="var(--green-tint)" stroke="var(--green-deep)" stroke-width="2">
+          <circle cx="62" cy="106" r="44"/>
+          <circle cx="62" cy="106" r="32" fill="none" stroke-width="1.2" opacity=".45"/>
+          <path d="M51 128V84h15a12.5 12.5 0 0 1 0 25H51" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+        <g fill="var(--green-tint)" stroke="var(--green-deep)" stroke-width="2">
+          <circle cx="146" cy="70" r="36"/>
+          <circle cx="146" cy="70" r="26" fill="none" stroke-width="1.2" opacity=".45"/>
+          <path d="M137 88V52h12a10 10 0 0 1 0 20h-12" fill="none" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+        <g fill="var(--card)" stroke="var(--green-deep)" stroke-width="2">
+          <circle cx="118" cy="128" r="26"/>
+          <circle cx="118" cy="128" r="18.5" fill="none" stroke-width="1.2" opacity=".45"/>
+          <path d="M111.5 141v-26h8.5a7.2 7.2 0 0 1 0 14.4h-8.5" fill="none" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+        <g fill="none" stroke="var(--green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity=".7">
+          <path d="M22 44c6-14 22-24 40-24"/><path d="m56 14 6 6-6 6"/>
+          <path d="M194 122c-4 14-16 26-32 30"/><path d="m168 146-6 6 6 6"/>
+        </g>
+      </svg>
 
       <div class="equation" role="list" aria-label="How Plinks move">
         <span class="eq__coin" id="eqCoin" aria-hidden="true"><svg viewBox="0 0 48 48"><use href="#i-plink"/></svg></span>
         <div class="eq" role="listitem">
-          <span class="eq__i"><svg viewBox="0 0 48 48" aria-hidden="true" style="color:var(--ink-2)"><use href="#i-shirt"/></svg></span>
+          <span class="eq__i"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#l-gift"/></svg></span>
           <span><span class="eq__t">Give something useful</span><br><span class="eq__d">A Donor hands over an item</span></span>
         </div>
         <span class="eq__arrow" aria-hidden="true"><svg width="16" height="18" viewBox="0 0 16 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v13M4 11l4 4 4-4"/></svg></span>
         <div class="eq" role="listitem" data-hl="1">
-          <span class="eq__i"><svg viewBox="0 0 48 48" aria-hidden="true" style="color:var(--green-deep)"><use href="#i-plink"/></svg></span>
+          <span class="eq__i"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#l-coins"/></svg></span>
           <span><span class="eq__t">Earn Plinks</span><br><span class="eq__d">They land in your Fleekart balance</span></span>
         </div>
         <span class="eq__arrow" aria-hidden="true"><svg width="16" height="18" viewBox="0 0 16 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v13M4 11l4 4 4-4"/></svg></span>
         <div class="eq" role="listitem" data-hl="1">
-          <span class="eq__i"><svg viewBox="0 0 48 48" aria-hidden="true" style="color:var(--green-deep)"><use href="#i-spend"/></svg></span>
+          <span class="eq__i"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#l-wallet"/></svg></span>
           <span><span class="eq__t">Use Plinks</span><br><span class="eq__d">Spend them whenever you need something</span></span>
         </div>
         <span class="eq__arrow" aria-hidden="true"><svg width="16" height="18" viewBox="0 0 16 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v13M4 11l4 4 4-4"/></svg></span>
         <div class="eq" role="listitem">
-          <span class="eq__i"><svg viewBox="0 0 48 48" aria-hidden="true" style="color:var(--ink-2)"><use href="#i-receive"/></svg></span>
+          <span class="eq__i"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#l-bag"/></svg></span>
           <span><span class="eq__t">Grab something you need</span><br><span class="eq__d">A Beneficiary receives the item</span></span>
         </div>
       </div>
@@ -521,6 +617,13 @@
       </figure>
     </div>
 
+    <ul class="stats rv" aria-label="What the numbers say">
+      <li class="stat"><span class="stat__i"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#l-trash"/></svg></span><b class="stat__n">62 million <small>tonnes</small></b><span class="stat__l">of waste a year, from Indian cities</span></li>
+      <li class="stat"><span class="stat__i"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#l-layers"/></svg></span><b class="stat__n">70%</b><span class="stat__l">ends up in overflowing landfills</span></li>
+      <li class="stat"><span class="stat__i"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#l-box"/></svg></span><b class="stat__n">Over half</b><span class="stat__l">of it is dry waste</span></li>
+      <li class="stat"><span class="stat__i"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#l-hourglass"/></svg></span><b class="stat__n">35%</b><span class="stat__l">shorter product lifespans</span></li>
+    </ul>
+
     <div class="why rv" id="lifeline">
       <div class="why__row">
         <div class="why__item">
@@ -538,6 +641,23 @@
       </div>
 
       <div class="statement rv">
+        <svg class="statement__diag" viewBox="0 0 340 132" role="img" aria-label="A straight line from buy to use to dump, crossed out, beside the Fleekart loop where an item is given and grabbed again">
+          <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" opacity=".55">
+            <circle cx="20" cy="66" r="7"/><path d="M34 66h18"/><path d="m47 61 5 5-5 5"/>
+            <circle cx="74" cy="66" r="7"/><path d="M88 66h18"/><path d="m101 61 5 5-5 5"/>
+            <g transform="translate(118 54)"><path d="M0 4h24"/><path d="M20 4v14c0 1-1 2-2 2H6c-1 0-2-1-2-2V4"/><path d="M8 4V2c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/></g>
+          </g>
+          <path d="m112 48 36 36" stroke="var(--clay)" stroke-width="2.2" stroke-linecap="round"/>
+          <g font-family="inherit" font-size="10" font-weight="700" letter-spacing="1.4" fill="currentColor" opacity=".7" text-anchor="middle">
+            <text x="20" y="96">BUY</text><text x="74" y="96">USE</text><text x="130" y="96">DUMP</text>
+          </g>
+          <circle cx="262" cy="66" r="40" fill="none" stroke="var(--green)" stroke-width="2.2"/>
+          <path d="m254 20 8 6-8 6M270 112l-8-6 8-6" fill="none" stroke="var(--green)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <g font-family="inherit" font-size="10" font-weight="700" letter-spacing="1.4" fill="currentColor" opacity=".85" text-anchor="middle">
+            <text x="262" y="12">GIVE</text><text x="262" y="130">GRAB</text>
+          </g>
+          <text x="262" y="70" font-family="inherit" font-size="10" font-weight="700" letter-spacing="1.4" fill="var(--green)" text-anchor="middle">FLEEKART</text>
+        </svg>
         <p>“Every useful thing kept in circulation matters.”</p>
         <span>Fleekart breaks this linear “buy-use-dump” cycle. Most items don't reach the end of their life — they just reach the end of their first owner's interest. By connecting users to give pre-loved items a second life, we keep good products working and prevent unnecessary waste, thereby saving raw resources and reducing carbon emissions.</span>
       </div>
@@ -616,7 +736,7 @@
 b:I[97367,["/_next/static/chunks/3fntmmi971322.js"],"ViewportBoundary"]
 d:I[97367,["/_next/static/chunks/3fntmmi971322.js"],"MetadataBoundary"]
 f:I[27201,["/_next/static/chunks/3fntmmi971322.js"],"IconMark"]
-0:{"P":null,"c":["",""],"q":"","i":false,"f":[[["",{"children":["__PAGE__",{},"$undefined","$undefined",4608]},"$undefined","$undefined",4624],[["$","$1","c",{"children":[[["$","script","script-0",{"src":"/_next/static/chunks/3fntmmi971322.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":[["$","link",null,{"rel":"preload","href":"/assets/Manrope.woff2","as":"font","type":"font/woff2","crossOrigin":"anonymous"}],["$","link",null,{"rel":"stylesheet","href":"/assets/v2.css"}],["$","link",null,{"rel":"stylesheet","href":"/assets/additions.css"}]]}],["$","body",null,{"className":"no-js","children":[["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","script",null,{"src":"/assets/gsap.min.js","defer":true}],["$","script",null,{"src":"/assets/ScrollTrigger.min.js","defer":true}],["$","script",null,{"src":"/assets/app.js","defer":true}],["$","script",null,{"src":"/assets/section-motion.js","defer":true}]]}]]}]]}],{"children":[["$","$1","c",{"children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$4"}}],null,"$L5"]}],{},null,false,null]},null,false,null],"$L6",false]],"m":"$undefined","G":["$7",[]],"S":true,"h":null,"r":"$undefined","s":"$undefined","a":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"sinj22y9YbGffIA4Q1syf"}
+0:{"P":null,"c":["",""],"q":"","i":false,"f":[[["",{"children":["__PAGE__",{},"$undefined","$undefined",4608]},"$undefined","$undefined",4624],[["$","$1","c",{"children":[[["$","script","script-0",{"src":"/_next/static/chunks/3fntmmi971322.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":[["$","link",null,{"rel":"preload","href":"/assets/Manrope.woff2","as":"font","type":"font/woff2","crossOrigin":"anonymous"}],["$","link",null,{"rel":"stylesheet","href":"/assets/v2.css"}],["$","link",null,{"rel":"stylesheet","href":"/assets/additions.css"}]]}],["$","body",null,{"className":"no-js","children":[["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","script",null,{"src":"/assets/gsap.min.js","defer":true}],["$","script",null,{"src":"/assets/ScrollTrigger.min.js","defer":true}],["$","script",null,{"src":"/assets/app.js","defer":true}],["$","script",null,{"src":"/assets/section-motion.js","defer":true}]]}]]}]]}],{"children":[["$","$1","c",{"children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$4"}}],null,"$L5"]}],{},null,false,null]},null,false,null],"$L6",false]],"m":"$undefined","G":["$7",[]],"S":true,"h":null,"r":"$undefined","s":"$undefined","a":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"-jIiWbtfMIu1uRp50VJ-n"}
 5:["$","$L8",null,{"children":["$","$9",null,{"name":"Next.MetadataOutlet","children":"$@a"}]}]
 6:["$","$1","h",{"children":[null,["$","$Lb",null,{"children":"$Lc"}],["$","div",null,{"hidden":true,"children":["$","$Ld",null,{"children":["$","$9",null,{"name":"Next.Metadata","children":"$Le"}]}]}],null]}]
 c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1, viewport-fit=cover"}],["$","meta","2",{"name":"theme-color","content":"#FBFAF7"}]]
