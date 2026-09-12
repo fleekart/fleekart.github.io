@@ -111,7 +111,7 @@
 <header class="nav" id="nav">
   <div class="nav__in">
     <a class="nav__logo" href="#top" aria-label="Fleekart — home">
-      <img src="/assets/logo.webp" alt="Fleekart" width="440" height="177" fetchpriority="high" decoding="async">
+      <img src="/assets/logo.webp" alt="Fleekart" width="440" height="183" fetchpriority="high" decoding="async">
     </a>
     <nav class="nav__links" aria-label="Primary">
       <a href="#about">About</a>
@@ -602,7 +602,7 @@
   <div class="wrap">
     <div class="foot__top">
       <div class="foot__brand">
-        <img src="/assets/logo.webp" alt="Fleekart" width="440" height="177" loading="lazy" decoding="async">
+        <img src="/assets/logo.webp" alt="Fleekart" width="440" height="183" loading="lazy" decoding="async">
         <p>Your first choice before selling or buying anything.</p>
       </div>
       <nav class="foot__links" aria-label="Footer">
@@ -639,7 +639,7 @@
 </footer>
 </main>
 5:X
-0:{"buildId":"bqz7lF3Ke_LNTdNt-ipmP","data":[{"rsc":["$","$1","c",{"children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],null,"$L3"]}],"isPartial":"$@4","staleTime":"$5","varyParams":null},{"rsc":"$L6","isPartial":"$@7","staleTime":"$5","varyParams":null},{"rsc":"$L8","isPartial":"$@9","staleTime":"$5","varyParams":null}],"isUpgradeableISRFallback":false,"a":"$@a","rootVaryParams":null,"needsRuntimeRequest":"$@b"}
+0:{"buildId":"nW4WvAiJOp__OYZJhFP4C","data":[{"rsc":["$","$1","c",{"children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],null,"$L3"]}],"isPartial":"$@4","staleTime":"$5","varyParams":null},{"rsc":"$L6","isPartial":"$@7","staleTime":"$5","varyParams":null},{"rsc":"$L8","isPartial":"$@9","staleTime":"$5","varyParams":null}],"isUpgradeableISRFallback":false,"a":"$@a","rootVaryParams":null,"needsRuntimeRequest":"$@b"}
 c:I[97367,["/_next/static/chunks/3fntmmi971322.js"],"OutletBoundary"]
 d:"$Sreact.suspense"
 f:I[97367,["/_next/static/chunks/3fntmmi971322.js"],"ViewportBoundary"]
