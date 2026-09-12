@@ -1,5 +1,5 @@
 1:"$Sreact.fragment"
-2:T9c08,<a class="skip" href="#main">Skip to content</a>
+2:T96b4,<a class="skip" href="#main">Skip to content</a>
 <!-- ══ INK ILLUSTRATION LIBRARY ══════════════════════════════════ -->
 <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute;pointer-events:none">
 <defs>
@@ -133,10 +133,9 @@
     <a href="#about">About <span>01</span></a>
     <a href="#how">How it works <span>02</span></a>
     <a href="#plinks">Earn Plinks <span>03</span></a>
-    <a href="#categories">Categories <span>04</span></a>
-    <a href="#impact">Impact <span>05</span></a>
-    <a href="#download">Download <span>06</span></a>
-    <a href="#resources">Resources <span>07</span></a>
+    <a href="#impact">Impact <span>04</span></a>
+    <a href="#download">Download <span>05</span></a>
+    <a href="#resources">Resources <span>06</span></a>
   </nav>
   <a class="btn" href="#download">Get the app</a>
 </div>
@@ -200,11 +199,12 @@
   <div class="wrap about__grid">
     <div class="about__body">
       <p class="eyebrow rv">About Fleekart</p>
-      <h2 class="d2 rv" id="aboutH">Good things shouldn't become waste just because you don't need them anymore.</h2>
-      <p class="lead rv">Most useful objects stop moving long before they stop working. Fleekart is where they keep going — a Donor gives what they no longer need, a Beneficiary grabs what they do, and Plinks carry the value between them.</p>
-      <div class="about__pts">
-        <p class="about__pt rv"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true" style="color:var(--teal-deep)"><use href="#i-check"/></svg><span><b>No cash changes hands.</b> Nothing is listed for a price and nothing is sold.</span></p>
-        <p class="about__pt rv"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true" style="color:var(--teal-deep)"><use href="#i-check"/></svg><span><b>Clothes, toys, books, gadgets.</b> Anything still useful to somebody else.</span></p>
+      <h2 class="d2 rv" id="aboutH">Building a global community where every useful item finds a second life.</h2>
+      <p class="lead rv">Fleekart is a sustainable circular platform where pre-loved items keep going around instead of ending up in landfills. We connect people and local communities to make the transaction seamless, transparent, and rewarding — giving everyday items a meaningful second life while reducing carbon footprints.</p>
+      <div class="about__why rv">
+        <h3 class="d3">Why Fleekart Exists</h3>
+        <p>Every year, millions of perfectly functional items — from books and electronics to home goods and apparel — sit idle in storage or get thrown away. Meanwhile, someone nearby is actively searching for those exact items.</p>
+        <p>Fleekart solves this mismatch by replacing traditional re-commerce friction with a cashless, community-driven ecosystem. We believe sustainability shouldn't be complicated; it should be as simple as passing something along to a neighbour.</p>
       </div>
       <p class="rv"><a class="tlink" href="#how">See how a handover works <svg class="ar" width="15" height="15" viewBox="0 0 16 16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2.6 8h10.2M9.2 4.4 12.8 8l-3.6 3.6"/></svg></a></p>
     </div>
@@ -229,13 +229,136 @@
     <div class="how__head">
       <div class="sec-head">
         <p class="eyebrow rv">How it works</p>
-        <h2 class="d2 rv" id="howH">One handover, two sides.</h2>
-        <p class="lead rv">A Donor gives something useful and earns Plinks. A Beneficiary uses Plinks to grab it. Fleekart sits in the middle so nothing has to be sold.</p>
+        <h2 class="d2 rv" id="howH">How it works</h2>
       </div>
       <div class="how__legend rv">
         <span><i style="background:var(--teal)"></i> Donor</span>
         <span><i style="background:var(--clay)"></i> Beneficiary</span>
         <span><i style="background:var(--green)"></i> Plinks</span>
+      </div>
+    </div>
+
+    <!-- the two sides of one handover -->
+    <div class="ladder rv" id="ladder">
+      <div class="ladder__head">
+        <div class="ladder__role ladder__role--donor">
+          <span class="flow__label">For the Donor (Give &amp; Earn)</span>
+        </div>
+        <div aria-hidden="true"></div>
+        <div class="ladder__role ladder__role--ben">
+          <span class="flow__label">Beneficiary (Grab &amp; Use)</span>
+        </div>
+      </div>
+
+      <ol class="ladder__rows" id="ladderRows">
+      <li class="rung">
+        <div class="rung__side rung__side--donor">
+          <span class="rung__ico"><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#i-shirt"/></svg></span>
+          <div class="rung__txt">
+            <span class="rung__tag">Donor</span>
+            <h3>Find What You Don't Use</h3>
+            <p>Pick clothes, toys, books, or gadgets (preferably in a working condition) that you no longer need.</p>
+          </div>
+        </div>
+        <div class="rung__node" aria-hidden="true">01</div>
+        <div class="rung__side rung__side--ben">
+          <span class="rung__ico"><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#i-discover"/></svg></span>
+          <div class="rung__txt">
+            <span class="rung__tag">Beneficiary</span>
+            <h3>Discover Useful Items</h3>
+            <p>Browse pre-loved items offered by neighbours or other Fleekart members right in your area.</p>
+          </div>
+        </div>
+      </li>
+      <li class="rung">
+        <div class="rung__side rung__side--donor">
+          <span class="rung__ico"><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#i-drop"/></svg></span>
+          <div class="rung__txt">
+            <span class="rung__tag">Donor</span>
+            <h3>List It in Seconds</h3>
+            <p>Snap a few photos and upload the item to the Fleekart app with a reasonable Plinks (credits) required for the product. <a class="tlink" href="#plinks">Know more about Plinks</a>.</p>
+          </div>
+        </div>
+        <div class="rung__node" aria-hidden="true">02</div>
+        <div class="rung__side rung__side--ben">
+          <span class="rung__ico"><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#i-spend"/></svg></span>
+          <div class="rung__txt">
+            <span class="rung__tag">Beneficiary</span>
+            <h3>Claim with Plinks</h3>
+            <p>Use your Plinks (credits) to claim what you need. Zero money, zero cash.</p>
+          </div>
+        </div>
+      </li>
+      <li class="rung">
+        <div class="rung__side rung__side--donor">
+          <span class="rung__ico"><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#i-loop"/></svg></span>
+          <div class="rung__txt">
+            <span class="rung__tag">Donor</span>
+            <h3>Connect &amp; Confirm</h3>
+            <p>A neighbour or beneficiary requests your item. Accept the request and agree on a simple local pickup time and place.</p>
+          </div>
+        </div>
+        <div class="rung__node" aria-hidden="true">03</div>
+        <div class="rung__side rung__side--ben">
+          <span class="rung__ico"><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#i-loop"/></svg></span>
+          <div class="rung__txt">
+            <span class="rung__tag">Beneficiary</span>
+            <h3>Coordinate the Pickup</h3>
+            <p>Chat safely in the app to arrange a convenient time and spot to collect your item.</p>
+          </div>
+        </div>
+      </li>
+      <li class="rung">
+        <div class="rung__side rung__side--donor">
+          <span class="rung__ico"><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#i-verify"/></svg></span>
+          <div class="rung__txt">
+            <span class="rung__tag">Donor</span>
+            <h3>Hand It Over &amp; Earn Plinks</h3>
+            <p>Share the secure pickup code at handover. You instantly earn Plinks for giving your item a second life.</p>
+          </div>
+        </div>
+        <div class="rung__node" aria-hidden="true">04</div>
+        <div class="rung__side rung__side--ben">
+          <span class="rung__ico"><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#i-receive"/></svg></span>
+          <div class="rung__txt">
+            <span class="rung__tag">Beneficiary</span>
+            <h3>Collect &amp; Confirm</h3>
+            <p>Meet up, share your pickup code, and take your item home to start its next chapter.</p>
+          </div>
+        </div>
+      </li>
+      <li class="rung">
+        <div class="rung__side rung__side--donor">
+          <span class="rung__ico"><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#i-plink"/></svg></span>
+          <div class="rung__txt">
+            <span class="rung__tag">Donor</span>
+            <h3>Use Your Plinks Anytime</h3>
+            <p>Spend your earned Plinks whenever you find something for yourself in Fleekart. Plinks never expire.</p>
+          </div>
+        </div>
+        <div class="rung__node" aria-hidden="true">05</div>
+        <div class="rung__side rung__side--ben">
+          <span class="rung__ico"><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#i-again"/></svg></span>
+          <div class="rung__txt">
+            <span class="rung__tag">Beneficiary</span>
+            <h3>Keep the Loop Going &amp; Make an Impact</h3>
+            <p>When you no longer need the item, pass it along to someone else and collect your Plinks.</p>
+          </div>
+        </div>
+      </li>
+      </ol>
+
+      <div class="ladder__foot">
+        <p class="ladder__out ladder__out--donor">You declutter your home, keep useful items out of landfills, and <b>earn rewards</b>!</p>
+        <div aria-hidden="true"></div>
+        <p class="ladder__out ladder__out--ben">By choosing a pre-loved item instead of buying new, you <b>save money</b> while reducing carbon emissions and landfill waste.</p>
+      </div>
+    </div>
+
+    <div class="journey rv">
+      <div class="sec-head">
+        <h3 class="d3" id="journeyH">Experience the Fleekart Journey.</h3>
+        <p class="lead">Take our interactive video below for a spin to watch how a pre-loved camera or book travels from a Donor to a Beneficiary, earning credits and saving along the way.</p>
       </div>
     </div>
 
@@ -305,103 +428,6 @@
       </div>
     </div>
 
-    <!-- the two sides of one handover -->
-    <div class="ladder rv" id="ladder">
-      <div class="ladder__head">
-        <div class="ladder__role ladder__role--donor">
-          <span class="flow__label">Donor</span>
-        </div>
-        <div aria-hidden="true"></div>
-        <div class="ladder__role ladder__role--ben">
-          <span class="flow__label">Beneficiary</span>
-        </div>
-      </div>
-
-      <ol class="ladder__rows" id="ladderRows">
-      <li class="rung">
-        <div class="rung__side rung__side--donor">
-          <span class="rung__ico"><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#i-shirt"/></svg></span>
-          <div class="rung__txt">
-            <span class="rung__tag">Donor</span>
-            <h3>Choose something you no longer need</h3>
-            <p>Clothes, toys, books, gadgets — anything still useful to someone else.</p>
-          </div>
-        </div>
-        <div class="rung__node" aria-hidden="true">01</div>
-        <div class="rung__side rung__side--ben">
-          <span class="rung__ico"><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#i-discover"/></svg></span>
-          <div class="rung__txt">
-            <span class="rung__tag">Beneficiary</span>
-            <h3>Discover something useful</h3>
-            <p>Browse what people around you have already given.</p>
-          </div>
-        </div>
-      </li>
-      <li class="rung">
-        <div class="rung__side rung__side--donor">
-          <span class="rung__ico"><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#i-drop"/></svg></span>
-          <div class="rung__txt">
-            <span class="rung__tag">Donor</span>
-            <h3>Drop it through Fleekart</h3>
-            <p>Hand it over through the app instead of listing it for sale.</p>
-          </div>
-        </div>
-        <div class="rung__node" aria-hidden="true">02</div>
-        <div class="rung__side rung__side--ben">
-          <span class="rung__ico"><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#i-spend"/></svg></span>
-          <div class="rung__txt">
-            <span class="rung__tag">Beneficiary</span>
-            <h3>Grab it using Plinks</h3>
-            <p>Plinks cover it. No price, no negotiation, no cash.</p>
-          </div>
-        </div>
-      </li>
-      <li class="rung">
-        <div class="rung__side rung__side--donor">
-          <span class="rung__ico"><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#i-verify"/></svg></span>
-          <div class="rung__txt">
-            <span class="rung__tag">Donor</span>
-            <h3>The item is verified and processed</h3>
-            <p>Fleekart checks it over so the next person knows what they're getting.</p>
-          </div>
-        </div>
-        <div class="rung__node" aria-hidden="true">03</div>
-        <div class="rung__side rung__side--ben">
-          <span class="rung__ico"><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#i-receive"/></svg></span>
-          <div class="rung__txt">
-            <span class="rung__tag">Beneficiary</span>
-            <h3>Receive the item</h3>
-            <p>It reaches you through Fleekart and starts its next chapter.</p>
-          </div>
-        </div>
-      </li>
-      <li class="rung">
-        <div class="rung__side rung__side--donor">
-          <span class="rung__ico"><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#i-plink"/></svg></span>
-          <div class="rung__txt">
-            <span class="rung__tag">Donor</span>
-            <h3>Earn Plinks</h3>
-            <p>Your Plinks are yours to spend whenever you need something.</p>
-          </div>
-        </div>
-        <div class="rung__node" aria-hidden="true">04</div>
-        <div class="rung__side rung__side--ben">
-          <span class="rung__ico"><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#i-again"/></svg></span>
-          <div class="rung__txt">
-            <span class="rung__tag">Beneficiary</span>
-            <h3>Give useful things another life</h3>
-            <p>When you're done with it, pass it on and become a Donor.</p>
-          </div>
-        </div>
-      </li>
-      </ol>
-
-      <div class="ladder__foot">
-        <p class="ladder__out ladder__out--donor">You end up with <b>Plinks</b>, and one less useful thing going to waste.</p>
-        <div aria-hidden="true"></div>
-        <p class="ladder__out ladder__out--ben">You end up with <b>what you needed</b>, without buying anything new.</p>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -410,15 +436,26 @@
   <div class="wrap plinks__grid">
     <div class="plinks__body">
       <p class="eyebrow rv">Earn Plinks</p>
-      <h2 class="d2 rv" id="plinksH">Plinks make <em>good things</em> go around.</h2>
+      <h2 class="d2 rv" id="plinksH">What are Plinks?</h2>
+      <p class="lead rv">Plinks are the digital credits used on Fleekart to make every exchange happen!</p>
+      <div class="about__pts rv">
+        <p class="about__pt"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true" style="color:var(--teal-deep)"><use href="#i-check"/></svg><span><b>How they work:</b> Donors collect Plinks when they share pre-loved items, and Beneficiaries use Plinks to claim items they need.</span></p>
+        <p class="about__pt"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true" style="color:var(--teal-deep)"><use href="#i-check"/></svg><span><b>Zero Money Involved:</b> Plinks keep exchanges simple, safe, and fair — no cash, no pricing arguments, and no risk of getting cheated.</span></p>
+        <p class="about__pt"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true" style="color:var(--teal-deep)"><use href="#i-check"/></svg><span><b>Never Expire:</b> Your Plinks stay in your wallet forever until you're ready to use them!</span></p>
+      </div>
       <div class="rv">
-        <h3 class="d3" style="margin-bottom:10px">What are Plinks?</h3>
-        <p class="lead">Plinks are the coins used inside Fleekart. Donors earn Plinks when they give useful items. Beneficiaries use Plinks to grab useful items. They are not money and nothing is priced in cash.</p>
+        <h3 class="d3" style="margin-bottom:12px">How to earn Plinks</h3>
+        <dl class="earn">
+          <div><dt>Welcome Bonus</dt><dd>Get 3,000 free Plinks as soon as you sign up so you can start claiming items right away!</dd></div>
+          <div><dt>Give Useful Items</dt><dd>Look around your house for clothes, toys, books, or gadgets you no longer use. Post them on Fleekart and collect Plinks as soon as someone grabs them.</dd></div>
+          <div><dt>Invite Your Friends (1,000 Plinks)</dt><dd>Earn 1,000 Plinks for every friend who signs up on Fleekart using your invite link or code — and they get 1,000 too, released once they complete their first exchange or 14 days pass.</dd></div>
+          <div><dt>Share a "New Life Story" (500 Plinks)</dt><dd>Loved an item you picked up? Post a quick photo or story on your profile and share it on social media to earn 500 Plinks, up to 1,000 a month.</dd></div>
+        </dl>
       </div>
       <div class="buy rv">
         <div>
-          <p class="buy__t">Buy Plinks directly</p>
-          <p class="buy__d">Top up your balance without giving something first.</p>
+          <p class="buy__t">Top-Up Option</p>
+          <p class="buy__d">Need a few extra coins to grab something special? You'll soon be able to purchase additional Plinks directly in the app for a small fee.</p>
         </div>
         <span class="soon">Coming soon</span>
       </div>
@@ -457,65 +494,14 @@
   </div>
 </section>
 
-<!-- ══ CATEGORIES ═══════════════════════════════════════════════ -->
-<section class="sec cats" id="categories" aria-labelledby="catsH">
-  <div class="wrap">
-    <div class="sec-head wide">
-      <p class="eyebrow rv">What moves</p>
-      <h2 class="d2 rv" id="catsH">Not just gadgets. Anything still useful.</h2>
-      <p class="lead rv">Fleekart is a circular-use platform, not a resale site. The things that move through it are the ordinary, good things people stop needing.</p>
-    </div>
-
-    <div class="cats__grid">
-      <div class="cats__list" role="tablist" aria-label="Categories" id="catList">
-        <button class="cat is-on" role="tab" aria-selected="true" aria-controls="catart-clothes" id="cat-clothes" data-cat="clothes">
-          <span class="cat__n">01</span><span class="cat__t">Clothes</span>
-          <span class="cat__d">A jacket someone outgrew, still with years in it</span>
-        </button>
-        <button class="cat" role="tab" aria-selected="false" aria-controls="catart-toys" id="cat-toys" data-cat="toys" tabindex="-1">
-          <span class="cat__n">02</span><span class="cat__t">Toys</span>
-          <span class="cat__d">Outgrown in one home, brand new in the next</span>
-        </button>
-        <button class="cat" role="tab" aria-selected="false" aria-controls="catart-books" id="cat-books" data-cat="books" tabindex="-1">
-          <span class="cat__n">03</span><span class="cat__t">Books</span>
-          <span class="cat__d">Read once, waiting for their next reader</span>
-        </button>
-        <button class="cat" role="tab" aria-selected="false" aria-controls="catart-gadgets" id="cat-gadgets" data-cat="gadgets" tabindex="-1">
-          <span class="cat__n">04</span><span class="cat__t">Gadgets</span>
-          <span class="cat__d">Replaced, not finished — and useful to someone</span>
-        </button>
-      </div>
-
-      <div class="cats__stage" id="catStage">
-        <figure class="catart is-on" id="catart-clothes" role="tabpanel" aria-labelledby="cat-clothes">
-          <img src="/assets/cat-clothes.webp" srcset="/assets/cat-clothes@sm.webp 660w, /assets/cat-clothes.webp 1160w" sizes="(max-width:1080px) 92vw, 46vw" width="1160" height="798" alt="A person in a knitted sweater holding a folded stack of jeans." loading="lazy" decoding="async">
-          <figcaption><span class="catart__ico"><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#i-shirt"/></svg></span><b>Clothes</b></figcaption>
-        </figure>
-        <figure class="catart" id="catart-toys" role="tabpanel" aria-labelledby="cat-toys" hidden>
-          <img src="/assets/cat-toys.webp" srcset="/assets/cat-toys@sm.webp 660w, /assets/cat-toys.webp 1160w" sizes="(max-width:1080px) 92vw, 46vw" width="1160" height="798" alt="A child's hands pushing two small toy cars across a table." loading="lazy" decoding="async">
-          <figcaption><span class="catart__ico"><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#i-toy"/></svg></span><b>Toys</b></figcaption>
-        </figure>
-        <figure class="catart" id="catart-books" role="tabpanel" aria-labelledby="cat-books" hidden>
-          <img src="/assets/cat-books.webp" srcset="/assets/cat-books@sm.webp 660w, /assets/cat-books.webp 1160w" sizes="(max-width:1080px) 92vw, 46vw" width="1160" height="798" alt="A reader standing between tall shelves in a second-hand bookshop, holding a stack of books." loading="lazy" decoding="async">
-          <figcaption><span class="catart__ico"><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#i-book"/></svg></span><b>Books</b></figcaption>
-        </figure>
-        <figure class="catart" id="catart-gadgets" role="tabpanel" aria-labelledby="cat-gadgets" hidden>
-          <img src="/assets/cat-gadgets.webp" srcset="/assets/cat-gadgets@sm.webp 660w, /assets/cat-gadgets.webp 1160w" sizes="(max-width:1080px) 92vw, 46vw" width="1160" height="798" alt="Headphones, a phone case, a camera and other everyday devices laid out in a row." loading="lazy" decoding="async">
-          <figcaption><span class="catart__ico"><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#i-gadget"/></svg></span><b>Gadgets</b></figcaption>
-        </figure>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- ══ IMPACT ═══════════════════════════════════════════════════ -->
 <section class="sec impact" id="impact" aria-labelledby="impactH">
   <div class="wrap">
     <div class="impact__grid">
       <div class="sec-head">
         <p class="eyebrow rv">Impact</p>
-        <h2 class="d2 rv" id="impactH">Every useful thing kept in circulation matters.</h2>
-        <p class="lead rv">A thing that keeps being used is a thing nobody had to make again. That is the whole argument for Fleekart: fewer good objects thrown out, more of them still doing their job somewhere else.</p>
+        <h2 class="d2 rv" id="impactH">Did You Know?</h2>
+        <p class="lead rv">Indian cities generate over 62 million tonnes of waste annually, with over 70% ending up in overflowing landfills. More than half of this is dry waste — including millions of functional items that could easily enter a local circular loop instead of a garbage dump.</p>
       </div>
       <figure class="shot shot--impact rv">
         <div class="shot__frame">
@@ -529,34 +515,25 @@
       </figure>
     </div>
 
-    <div class="lifeline rv" id="lifeline">
-      <div class="lifeline__row">
-        <div class="life">
-          <div class="life__box"><svg viewBox="0 0 48 48" aria-hidden="true" style="color:var(--ink-2)"><use href="#i-shirt"/></svg>
-            <span class="life__link" aria-hidden="true"><i></i></span></div>
-          <p class="life__t">Item</p><p class="life__d">Something useful that stopped being used.</p>
+    <div class="why rv" id="lifeline">
+      <div class="why__row">
+        <div class="why__item">
+          <h3>Rising Consumerism &amp; Disposable Culture</h3>
+          <p>With e-commerce, instant deliveries, and trend-driven shopping, buying has become effortless. In India's growing urban centres, households buy significantly more products than previous generations, turning durable items — like clothing, toys, home décor, and small appliances — into short-term consumer goods.</p>
         </div>
-        <div class="life">
-          <div class="life__box"><svg viewBox="0 0 48 48" aria-hidden="true" style="color:var(--teal-deep)"><use href="#i-again"/></svg>
-            <span class="life__link" aria-hidden="true"><i></i></span></div>
-          <p class="life__t">Second life</p><p class="life__d">Someone else starts using it instead.</p>
+        <div class="why__item">
+          <h3>Shrinking Product Lifespans</h3>
+          <p>The active lifespan of everyday products has fallen by over 35% in recent years. Items aren't necessarily breaking down — owners simply move on to newer models, updated styles, or upgraded versions long before the product stops working.</p>
         </div>
-        <div class="life">
-          <div class="life__box">
-            <svg viewBox="0 0 48 48" aria-hidden="true" style="color:var(--ink-2)"><use href="#i-bin"/>
-              <path d="M9 42 39 8" fill="none" stroke="var(--clay)" stroke-width="2.6" stroke-linecap="round"/></svg>
-            <span class="life__link" aria-hidden="true"><i></i></span></div>
-          <p class="life__t">Less waste</p><p class="life__d">One fewer good thing thrown away.</p>
-        </div>
-        <div class="life">
-          <div class="life__box"><svg viewBox="0 0 48 48" aria-hidden="true" style="color:var(--green-deep)"><use href="#i-plink"/></svg></div>
-          <p class="life__t">More value</p><p class="life__d">Plinks stay in the community that made them.</p>
+        <div class="why__item">
+          <h3>The "Idle Household Storage" Trap</h3>
+          <p>Before an item ever reaches a landfill, it sits in a closet, drawer, or storeroom for months or years. Over time, as it stays hidden away, it loses relevance, degrades in quality, and eventually gets tossed into municipal dry waste during home cleanouts. In urban India, billions of rupees in functional household items are discarded or sit idle without ever entering a circular loop.</p>
         </div>
       </div>
 
       <div class="statement rv">
-        <p>One item can have more than one life.</p>
-        <span>Fleekart doesn't publish impact figures it can't stand behind. When there are real numbers to show, they'll appear here.</span>
+        <p>“Every useful thing kept in circulation matters.”</p>
+        <span>Fleekart breaks this linear “buy-use-dump” cycle. Most items don't reach the end of their life — they just reach the end of their first owner's interest. By connecting users to give pre-loved items a second life, we keep good products working and prevent unnecessary waste, thereby saving raw resources and reducing carbon emissions.</span>
       </div>
     </div>
   </div>
@@ -586,14 +563,6 @@
       </div>
     </div>
 
-    <div class="dl__art rv">
-      <video class="dl__vid" muted loop playsinline preload="none" poster="/assets/download-boxy.webp"
-             aria-label="Animation of Fleekart's mascot presenting a laptop, headphones and a camera"
-             data-lazyvid data-inview>
-        <source data-src="/assets/download-boxy.webm" type="video/webm">
-      </video>
-
-    </div>
   </div>
 </section>
 
@@ -611,7 +580,6 @@
           <a href="#about">About</a>
           <a href="#how">How it works</a>
           <a href="#plinks">Earn Plinks</a>
-          <a href="#categories">Categories</a>
           <a href="#impact">Impact</a>
         </div>
         <div class="foot__col">
@@ -632,14 +600,13 @@
     </div>
     <div class="foot__bot">
       <span>© 2026 Fleekart · Chennai, India · <a href="mailto:info@fleekart.com">info@fleekart.com</a></span>
-      <span>Donor · Beneficiary · Plinks</span>
       <span>Photography via <a href="https://unsplash.com" rel="noopener" style="text-decoration:underline;text-underline-offset:2px">Unsplash</a></span>
     </div>
   </div>
 </footer>
 </main>
 5:X
-0:{"buildId":"nW4WvAiJOp__OYZJhFP4C","data":[{"rsc":["$","$1","c",{"children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],null,"$L3"]}],"isPartial":"$@4","staleTime":"$5","varyParams":null},{"rsc":"$L6","isPartial":"$@7","staleTime":"$5","varyParams":null},{"rsc":"$L8","isPartial":"$@9","staleTime":"$5","varyParams":null}],"isUpgradeableISRFallback":false,"a":"$@a","rootVaryParams":null,"needsRuntimeRequest":"$@b"}
+0:{"buildId":"lIpgbIghEQCtJKaqunldV","data":[{"rsc":["$","$1","c",{"children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],null,"$L3"]}],"isPartial":"$@4","staleTime":"$5","varyParams":null},{"rsc":"$L6","isPartial":"$@7","staleTime":"$5","varyParams":null},{"rsc":"$L8","isPartial":"$@9","staleTime":"$5","varyParams":null}],"isUpgradeableISRFallback":false,"a":"$@a","rootVaryParams":null,"needsRuntimeRequest":"$@b"}
 c:I[97367,["/_next/static/chunks/3fntmmi971322.js"],"OutletBoundary"]
 d:"$Sreact.suspense"
 f:I[97367,["/_next/static/chunks/3fntmmi971322.js"],"ViewportBoundary"]

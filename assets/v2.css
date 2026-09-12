@@ -888,3 +888,22 @@ svg[data-ico="bin"]    { --ico-anim:icoShake; --ico-dur:.75s; }
   .ico-in[data-ico],.ico-go[data-ico],.dot.ico-in{ animation:none!important; }
   .store:hover svg,.btn:hover .ar--down{ transform:none; }
 }
+
+
+/* founder corrections, 12 Sep 2026: the sections he rewrote run ~15% smaller */
+.about .d2,.how .d2,.plinks .d2,.impact .d2{ font-size:clamp(29px,3.45vw,49px); }
+.about .lead,.how .lead,.plinks .lead,.impact .lead{ font-size:clamp(15px,1.1vw,17px); }
+.about .d3,.how .d3,.plinks .d3{ font-size:clamp(20px,1.75vw,26px); }
+.about__why{ display:grid; gap:10px; }
+.about__why p{ font-size:15px; color:var(--ink-2); line-height:1.55; text-wrap:pretty; }
+.journey{ margin-top:clamp(40px,5vw,72px); margin-bottom:clamp(22px,2.6vw,36px); }
+.earn{ display:grid; gap:12px; margin:0; }
+.earn div{ display:grid; gap:2px; }
+.earn dt{ font-size:15px; font-weight:660; letter-spacing:-.012em; }
+.earn dd{ margin:0; font-size:13.8px; color:var(--ink-3); line-height:1.5; text-wrap:pretty; }
+.why{ margin-top:clamp(36px,4.5vw,64px); }
+.why__row{ display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:clamp(20px,3vw,44px); }
+.why__item h3{ font-size:16px; font-weight:670; letter-spacing:-.018em; margin-bottom:8px; }
+.why__item p{ font-size:13.8px; color:var(--ink-3); line-height:1.55; text-wrap:pretty; }
+.dl__grid{ grid-template-columns:minmax(0,1fr); }
+@media (max-width:880px){ .why__row{ grid-template-columns:minmax(0,1fr); } }
