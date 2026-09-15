@@ -286,33 +286,65 @@
   }
 
   /* ── the handover, performed by the visitor ─────────────── */
+  /* Five beats, the order the app does them: pick a thing, ask for Plinks,
+     post it (Fleekart checks it), the Beneficiary accepts, the thing goes
+     across and the Plinks come back. States on #deal: is-idle → is-posted →
+     is-done; is-armed only while a drag is past the point of no return. */
   var deal = doc.getElementById('deal');
   if (deal) {
+    /* `asks` are the three amounts offered for each thing, the middle one
+       pre-chosen. `co2Kg` is null on purpose: every CO2e input in
+       data/impact/coefficient_inputs.yaml is still awaiting the founder's
+       sourced table (OA-002) and the seed's provisional set may not be
+       published. Give a thing a number here and the carbon line counts it. */
     var THINGS = [
-      { icon: 'i-shirt',  name: 'Denim jacket',        the: 'the jacket' },
-      { icon: 'i-toy',    name: 'Wooden train',        the: 'the train' },
-      { icon: 'i-book',   name: 'Paperback stack',     the: 'the books' },
-      { icon: 'i-gadget', name: 'Over-ear headphones', the: 'the headphones' }
+      { icon: 'i-shirt',  name: 'Denim jacket',        the: 'the jacket',     one: 'jacket',             asks: [200, 300, 500],  co2Kg: null },
+      { icon: 'i-toy',    name: 'Wooden train',        the: 'the train',      one: 'train',              asks: [100, 200, 300],  co2Kg: null },
+      { icon: 'i-book',   name: 'Paperback stack',     the: 'the books',      one: 'stack of books',     asks: [100, 150, 250],  co2Kg: null },
+      { icon: 'i-gadget', name: 'Over-ear headphones', the: 'the headphones', one: 'pair of headphones', asks: [300, 500, 800],  co2Kg: null },
+      { icon: 'i-camera', name: 'Digital camera',      the: 'the camera',     one: 'camera',             asks: [500, 800, 1200], co2Kg: null },
+      { icon: 'i-bat',    name: 'Cricket bat',         the: 'the bat',        one: 'bat',                asks: [200, 300, 500],  co2Kg: null }
     ];
+    var ACCEPT_AFTER = 2600;   /* ms before the Beneficiary accepts by themselves */
+
     var stage = doc.getElementById('dealStage');
     var thing = doc.getElementById('thing');
     var thingUse = doc.getElementById('thingUse');
     var thingName = doc.getElementById('thingName');
+    var thingAsk = doc.getElementById('thingAsk');
     var slotFrom = doc.getElementById('slotFrom');
     var slotTo = doc.getElementById('slotTo');
     var coin = doc.getElementById('coin');
+    var coinN = doc.getElementById('coinN');
     var walletDonor = doc.getElementById('walletDonor');
+    var walletBen = doc.getElementById('walletBen');
+    var walletDonorN = doc.getElementById('walletDonorN');
+    var walletBenN = doc.getElementById('walletBenN');
     var hint = doc.getElementById('dealHint');
     var again = doc.getElementById('dealAgain');
     var dots = Array.prototype.slice.call(deal.querySelectorAll('.deal__dots button'));
+    var chips = Array.prototype.slice.call(deal.querySelectorAll('.deal__chips button'));
+    var post = doc.getElementById('dealPost');
+    var accept = doc.getElementById('dealAccept');
+    var acceptT = accept ? accept.querySelector('.deal__acceptT') : null;
+    var co2Text = doc.getElementById('dealCo2T');
+    var slotToLab = slotTo ? slotTo.querySelector('span') : null;
     var hub = doc.getElementById('dealHub');
 
-    var idx = 0, done = false, held = false, home = { x: 0, y: 0 }, target = { x: 0, y: 0 };
+    var idx = 0, ask = 1, phase = 'idle', held = false, acceptTimer = null;
+    var home = { x: 0, y: 0 }, target = { x: 0, y: 0 };
 
-    function centreIn(box) {
-      var s = stage.getBoundingClientRect(), b = box.getBoundingClientRect(), t = thing.getBoundingClientRect();
+    function fmt(n) { return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ','); }
+    function amount() { return THINGS[idx].asks[ask]; }
+    function cap(str) { return str.charAt(0).toUpperCase() + str.slice(1); }
+
+    /* where `el` should sit to be centred in `box`, in stage coordinates */
+    function centreOf(box, el) {
+      var s = stage.getBoundingClientRect(), b = box.getBoundingClientRect(), t = el.getBoundingClientRect();
       return { x: (b.left - s.left) + (b.width - t.width) / 2, y: (b.top - s.top) + (b.height - t.height) / 2 };
     }
+    function centreIn(box) { return centreOf(box, thing); }
+    function coinAt(box) { return centreOf(box, coin); }
     function measure() {
       home = centreIn(slotFrom);
       target = centreIn(slotTo);
@@ -334,64 +366,140 @@
 
     function say(html) { if (hint) hint.innerHTML = html; }
 
+    function setAsk(k) {
+      ask = k;
+      var n = fmt(amount());
+      chips.forEach(function (c, i) {
+        c.setAttribute('aria-checked', String(i === k));
+        c.tabIndex = i === k ? 0 : -1;
+      });
+      if (thingAsk) thingAsk.innerHTML = '<b>' + n + '</b> Plinks';
+      if (acceptT) acceptT.innerHTML = 'Accept for <b>' + n + '</b> Plinks';
+      if (coinN) coinN.textContent = n;
+      thing.setAttribute('aria-label', 'Post ' + THINGS[idx].name + ' for ' + n + ' Plinks. Press Enter to post it, or drag it to Fleekart.');
+    }
+
     function setThing(i) {
       idx = i;
       thingUse.setAttribute('href', '#' + THINGS[i].icon);
       thingName.textContent = THINGS[i].name;
+      chips.forEach(function (c, k) { c.textContent = fmt(THINGS[i].asks[k]); });
       dots.forEach(function (d, k) {
         d.setAttribute('aria-selected', String(k === i));
         d.tabIndex = k === i ? 0 : -1;
       });
+      setAsk(1);
+      /* the carbon sentence names the thing from the start, so it is never a beat behind */
+      if (co2Text) co2Text.textContent = 'One ' + THINGS[i].one + ' fewer made new — the carbon of making it never happens.';
     }
 
     function reset(i, quiet) {
-      done = false;
-      deal.classList.remove('is-done', 'is-armed');
+      phase = 'idle';
+      clearTimeout(acceptTimer);
+      deal.classList.remove('is-done', 'is-posted', 'is-armed', 'is-carbon');
       deal.classList.add('is-idle');
-      if (typeof i === 'number') setThing(i);
+      if (slotToLab) slotToLab.textContent = 'Waiting for a listing';
+      if (typeof i === 'number') setThing(i); else setAsk(ask);
       gsap.set(coin, { opacity: 0, scale: .5 });
+      if (walletDonorN) walletDonorN.textContent = '';
+      if (walletBenN) walletBenN.textContent = '';
+      if (accept) { accept.disabled = true; accept.classList.remove('is-waiting'); }
       measure();
       if (REDUCED || quiet) place(home);
       else gsap.to(thing, { x: home.x, y: home.y, duration: .5, ease: 'power3.out' });
-      thing.setAttribute('aria-label', 'Hand over ' + THINGS[idx].name + '. Press Enter to send it, or drag it across.');
       if (again) again.disabled = true;
-      say('<b>Your turn.</b> Drag ' + THINGS[idx].the + ' across to Fleekart — or press Enter.');
+      say('<b>Your turn.</b> Ask for Plinks, then drag ' + THINGS[idx].the + ' to Fleekart — or press Enter.');
     }
 
-    function complete() {
-      if (done) return;
-      done = true;
+    /* beat 3: the thing goes to Fleekart and gets its tick */
+    function postIt() {
+      if (phase !== 'idle') return;
+      phase = 'posted';
       deal.classList.remove('is-idle', 'is-armed');
       measure();
-      say('<b>Through Fleekart…</b>');
+      say('<b>Posting…</b>');
       var tl = gsap.timeline();
       if (REDUCED) {
-        place(target);
-        deal.classList.add('is-done');
-        gsap.set(coin, { opacity: 1, x: 0, y: 0 });
+        place(centreIn(hub));
+        deal.classList.add('is-posted');
       } else {
         var mid = centreIn(hub);
         tl.to(thing, { x: mid.x, y: mid.y, duration: .45, ease: 'power2.inOut' })
           .to(hub, { scale: 1.12, duration: .18, ease: 'power2.out' }, '-=.12')
           .to(hub, { scale: 1, duration: .38, ease: 'elastic.out(1,.5)' })
-          .to(thing, { x: target.x, y: target.y, duration: .5, ease: 'power2.inOut' }, '-=.3')
-          .add(function () { deal.classList.add('is-done'); })
-          /* the Plinks go the other way */
-          .set(coin, { opacity: 1, scale: 1, x: centreIn(slotTo).x + 50, y: centreIn(slotTo).y + 84 })
-          .to(coin, { x: centreIn(hub).x + 52, y: centreIn(hub).y + 90, duration: .4, ease: 'power2.in' })
-          .to(coin, { x: centreIn(walletDonor).x + 52, y: centreIn(walletDonor).y + 84, duration: .45, ease: 'power2.out' })
+          .add(function () { deal.classList.add('is-posted'); }, '-=.3');
+      }
+      if (slotToLab) slotToLab.textContent = 'Yours, if you accept';
+      tl.add(function () {
+        say('<b>Posted.</b> Fleekart checked the listing — now the Beneficiary decides. Press <b>Accept</b>, or just wait.');
+        if (accept) {
+          accept.disabled = false;
+          /* the fill only starts once the button is on screen, or it runs unseen */
+          requestAnimationFrame(function () { accept.classList.add('is-waiting'); });
+          acceptTimer = setTimeout(acceptIt, ACCEPT_AFTER);
+        }
+      });
+    }
+
+    /* beats 4 and 5: the Beneficiary accepts, the thing lands, the Plinks come back */
+    function acceptIt() {
+      if (phase !== 'posted') return;
+      phase = 'done';
+      clearTimeout(acceptTimer);
+      var n = fmt(amount());
+      if (accept) {
+        accept.classList.remove('is-waiting');
+        accept.disabled = true;
+        if (acceptT) acceptT.textContent = 'Accepted ✓';
+      }
+      measure();
+      say('<b>Accepted.</b> ' + cap(THINGS[idx].the) + ' goes across; ' + n + ' Plinks come back…');
+      var tl = gsap.timeline();
+      var finish = function () {
+        deal.classList.add('is-done');
+        if (walletDonorN) walletDonorN.textContent = '+' + n;
+        if (walletBenN) walletBenN.textContent = '−' + n;
+      };
+      if (REDUCED) {
+        place(target);
+        finish();
+        gsap.set(coin, { opacity: 0 });
+      } else {
+        tl.to(thing, { x: target.x, y: target.y, duration: .5, ease: 'power2.inOut' })
+          .add(finish)
+          /* the Plinks go the other way: wallet → Fleekart → wallet */
+          .set(coin, { opacity: 1, scale: 1, x: coinAt(walletBen).x, y: coinAt(walletBen).y })
+          .to(coin, { x: coinAt(hub).x, y: coinAt(hub).y, duration: .4, ease: 'power2.in' })
+          .to(coin, { x: coinAt(walletDonor).x, y: coinAt(walletDonor).y, duration: .45, ease: 'power2.out' })
           .to(coin, { opacity: 0, scale: .6, duration: .25 }, '-=.05');
       }
       tl.add(function () {
-        say('<b>' + THINGS[idx].name + ' has a second life.</b> Plinks went back to the Donor — no price, no cash, nothing sold.');
+        deal.classList.add('is-carbon');
+        carbon();
+        say('<b>' + THINGS[idx].name + ' has a second life.</b> ' + n + ' Plinks went back to the Donor — no price, no cash, nothing sold.');
         if (again) again.disabled = false;
       });
     }
 
-    /* dragging */
+    /* the carbon line: a figure counts up if the thing has one, else the
+       true sentence — a new one was not made. See the markup comment. */
+    function carbon() {
+      if (!co2Text) return;
+      var t = THINGS[idx], kg = t.co2Kg;
+      if (typeof kg === 'number' && kg > 0) {
+        co2Text.innerHTML = 'About <span class="deal__co2N" id="dealCo2N">0</span> kg CO₂e — one ' + t.one + ' fewer made new.';
+        var el = doc.getElementById('dealCo2N'), o = { v: 0 };
+        if (REDUCED) { el.textContent = fmt(Math.round(kg)); return; }
+        gsap.to(o, { v: kg, duration: 1.3, ease: 'power2.out', delay: .25,
+                     onUpdate: function () { el.textContent = fmt(Math.round(o.v)); } });
+      }
+      /* no figure: the sentence set by setThing already stands */
+    }
+
+    /* dragging — to Fleekart, which is where a listing goes */
     var startPt = null, startXY = null;
     thing.addEventListener('pointerdown', function (ev) {
-      if (done) return;
+      if (phase !== 'idle') return;
       held = true;
       deal.classList.remove('is-idle');
       thing.classList.add('is-held');
@@ -407,7 +515,7 @@
       gsap.set(thing, { x: nx, y: ny });
       var total = Math.hypot(target.x - home.x, target.y - home.y) || 1;
       var moved = Math.hypot(nx - home.x, ny - home.y);
-      deal.classList.toggle('is-armed', moved / total > .42);
+      deal.classList.toggle('is-armed', moved / total > .34);
     });
     function release() {
       if (!held) return;
@@ -415,25 +523,44 @@
       thing.classList.remove('is-held');
       var nx = gsap.getProperty(thing, 'x'), ny = gsap.getProperty(thing, 'y');
       var total = Math.hypot(target.x - home.x, target.y - home.y) || 1;
-      if (Math.hypot(nx - home.x, ny - home.y) / total > .42) complete();
+      if (Math.hypot(nx - home.x, ny - home.y) / total > .34) postIt();
       else {
         deal.classList.remove('is-armed');
+        deal.classList.add('is-idle');
         gsap.to(thing, { x: home.x, y: home.y, duration: .5, ease: 'power3.out' });
-        say('<b>Not quite.</b> Take ' + THINGS[idx].the + ' all the way across — or press Enter.');
+        say('<b>Not quite.</b> Take ' + THINGS[idx].the + ' all the way to Fleekart — or press Enter.');
       }
     }
     thing.addEventListener('pointerup', release);
     thing.addEventListener('pointercancel', release);
 
-    /* keyboard and tap both send it */
+    /* keyboard and tap both post it */
     thing.addEventListener('click', function (ev) {
       if (ev.detail !== 0) return;      /* real clicks are handled by the drag */
-      complete();
+      postIt();
     });
     thing.addEventListener('keydown', function (ev) {
       if (ev.key === 'Enter' || ev.key === ' ' || ev.key === 'ArrowRight' || ev.key === 'ArrowDown') {
-        ev.preventDefault(); complete();
+        ev.preventDefault(); postIt();
       }
+    });
+    if (post) post.addEventListener('click', postIt);
+    if (accept) accept.addEventListener('click', acceptIt);
+
+    /* the amounts: a radio group, arrows move between them */
+    chips.forEach(function (c, k) {
+      c.addEventListener('click', function () {
+        if (phase !== 'idle') return;
+        setAsk(k);
+        say('<b>' + fmt(amount()) + ' Plinks.</b> Now post ' + THINGS[idx].the + ' — drag it to Fleekart, or press Enter.');
+      });
+      c.addEventListener('keydown', function (ev) {
+        var n = chips.length, to = -1;
+        if (ev.key === 'ArrowRight' || ev.key === 'ArrowDown') to = (k + 1) % n;
+        else if (ev.key === 'ArrowLeft' || ev.key === 'ArrowUp') to = (k + n - 1) % n;
+        if (to < 0 || phase !== 'idle') return;
+        ev.preventDefault(); setAsk(to); chips[to].focus();
+      });
     });
 
     if (again) again.addEventListener('click', function () {
@@ -441,17 +568,18 @@
       thing.focus();
     });
     dots.forEach(function (d, i) {
+      var n = THINGS.length;
       d.addEventListener('click', function () { reset(i); });
       d.addEventListener('keydown', function (ev) {
-        if (ev.key === 'ArrowRight' || ev.key === 'ArrowDown') { ev.preventDefault(); reset((i + 1) % 4); dots[(i + 1) % 4].focus(); }
-        else if (ev.key === 'ArrowLeft' || ev.key === 'ArrowUp') { ev.preventDefault(); reset((i + 3) % 4); dots[(i + 3) % 4].focus(); }
+        if (ev.key === 'ArrowRight' || ev.key === 'ArrowDown') { ev.preventDefault(); reset((i + 1) % n); dots[(i + 1) % n].focus(); }
+        else if (ev.key === 'ArrowLeft' || ev.key === 'ArrowUp') { ev.preventDefault(); reset((i + n - 1) % n); dots[(i + n - 1) % n].focus(); }
       });
     });
 
     /* first paint, and whenever the box changes shape */
     function settle() {
       measure();
-      place(done ? target : home);
+      place(phase === 'done' ? target : phase === 'posted' ? centreIn(hub) : home);
     }
     reset(0, true);
     window.addEventListener('load', settle);

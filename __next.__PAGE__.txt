@@ -1,5 +1,5 @@
 1:"$Sreact.fragment"
-2:Tc987,<a class="skip" href="#main">Skip to content</a>
+2:Tdffa,<a class="skip" href="#main">Skip to content</a>
 <!-- ══ INK ILLUSTRATION LIBRARY ══════════════════════════════════ -->
 <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute;pointer-events:none">
 <defs>
@@ -41,6 +41,33 @@
     <path d="M10.4 30.6V24a13.6 13.6 0 0 1 27.2 0v6.6" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"/>
     <rect x="5.4" y="28.6" width="10" height="14" rx="4.2" fill="none" stroke="currentColor" stroke-width="2.1"/>
     <rect x="32.6" y="28.6" width="10" height="14" rx="4.2" fill="none" stroke="currentColor" stroke-width="2.1"/>
+  </symbol>
+
+  <!-- two more things to hand over (15 Sep, the founder's "add more sample
+       products") and a leaf for the carbon line — same 2.1 stroke, same
+       1.35/.5 detail lines as the four above, so the dots read as one set -->
+  <symbol id="i-camera" viewBox="0 0 48 48">
+    <rect x="6" y="15" width="36" height="25" rx="4.6" fill="none" stroke="currentColor" stroke-width="2.1"/>
+    <path d="M16.6 15 19.4 9.8h9.2L31.4 15" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round" stroke-linecap="round"/>
+    <circle cx="24" cy="27.5" r="7.2" fill="none" stroke="currentColor" stroke-width="2.1"/>
+    <circle cx="24" cy="27.5" r="3.8" fill="none" stroke="currentColor" stroke-width="1.35" opacity=".5"/>
+    <path d="M11.5 21h4" fill="none" stroke="currentColor" stroke-width="1.35" opacity=".5" stroke-linecap="round"/>
+    <circle cx="36.3" cy="21" r="1.4" fill="currentColor"/>
+  </symbol>
+
+  <symbol id="i-bat" viewBox="0 0 48 48">
+    <g transform="rotate(-18 24 24)">
+      <rect x="21.4" y="3.2" width="5.2" height="9.8" rx="2.2" fill="none" stroke="currentColor" stroke-width="2.1"/>
+      <path d="M18 17c0-2.4 1.5-4 3.6-4h4.8c2.1 0 3.6 1.6 3.6 4v18.4c0 2.8-2.1 4.8-4.8 4.8h-2.4c-2.7 0-4.8-2-4.8-4.8Z" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/>
+      <path d="M24 17.6v17.8M22.2 6.2h3.6M22.2 9.4h3.6" fill="none" stroke="currentColor" stroke-width="1.35" opacity=".5" stroke-linecap="round"/>
+    </g>
+    <circle cx="38.4" cy="38.2" r="5.2" fill="none" stroke="currentColor" stroke-width="2.1"/>
+    <path d="M35.4 34.8c2.4 2 2.4 4.8 0 6.8" fill="none" stroke="currentColor" stroke-width="1.35" opacity=".5" stroke-linecap="round"/>
+  </symbol>
+
+  <symbol id="i-leaf" viewBox="0 0 48 48">
+    <path d="M9 39C9 21.4 21.4 9 39 9c0 17.6-12.4 30-30 30Z" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/>
+    <path d="M9 39C15 31.4 22 24.4 30 18" fill="none" stroke="currentColor" stroke-width="1.35" opacity=".5" stroke-linecap="round"/>
   </symbol>
 
   <symbol id="i-plink" viewBox="0 0 48 48">
@@ -442,7 +469,10 @@
       </div>
     </div>
 
-    <!-- make the handover yourself -->
+    <!-- make the handover yourself — five beats, in the order the app does them:
+         pick a thing · ask for Plinks · post it (Fleekart checks it) · the
+         Beneficiary accepts · the thing goes across and the Plinks come back.
+         The founder's 15 Sep ask; the states are driven from /assets/app.js -->
     <div class="deal rv" id="deal">
       <div class="deal__stage" id="dealStage">
 
@@ -453,9 +483,20 @@
             <span class="deal__note">has something useful</span>
           </header>
           <div class="deal__slot deal__slot--from" id="slotFrom" aria-hidden="true"><span>given</span></div>
+          <!-- how many Plinks to ask for: three choices a thing, the middle one
+               pre-chosen so the drag still works without touching this row -->
+          <div class="deal__ask" id="dealAsk">
+            <span class="deal__askLab" id="dealAskLab">Ask for</span>
+            <div class="deal__chips" role="radiogroup" aria-labelledby="dealAskLab">
+              <button type="button" role="radio" aria-checked="false" data-ask="0" tabindex="-1">200</button>
+              <button type="button" role="radio" aria-checked="true" data-ask="1">300</button>
+              <button type="button" role="radio" aria-checked="false" data-ask="2" tabindex="-1">500</button>
+            </div>
+            <button class="deal__post" type="button" id="dealPost">Post it</button>
+          </div>
           <p class="wallet" id="walletDonor">
             <span class="wallet__coin" aria-hidden="true"><svg viewBox="0 0 48 48"><use href="#i-plink"/></svg></span>
-            <span class="wallet__t">Plinks earned</span>
+            <span class="wallet__t"><b class="wallet__n" id="walletDonorN"></b>Plinks earned</span>
           </p>
         </section>
 
@@ -475,24 +516,43 @@
             <span class="deal__role">Beneficiary</span>
             <span class="deal__note">needs one</span>
           </header>
-          <div class="deal__slot deal__slot--to" id="slotTo"><span>Drop it here</span></div>
+          <div class="deal__slot deal__slot--to" id="slotTo"><span>Waiting for a listing</span></div>
+          <!-- appears once the thing is posted; accepts on press, or by itself
+               after a short pause so the demo finishes for someone just watching -->
+          <button class="deal__accept" type="button" id="dealAccept" disabled>
+            <span class="deal__acceptT">Accept for <b>300</b> Plinks</span>
+          </button>
           <p class="wallet" id="walletBen">
             <span class="wallet__coin" aria-hidden="true"><svg viewBox="0 0 48 48"><use href="#i-plink"/></svg></span>
-            <span class="wallet__t">Plinks spent</span>
+            <span class="wallet__t"><b class="wallet__n" id="walletBenN"></b>Plinks spent</span>
           </p>
         </section>
 
-        <!-- the thing being handed over -->
+        <!-- the thing being handed over; it carries its asking price across -->
         <button class="thing" id="thing" type="button" aria-describedby="dealHint">
           <span class="thing__ico"><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#i-shirt" id="thingUse"/></svg></span>
           <span class="thing__name" id="thingName">Denim jacket</span>
+          <span class="thing__ask" id="thingAsk"><b>300</b> Plinks</span>
+          <span class="thing__tick" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-check"/></svg></span>
           <span class="thing__grab" aria-hidden="true"></span>
         </button>
-        <span class="coin" id="coin" aria-hidden="true"><svg viewBox="0 0 48 48"><use href="#i-plink"/></svg></span>
+        <span class="coin" id="coin" aria-hidden="true"><svg viewBox="0 0 48 48"><use href="#i-plink"/></svg><b id="coinN">300</b></span>
+      </div>
+
+      <!-- the carbon line. Deliberately no kilogram figure: every CO2e input in
+           data/impact/coefficient_inputs.yaml (inputs-2026-09-10) is still null
+           and awaiting the founder's sourced table (OA-002); the seed's
+           provisional set is labelled not-for-publication. app.js counts a
+           figure up here the day one exists (THINGS[].co2Kg) — until then the
+           line says what is true: a new one was not made. -->
+      <div class="deal__co2" id="dealCo2">
+        <span class="deal__co2Ico" aria-hidden="true"><svg viewBox="0 0 48 48"><use href="#i-leaf"/></svg></span>
+        <span class="deal__co2T"><b>CO₂ saved.</b> <span id="dealCo2T">One jacket fewer made new — the carbon of making it never happens.</span></span>
+        <span class="deal__co2Meter" aria-hidden="true"><i></i></span>
       </div>
 
       <p class="deal__hint" id="dealHint" role="status" aria-live="polite">
-        <b>Your turn.</b> Drag the jacket across to Fleekart — or press Enter.
+        <b>Your turn.</b> Ask for Plinks, then drag the jacket to Fleekart — or press Enter.
       </p>
       <div class="deal__ctrl">
         <button class="deal__again" type="button" id="dealAgain">
@@ -504,6 +564,8 @@
           <button type="button" role="tab" data-item="1" aria-selected="false" tabindex="-1" aria-label="Wooden train"><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#i-toy"/></svg></button>
           <button type="button" role="tab" data-item="2" aria-selected="false" tabindex="-1" aria-label="Paperback stack"><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#i-book"/></svg></button>
           <button type="button" role="tab" data-item="3" aria-selected="false" tabindex="-1" aria-label="Over-ear headphones"><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#i-gadget"/></svg></button>
+          <button type="button" role="tab" data-item="4" aria-selected="false" tabindex="-1" aria-label="Digital camera"><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#i-camera"/></svg></button>
+          <button type="button" role="tab" data-item="5" aria-selected="false" tabindex="-1" aria-label="Cricket bat"><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#i-bat"/></svg></button>
         </div>
       </div>
     </div>
@@ -683,6 +745,13 @@
       </div>
     </div>
 
+    <div class="dl__art rv">
+      <div class="dl__phones">
+        <div class="phone"><div class="phone__screen"><img src="/assets/story-1.webp" alt="The Fleekart app's create-listing form" width="780" height="1688" loading="lazy" decoding="async"></div></div>
+        <div class="phone"><div class="phone__screen"><img src="/assets/story-2.webp" alt="A listing in the Fleekart app with its Request Exchange button" width="780" height="1688" loading="lazy" decoding="async"></div></div>
+        <p class="dl__cap" aria-hidden="true"><span>Give</span><span>Grab</span></p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -726,7 +795,7 @@
 </footer>
 </main>
 5:X
-0:{"buildId":"-jIiWbtfMIu1uRp50VJ-n","data":[{"rsc":["$","$1","c",{"children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],null,"$L3"]}],"isPartial":"$@4","staleTime":"$5","varyParams":null},{"rsc":"$L6","isPartial":"$@7","staleTime":"$5","varyParams":null},{"rsc":"$L8","isPartial":"$@9","staleTime":"$5","varyParams":null}],"isUpgradeableISRFallback":false,"a":"$@a","rootVaryParams":null,"needsRuntimeRequest":"$@b"}
+0:{"buildId":"0HLFA0RyKkuRqBIWiv5IR","data":[{"rsc":["$","$1","c",{"children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],null,"$L3"]}],"isPartial":"$@4","staleTime":"$5","varyParams":null},{"rsc":"$L6","isPartial":"$@7","staleTime":"$5","varyParams":null},{"rsc":"$L8","isPartial":"$@9","staleTime":"$5","varyParams":null}],"isUpgradeableISRFallback":false,"a":"$@a","rootVaryParams":null,"needsRuntimeRequest":"$@b"}
 c:I[97367,["/_next/static/chunks/3fntmmi971322.js"],"OutletBoundary"]
 d:"$Sreact.suspense"
 f:I[97367,["/_next/static/chunks/3fntmmi971322.js"],"ViewportBoundary"]

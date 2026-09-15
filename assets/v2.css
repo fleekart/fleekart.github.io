@@ -569,15 +569,26 @@ p{ margin:0; }
 .life__link{ position:absolute; top:46%; left:100%; right:auto; width:var(--gap); height:1.5px; background:var(--line); }
 .lifeline{ margin-top:clamp(38px,4.4vw,64px); }
 
-/* ── download art ──────────────────────────────────────────── */
+/* ── download art: the app, twice ────────────────────────────
+   The mascot clip was removed on 12 Sep at the founder's ask; the column
+   stayed empty and on 15 Sep he asked for it filled. Two of the phone
+   screens the "See it happen" section already carries — the listing you
+   give, the listing you grab — so the heading's two halves each have a
+   picture and nothing new is invented. */
 .dl__art{ display:grid; place-items:center; }
-.dl__vid{ width:min(100%,360px); height:auto; }
+.dl__phones{ position:relative; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:clamp(14px,2vw,26px);
+  width:min(100%,440px); align-items:end; }
+.dl__phones .phone{ width:100%; }
+.dl__phones .phone:first-child{ margin-bottom:clamp(28px,4vw,56px); }   /* the "give" screen sits higher: two beats, not a pair */
+.dl__cap{ margin:0; position:absolute; left:0; right:0; bottom:-30px; display:flex; justify-content:space-between; padding:0 4px; }
+.dl__cap span{ font-size:11px; font-weight:720; letter-spacing:.13em; text-transform:uppercase; color:var(--ink-3); }
+.dl__cap span:last-child{ color:var(--teal-deep); }
 
 @media (max-width:820px){
   .plinks__art{ justify-items:center; }
   .plinks__ill{ margin-right:0; }
-  .dl__art{ order:-1; }
-  .dl__vid{ width:min(76%,280px); }
+  .dl__art{ margin-top:8px; padding-bottom:30px; }     /* after the CTA on a phone, so the button comes first; room for the captions */
+  .dl__phones{ width:min(100%,320px); }
 }
 
 /* rail ends exactly on the last step's icon */
@@ -748,7 +759,8 @@ p{ margin:0; }
 .deal.is-done .deal__slot--from span{ opacity:.55; }
 .deal__slot--to{ border:1.5px dashed var(--line); background:transparent; }
 .deal__slot--to span{ font-size:12px; font-weight:640; color:var(--ink-3); }
-.deal.is-armed .deal__slot--to{ border-color:var(--clay); background:var(--clay-tint); transform:scale(1.03); }
+.deal.is-armed .deal__slot--to,.deal.is-posted .deal__slot--to{ border-color:var(--clay); background:var(--clay-tint); }
+.deal.is-armed .deal__slot--to{ transform:scale(1.03); }
 .deal.is-done .deal__slot--to{ border-style:solid; border-color:transparent; background:var(--clay-tint); }
 .deal.is-done .deal__slot--to span{ opacity:0; }
 
@@ -762,13 +774,13 @@ p{ margin:0; }
 }
 .deal__lane--item i::before{ right:-2px; border-left:8px solid var(--line); }
 .deal__lane--plink i::before{ left:-2px; border-right:8px solid var(--line); }
-.deal.is-done .deal__lane--item i::before{ border-left-color:var(--teal); }
+.deal.is-posted .deal__lane--item i::before,.deal.is-done .deal__lane--item i::before{ border-left-color:var(--teal); }
 .deal.is-done .deal__lane--plink i::before{ border-right-color:var(--green); }
 .deal__lane i::after{ content:''; position:absolute; inset:0; transform:scaleX(0); transform-origin:left;
   transition:transform .6s var(--ease); }
 .deal__lane--item i::after{ background:var(--teal); }
 .deal__lane--plink i::after{ background:var(--green); transform-origin:right; }
-.deal.is-done .deal__lane i::after{ transform:scaleX(1); }
+.deal.is-posted .deal__lane--item i::after,.deal.is-done .deal__lane i::after{ transform:scaleX(1); }
 .deal__lane b{ font-size:11px; font-weight:720; letter-spacing:.13em; text-transform:uppercase; color:var(--ink-3); }
 .deal__lane--plink{ order:3; }
 .deal__lane--plink b{ color:var(--green-deep); }
@@ -780,8 +792,8 @@ p{ margin:0; }
 .deal__hub > svg{ width:56%; height:56%; transition:opacity .3s; }
 .deal__tick{ position:absolute; inset:0; margin:auto; width:44%!important; height:44%!important;
   color:var(--green-deep); opacity:0; transform:scale(.5); }
-.deal.is-done .deal__hub > svg:first-child{ opacity:.18; }
-.deal.is-done .deal__tick{ opacity:1; transform:scale(1); transition:opacity .3s .25s, transform .4s .25s var(--ease); }
+.deal.is-posted .deal__hub > svg:first-child,.deal.is-done .deal__hub > svg:first-child{ opacity:.18; }
+.deal.is-posted .deal__tick,.deal.is-done .deal__tick{ opacity:1; transform:scale(1); transition:opacity .3s .25s, transform .4s .25s var(--ease); }
 .deal__hubLab{ font-size:11px; font-weight:720; letter-spacing:.13em; text-transform:uppercase; color:var(--ink); }
 
 .wallet{ display:inline-flex; align-items:center; gap:8px; padding:7px 13px 7px 8px; border-radius:99px;
@@ -808,7 +820,7 @@ p{ margin:0; }
 .thing__ico svg{ width:46px; height:46px; }
 .thing__name{ font-size:12.4px; font-weight:640; letter-spacing:-.01em; text-align:center; line-height:1.25; }
 .thing__grab{ width:26px; height:3px; border-radius:2px; background:var(--line); transition:opacity .3s; }
-.deal.is-done .thing{ cursor:default; }
+.deal.is-posted .thing,.deal.is-done .thing{ cursor:default; }
 .deal.is-done .thing__ico{ color:var(--clay-deep); }
 .deal.is-done .thing__grab{ opacity:0; }
 .thing::after{
@@ -819,12 +831,13 @@ p{ margin:0; }
 @keyframes thingHint{ 0%,100%{opacity:0;transform:scale(.96)} 22%{opacity:.5;transform:scale(1)} 55%{opacity:0;transform:scale(1.04)} }
 
 .coin{
-  position:absolute; z-index:6; top:0; left:0; width:38px; height:38px; border-radius:50%;
-  display:grid; place-items:center; background:var(--green-tint); border:1px solid rgba(46,158,79,.35);
-  color:var(--green-deep); opacity:0; pointer-events:none;
+  position:absolute; z-index:6; top:0; left:0; height:36px; padding:0 11px 0 6px; border-radius:99px;
+  display:inline-flex; align-items:center; gap:4px; background:var(--green-tint); border:1px solid rgba(46,158,79,.35);
+  color:var(--green-deep); opacity:0; pointer-events:none; white-space:nowrap;
   box-shadow:0 8px 18px -10px rgba(20,24,27,.45);
 }
-.coin svg{ width:24px; height:24px; }
+.coin svg{ width:22px; height:22px; }
+.coin b{ font-size:12.5px; font-weight:760; letter-spacing:-.01em; }
 
 .deal__hint{ text-align:center; font-size:14.4px; color:var(--ink-3); margin-top:clamp(18px,2vw,28px); text-wrap:balance; }
 .deal__hint b{ color:var(--ink); font-weight:680; }
@@ -855,15 +868,88 @@ p{ margin:0; }
     border-top:0; border-bottom:0; }
   .deal__lane--item i::before{ bottom:-7px; border-top:8px solid var(--line); }
   .deal__lane--plink i::before{ top:-7px; border-bottom:8px solid var(--line); }
-  .deal.is-done .deal__lane--item i::before{ border-top-color:var(--teal); border-left-color:transparent; }
+  .deal.is-posted .deal__lane--item i::before,.deal.is-done .deal__lane--item i::before{ border-top-color:var(--teal); border-left-color:transparent; }
   .deal.is-done .deal__lane--plink i::before{ border-bottom-color:var(--green); border-right-color:transparent; }
   .deal__lane i::after{ transform:scaleY(0); transform-origin:top; }
   .deal__lane--plink i::after{ transform-origin:bottom; }
-  .deal.is-done .deal__lane i::after{ transform:scaleY(1); }
+  .deal.is-posted .deal__lane--item i::after,.deal.is-done .deal__lane i::after{ transform:scaleY(1); }
   .deal__side{ width:100%; max-width:260px; }
   .deal__slot{ max-width:200px; }
 }
 @media (prefers-reduced-motion:reduce){ .deal.is-idle .thing::after{ animation:none; } }
+
+/* ── the beats added 15 Sep: ask, post, accept, carbon ─────────── */
+/* ask: three amounts and the post button, under the Donor's shelf */
+.deal__ask{ display:flex; align-items:center; justify-content:center; flex-wrap:wrap; gap:6px 8px;
+  transition:opacity .35s; }
+.deal__askLab{ font-size:11px; font-weight:720; letter-spacing:.13em; text-transform:uppercase; color:var(--ink-3); }
+.deal__chips{ display:inline-flex; gap:4px; }
+.deal__chips button{
+  min-width:44px; height:30px; padding:0 9px; border-radius:99px; font-size:12.5px; font-weight:680;
+  color:var(--ink-2); border:1px solid var(--line); background:var(--card);
+  transition:color .2s, border-color .2s, background .2s, transform .2s var(--ease);
+}
+.deal__chips button:hover{ border-color:var(--ink-3); color:var(--ink); }
+.deal__chips button[aria-checked="true"]{ color:var(--green-deep); border-color:rgba(46,158,79,.45); background:var(--green-tint); }
+.deal__post{
+  height:30px; padding:0 13px; border-radius:99px; background:var(--ink); color:#fff; font-size:12.5px; font-weight:660;
+  transition:transform .3s var(--ease), opacity .3s; box-shadow:0 1px 2px rgba(20,24,27,.18);
+}
+.deal__post:hover{ transform:translateY(-1.5px); }
+.deal.is-posted .deal__ask,.deal.is-done .deal__ask{ opacity:.42; pointer-events:none; }
+.deal.is-posted .deal__post,.deal.is-done .deal__post{ display:none; }
+.thing__tick{ position:absolute; top:-9px; right:-9px; width:24px; height:24px; border-radius:50%;
+  display:grid; place-items:center; background:var(--green-deep); color:#fff; border:2px solid var(--card);
+  opacity:0; transform:scale(.5); transition:opacity .25s, transform .35s var(--ease); }
+.thing__tick svg{ width:13px; height:13px; }
+.deal.is-posted .thing__tick,.deal.is-done .thing__tick{ opacity:1; transform:none; }
+.thing__ask{ font-size:11px; font-weight:700; letter-spacing:.02em; color:var(--green-deep); margin-top:-3px; }
+.thing__ask b{ font-weight:800; }
+
+/* accept: keeps its place on the Beneficiary side, shows once there is
+   something to accept, and fills up while the pause runs out */
+.deal__accept{
+  position:relative; overflow:hidden; height:30px; padding:0 13px; border-radius:99px;
+  background:var(--clay-tint); color:var(--clay-deep); border:1px solid rgba(184,92,56,.35);
+  font-size:12.5px; font-weight:680; white-space:nowrap;
+  opacity:0; visibility:hidden; transform:translateY(4px);
+  transition:opacity .35s, transform .35s var(--ease), visibility 0s .35s;
+}
+.deal__accept::after{ content:''; position:absolute; inset:0; background:rgba(184,92,56,.14); transform:scaleX(0); transform-origin:left; }
+.deal__accept.is-waiting::after{ transition:transform 2.4s linear; transform:scaleX(1); }
+.deal__acceptT{ position:relative; }
+.deal__accept b{ font-weight:800; }
+.deal.is-posted .deal__accept,.deal.is-done .deal__accept{ opacity:1; visibility:visible; transform:none; transition-delay:0s; }
+.deal__accept:hover{ background:var(--clay); color:#fff; border-color:transparent; }
+.deal.is-done .deal__accept{ background:transparent; border-color:var(--line-2); color:var(--ink-3); pointer-events:none; }
+.deal.is-done .deal__accept::after{ display:none; }
+
+/* the wallets show the amount once it has moved */
+.wallet__n{ font-weight:800; margin-right:5px; }
+.wallet__n:empty{ display:none; }
+
+/* carbon: in flow only once the handover is done, so the box does not carry
+   an empty row while the visitor is still choosing */
+.deal__co2{ display:none; align-items:center; justify-content:center; flex-wrap:wrap; gap:8px 12px;
+  margin-top:clamp(18px,2vw,26px); padding:10px 16px; border-radius:14px;
+  background:var(--green-tint); border:1px solid rgba(46,158,79,.22); color:var(--green-deep); }
+.deal.is-carbon .deal__co2{ display:flex; animation:co2In .6s var(--ease) both; }
+.deal__co2Ico{ width:22px; height:22px; flex:none; }
+.deal__co2Ico svg{ width:22px; height:22px; }
+.deal__co2T{ font-size:13.4px; color:var(--ink-2); text-wrap:balance; text-align:center; }
+.deal__co2T b{ color:var(--green-deep); font-weight:720; }
+.deal__co2N{ font-weight:800; color:var(--green-deep); font-variant-numeric:tabular-nums; }
+.deal__co2Meter{ flex:none; width:72px; height:4px; border-radius:2px; background:rgba(46,158,79,.18); overflow:hidden; }
+.deal__co2Meter i{ display:block; height:100%; background:var(--green); transform:scaleX(0); transform-origin:left; }
+.deal.is-carbon .deal__co2Meter i{ animation:co2Fill 1.3s var(--ease) .25s both; }
+@keyframes co2In{ from{ opacity:0; transform:translateY(6px); } to{ opacity:1; transform:none; } }
+@keyframes co2Fill{ to{ transform:scaleX(1); } }
+@media (prefers-reduced-motion:reduce){
+  .deal.is-carbon .deal__co2{ animation:none; }
+  .deal.is-carbon .deal__co2Meter i{ animation:none; transform:scaleX(1); }
+  .deal__accept.is-waiting::after{ transition:none; transform:scaleX(0); }
+}
+@media (max-width:820px){ .deal__co2Meter{ flex-basis:100%; width:100%; max-width:220px; margin-inline:auto; } }
 
 /* ═══ motion & hover: impact lifeline ═════════════════════════ */
 .life{ position:relative; }
@@ -978,5 +1064,4 @@ svg[data-ico="bin"]    { --ico-anim:icoShake; --ico-dur:.75s; }
 .why__row{ display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:clamp(20px,3vw,44px); }
 .why__item h3{ font-size:16px; font-weight:670; letter-spacing:-.018em; margin-bottom:8px; }
 .why__item p{ font-size:13.8px; color:var(--ink-3); line-height:1.55; text-wrap:pretty; }
-.dl__grid{ grid-template-columns:minmax(0,1fr); }
 @media (max-width:880px){ .why__row{ grid-template-columns:minmax(0,1fr); } }

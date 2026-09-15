@@ -61,7 +61,7 @@ body {
   margin: 0;
   background: var(--paper);
   color: var(--ink-soft);
-  font: 400 17px/1.72 var(--sans);
+  font: 400 16px/1.72 var(--sans);
   -webkit-font-smoothing: antialiased;
 }
 
@@ -112,8 +112,12 @@ a:hover { color: var(--ember); }
 .legal-nav a:hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(--ink); color: var(--ink); }
 .legal-nav a[aria-current="page"] { background: var(--ink); color: var(--sun); }
 
+/* Type was sized like the landing page's display (92px H1, 19–22px lead) and
+   the founder called it "very big" on 15 Sep. A policy page is read, not
+   glanced at: H1 40px on a desktop, 28px on a phone, body 16px. Line-heights
+   and the two faces are unchanged, so the pages still look like the site. */
 .page h1 {
-  font: 400 clamp(46px, 9.5vw, 92px)/0.92 var(--display);
+  font: 400 clamp(28px, 4.2vw, 40px)/0.92 var(--display);
   letter-spacing: -0.01em; text-transform: uppercase;
   color: var(--ink); margin: 0 0 14px; text-wrap: balance;
 }
@@ -125,10 +129,10 @@ a:hover { color: var(--ember); }
   padding-bottom: 18px; border-bottom: 2px solid var(--ink);
 }
 
-.lead { font-size: clamp(19px, 1.7vw, 22px); line-height: 1.6; color: var(--ink); font-weight: 500; }
+.lead { font-size: clamp(17px, 1.3vw, 18px); line-height: 1.6; color: var(--ink); font-weight: 500; }
 
 .page h2 {
-  font: 400 clamp(27px, 3.4vw, 40px)/1.02 var(--display);
+  font: 400 clamp(22px, 2.4vw, 27px)/1.02 var(--display);   /* stays a step under the H1 */
   letter-spacing: 0; text-transform: uppercase; color: var(--ink);
   margin: clamp(44px, 5.5vw, 68px) 0 12px; padding-top: 18px;
   border-top: 2px solid var(--ink); text-wrap: balance;
