@@ -1,5 +1,5 @@
 1:"$Sreact.fragment"
-2:Tdfe8,<a class="skip" href="#main">Skip to content</a>
+2:Tbb1d,<a class="skip" href="#main">Skip to content</a>
 <!-- ══ INK ILLUSTRATION LIBRARY ══════════════════════════════════ -->
 <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute;pointer-events:none">
 <defs>
@@ -223,87 +223,11 @@
   </div>
 </section>
 
-<!-- ══ STORY ═══════════════════════════════════════════════════ -->
-<section class="sec story" id="story" aria-labelledby="storyH">
-  <div class="wrap">
-    <div class="sec-head">
-      <p class="eyebrow rv">How it works</p>
-      <h2 class="d2 rv" id="storyH">See it happen</h2>
-    </div>
-    <div class="story__grid" id="story-grid">
-      <ol class="story__beats" id="story-beats">
-        <li class="story__beat is-on" data-beat="0">
-          <div class="story__inline">
-            <div class="phone phone--inline"><div class="phone__screen"><img src="/assets/story-1.webp" alt="The Fleekart app's create-listing form, photos first" width="780" height="1688" decoding="async"></div></div>
-          </div>
-          <div class="story__text">
-            <span class="story__n num" aria-hidden="true">01</span>
-            <h3 class="d3">List It in Seconds</h3>
-            <p>Snap a few photos and upload the item to the Fleekart app with a reasonable Plinks (credits) required for the product.</p>
-          </div>
-        </li>
-        <li class="story__beat" data-beat="1">
-          <div class="story__inline">
-            <div class="phone phone--inline"><div class="phone__screen"><img src="/assets/story-2.webp" alt="A listing in the Fleekart app with its Request Exchange button" width="780" height="1688" loading="lazy" decoding="async"></div></div>
-          </div>
-          <div class="story__text">
-            <span class="story__n num" aria-hidden="true">02</span>
-            <h3 class="d3">Connect &amp; Confirm</h3>
-            <p>A neighbour or beneficiary requests your item. Accept the request and agree on a simple local pickup time and place.</p>
-          </div>
-        </li>
-        <li class="story__beat" data-beat="2">
-          <div class="story__inline">
-            <div class="phone phone--inline"><div class="phone__screen"><img src="/assets/story-3.webp" alt="An exchange in the Fleekart app, its steps Request, Accept, Handover and Done all complete" width="780" height="1688" loading="lazy" decoding="async"></div></div>
-          </div>
-          <div class="story__text">
-            <span class="story__n num" aria-hidden="true">03</span>
-            <h3 class="d3">Hand It Over &amp; Earn Plinks</h3>
-            <p>Share the secure pickup code at handover. You instantly earn Plinks for giving your item a second life.</p>
-          </div>
-        </li>
-        <li class="story__beat" data-beat="3">
-          <div class="story__inline">
-            <div class="phone phone--inline"><div class="phone__screen"><img src="/assets/story-4.webp" alt="The Plinks wallet in the Fleekart app, with the available balance" width="780" height="1688" loading="lazy" decoding="async"></div></div>
-          </div>
-          <div class="story__text">
-            <span class="story__n num" aria-hidden="true">04</span>
-            <h3 class="d3">Use Your Plinks Anytime</h3>
-            <p>Spend your earned Plinks whenever you find something for yourself in Fleekart. Plinks never expire.</p>
-          </div>
-        </li>
-      </ol>
-      <div class="story__pin" aria-hidden="true">
-        <div class="phone" id="story-phone">
-          <div class="phone__screen">
-          <img class="story__shot is-on" data-beat="0" src="/assets/story-1.webp" alt="" width="780" height="1688" loading="lazy" decoding="async">
-          <img class="story__shot" data-beat="1" src="/assets/story-2.webp" alt="" width="780" height="1688" loading="lazy" decoding="async">
-          <img class="story__shot" data-beat="2" src="/assets/story-3.webp" alt="" width="780" height="1688" loading="lazy" decoding="async">
-          <img class="story__shot" data-beat="3" src="/assets/story-4.webp" alt="" width="780" height="1688" loading="lazy" decoding="async">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══ FILM BAND ════════════════════════════════════════════════ -->
-<section class="filmband" id="street" aria-label="A handover on the street, filmed">
-  <div class="filmband__clip">
-    <video class="filmband__vid" muted loop playsinline preload="none" poster="/assets/hero-street.webp"
-           aria-hidden="true" data-inview>
-      <source data-src="/assets/hero-street.mp4" type="video/mp4">
-    </video>
-    <div class="filmband__veil" aria-hidden="true"></div>
-    <p class="filmband__cap">Ten minutes away. One handover. Nothing sold.</p>
-  </div>
-</section>
-
 <hr class="hr">
 
 <!-- ══ ABOUT ════════════════════════════════════════════════════ -->
 <section class="sec about" id="about" aria-labelledby="aboutH">
-  <div class="wrap about__grid">
+  <div class="wrap about__grid about__grid--solo">
     <div class="about__body">
       <p class="eyebrow rv">About Fleekart</p>
       <h2 class="d2 rv" id="aboutH">Building a global community where every useful item finds a second life.</h2>
@@ -316,18 +240,19 @@
       <p class="rv"><a class="tlink" href="#how">See how a handover works <svg class="ar" width="15" height="15" viewBox="0 0 16 16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2.6 8h10.2M9.2 4.4 12.8 8l-3.6 3.6"/></svg></a></p>
     </div>
 
-    <div class="stage rv">
-      <figure class="shot shot--about">
-        <div class="shot__frame">
-          <video class="shot__reel" muted loop playsinline preload="none" poster="/assets/about-sharing.webp"
-                 aria-label="A pair of headphones on a desk, a book returned to a shelf, and a box passed from one person to another"
-                 data-inview>
-            <source src="/assets/about-sharing.mp4" type="video/mp4">
-          </video>
-        </div>
-      </figure>
-    </div>
   </div>
+
+  <!-- the handover film, below the About copy (client, 18 Sep) -->
+  <section class="filmband about__film" id="street" aria-label="A handover on the street, filmed">
+  <div class="filmband__clip">
+    <video class="filmband__vid" muted loop playsinline preload="none" poster="/assets/hero-street.webp"
+           aria-hidden="true" data-inview>
+      <source data-src="/assets/hero-street.mp4" type="video/mp4">
+    </video>
+    <div class="filmband__veil" aria-hidden="true"></div>
+    <p class="filmband__cap">Ten minutes away. One handover. Nothing sold.</p>
+  </div>
+</section>
 </section>
 
 <!-- ══ HOW IT WORKS ═════════════════════════════════════════════ -->
@@ -575,7 +500,7 @@
 
 <!-- ══ PLINKS ═══════════════════════════════════════════════════ -->
 <section class="sec plinks" id="plinks" aria-labelledby="plinksH">
-  <div class="wrap plinks__grid">
+  <div class="wrap plinks__grid plinks__grid--solo">
     <div class="plinks__body">
       <p class="eyebrow rv">Earn Plinks</p>
       <h2 class="d2 rv" id="plinksH">What are Plinks?</h2>
@@ -603,52 +528,6 @@
       </div>
     </div>
 
-    <div class="plinks__art rv">
-      <svg class="plinks__ill" viewBox="0 0 208 168" role="img" aria-label="Three Plink coins, the credits that move between a Donor and a Beneficiary">
-        <g fill="var(--green-tint)" stroke="var(--green-deep)" stroke-width="2">
-          <circle cx="62" cy="106" r="44"/>
-          <circle cx="62" cy="106" r="32" fill="none" stroke-width="1.2" opacity=".45"/>
-          <path d="M51 128V84h15a12.5 12.5 0 0 1 0 25H51" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-        </g>
-        <g fill="var(--green-tint)" stroke="var(--green-deep)" stroke-width="2">
-          <circle cx="146" cy="70" r="36"/>
-          <circle cx="146" cy="70" r="26" fill="none" stroke-width="1.2" opacity=".45"/>
-          <path d="M137 88V52h12a10 10 0 0 1 0 20h-12" fill="none" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
-        </g>
-        <g fill="var(--card)" stroke="var(--green-deep)" stroke-width="2">
-          <circle cx="118" cy="128" r="26"/>
-          <circle cx="118" cy="128" r="18.5" fill="none" stroke-width="1.2" opacity=".45"/>
-          <path d="M111.5 141v-26h8.5a7.2 7.2 0 0 1 0 14.4h-8.5" fill="none" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
-        </g>
-        <g fill="none" stroke="var(--green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity=".7">
-          <path d="M22 44c6-14 22-24 40-24"/><path d="m56 14 6 6-6 6"/>
-          <path d="M194 122c-4 14-16 26-32 30"/><path d="m168 146-6 6 6 6"/>
-        </g>
-      </svg>
-
-      <div class="equation" role="list" aria-label="How Plinks move">
-        <span class="eq__coin" id="eqCoin" aria-hidden="true"><svg viewBox="0 0 48 48"><use href="#i-plink"/></svg></span>
-        <div class="eq" role="listitem">
-          <span class="eq__i"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#l-gift"/></svg></span>
-          <span><span class="eq__t">Give something useful</span><br><span class="eq__d">A Donor hands over an item</span></span>
-        </div>
-        <span class="eq__arrow" aria-hidden="true"><svg width="16" height="18" viewBox="0 0 16 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v13M4 11l4 4 4-4"/></svg></span>
-        <div class="eq" role="listitem" data-hl="1">
-          <span class="eq__i"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#l-coins"/></svg></span>
-          <span><span class="eq__t">Earn Plinks</span><br><span class="eq__d">They land in your Fleekart balance</span></span>
-        </div>
-        <span class="eq__arrow" aria-hidden="true"><svg width="16" height="18" viewBox="0 0 16 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v13M4 11l4 4 4-4"/></svg></span>
-        <div class="eq" role="listitem" data-hl="1">
-          <span class="eq__i"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#l-wallet"/></svg></span>
-          <span><span class="eq__t">Use Plinks</span><br><span class="eq__d">Spend them whenever you need something</span></span>
-        </div>
-        <span class="eq__arrow" aria-hidden="true"><svg width="16" height="18" viewBox="0 0 16 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v13M4 11l4 4 4-4"/></svg></span>
-        <div class="eq" role="listitem">
-          <span class="eq__i"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#l-bag"/></svg></span>
-          <span><span class="eq__t">Grab something you need</span><br><span class="eq__d">A Beneficiary receives the item</span></span>
-        </div>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -659,7 +538,6 @@
       <div class="sec-head">
         <p class="eyebrow rv">Impact</p>
         <h2 class="d2 rv" id="impactH">Did You Know?</h2>
-        <p class="lead rv">Indian cities generate over 62 million tonnes of waste annually, with over 70% ending up in overflowing landfills. More than half of this is dry waste — including millions of functional items that could easily enter a local circular loop instead of a garbage dump.</p>
       </div>
       <figure class="shot shot--impact rv">
         <div class="shot__frame">
@@ -671,28 +549,27 @@
           </video>
         </div>
       </figure>
+
+      <ul class="stats stats--two rv" aria-label="What the numbers say">
+        <li class="stat"><span class="stat__i"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#l-trash"/></svg></span><p class="stat__c">Indian cities generate around 62Mn tonnes of waste annually and 70% of this ends up in landfill.</p></li>
+        <li class="stat"><span class="stat__i"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#l-box"/></svg></span><p class="stat__c">Around 21M tonnes of dry waste including millions of functional items are discarded without entering into a circular economy.</p></li>
+      </ul>
     </div>
 
-    <ul class="stats rv" aria-label="What the numbers say">
-      <li class="stat"><span class="stat__i"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#l-trash"/></svg></span><b class="stat__n">62 million <small>tonnes</small></b><span class="stat__l">of waste a year, from Indian cities</span></li>
-      <li class="stat"><span class="stat__i"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#l-layers"/></svg></span><b class="stat__n">70%</b><span class="stat__l">ends up in overflowing landfills</span></li>
-      <li class="stat"><span class="stat__i"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#l-box"/></svg></span><b class="stat__n">Over half</b><span class="stat__l">of it is dry waste</span></li>
-      <li class="stat"><span class="stat__i"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#l-hourglass"/></svg></span><b class="stat__n">35%</b><span class="stat__l">shorter product lifespans</span></li>
-    </ul>
 
     <div class="why rv" id="lifeline">
       <div class="why__row">
         <div class="why__item">
           <h3>Rising Consumerism &amp; Disposable Culture</h3>
-          <p>With e-commerce, instant deliveries, and trend-driven shopping, buying has become effortless. In India's growing urban centres, households buy significantly more products than previous generations, turning durable items — like clothing, toys, home décor, and small appliances — into short-term consumer goods.</p>
+          <p>E-commerce and rapid deliveries have made purchasing seamless in urban India. Consequently, durable items—such as clothing, toys, home décor, and small appliances—are treated as short-term, disposable goods.</p>
         </div>
         <div class="why__item">
           <h3>Shrinking Product Lifespans</h3>
-          <p>The active lifespan of everyday products has fallen by over 35% in recent years. Items aren't necessarily breaking down — owners simply move on to newer models, updated styles, or upgraded versions long before the product stops working.</p>
+          <p>Everyday item lifespans have dropped by over 35% in recent years. Consumers frequently upgrade to newer models or styles well before their current items break or stop working.</p>
         </div>
         <div class="why__item">
           <h3>The "Idle Household Storage" Trap</h3>
-          <p>Before an item ever reaches a landfill, it sits in a closet, drawer, or storeroom for months or years. Over time, as it stays hidden away, it loses relevance, degrades in quality, and eventually gets tossed into municipal dry waste during home cleanouts. In urban India, billions of rupees in functional household items are discarded or sit idle without ever entering a circular loop.</p>
+          <p>Functional items often sit unused in storage for months or years, where they degrade, lose relevance, never enter a circular economy before getting discarded.</p>
         </div>
       </div>
 
@@ -795,7 +672,7 @@
 </footer>
 </main>
 5:X
-0:{"buildId":"ebeuDPS967Ugk6OJyeFF1","data":[{"rsc":["$","$1","c",{"children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],null,"$L3"]}],"isPartial":"$@4","staleTime":"$5","varyParams":null},{"rsc":"$L6","isPartial":"$@7","staleTime":"$5","varyParams":null},{"rsc":"$L8","isPartial":"$@9","staleTime":"$5","varyParams":null}],"isUpgradeableISRFallback":false,"a":"$@a","rootVaryParams":null,"needsRuntimeRequest":"$@b"}
+0:{"buildId":"ply9ZSvtjEzk7Cu56ww4n","data":[{"rsc":["$","$1","c",{"children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],null,"$L3"]}],"isPartial":"$@4","staleTime":"$5","varyParams":null},{"rsc":"$L6","isPartial":"$@7","staleTime":"$5","varyParams":null},{"rsc":"$L8","isPartial":"$@9","staleTime":"$5","varyParams":null}],"isUpgradeableISRFallback":false,"a":"$@a","rootVaryParams":null,"needsRuntimeRequest":"$@b"}
 c:I[97367,["/_next/static/chunks/3fntmmi971322.js"],"OutletBoundary"]
 d:"$Sreact.suspense"
 f:I[97367,["/_next/static/chunks/3fntmmi971322.js"],"ViewportBoundary"]
@@ -808,7 +685,7 @@ f:I[97367,["/_next/static/chunks/3fntmmi971322.js"],"ViewportBoundary"]
 :HL["/assets/additions.css","style"]
 3:["$","$Lc",null,{"children":["$","$d",null,{"name":"Next.MetadataOutlet","children":"$@e"}]}]
 6:["$","$1","h",{"children":[null,["$","$Lf",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1, viewport-fit=cover"}],["$","meta","2",{"name":"theme-color","content":"#FBFAF7"}]]}],["$","div",null,{"hidden":true,"children":["$","$L10",null,{"children":["$","$d",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Fleekart — Your first choice before selling or buying anything"}],["$","meta","1",{"name":"description","content":"Fleekart keeps useful things in circulation. Donors give what they no longer need and earn Plinks. Beneficiaries use Plinks to grab what they need."}],["$","meta","2",{"property":"og:title","content":"Fleekart — Your first choice before selling or buying anything"}],["$","meta","3",{"property":"og:description","content":"Give useful things a second life. Find what you need from people around you — and keep good things in circulation."}],["$","meta","4",{"property":"og:url","content":"https://fleekart.com/"}],["$","meta","5",{"property":"og:image","content":"https://fleekart.com/assets/og.png"}],["$","meta","6",{"property":"og:type","content":"website"}],["$","meta","7",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","8",{"name":"twitter:title","content":"Fleekart — Your first choice before selling or buying anything"}],["$","meta","9",{"name":"twitter:description","content":"Give useful things a second life. Find what you need from people around you — and keep good things in circulation."}],["$","meta","10",{"name":"twitter:image","content":"https://fleekart.com/assets/og.png"}],["$","link","11",{"rel":"icon","href":"/assets/favicon.webp","type":"image/webp"}],["$","link","12",{"rel":"icon","href":"/assets/favicon-32.png","sizes":"32x32","type":"image/png"}],["$","link","13",{"rel":"icon","href":"/assets/icon-192.png","sizes":"192x192","type":"image/png"}],["$","link","14",{"rel":"apple-touch-icon","href":"/assets/apple-touch-icon.png"}],["$","$L11","15",{}]]}]}]}],null]}]
-8:["$","$1","c",{"children":[[["$","script","script-0",{"src":"/_next/static/chunks/3fntmmi971322.js","async":true}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":[["$","link",null,{"rel":"preload","href":"/assets/Manrope.woff2","as":"font","type":"font/woff2","crossOrigin":"anonymous"}],["$","link",null,{"rel":"stylesheet","href":"/assets/v2.css"}],["$","link",null,{"rel":"stylesheet","href":"/assets/additions.css"}]]}],["$","body",null,{"className":"no-js","children":[["$","$L12",null,{"parallelRouterKey":"children","template":["$","$L13",null,{}],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]]}],["$","script",null,{"src":"/assets/gsap.min.js","defer":true}],["$","script",null,{"src":"/assets/ScrollTrigger.min.js","defer":true}],["$","script",null,{"src":"/assets/app.js","defer":true}],["$","script",null,{"src":"/assets/section-motion.js","defer":true}]]}]]}]]}]
+8:["$","$1","c",{"children":[[["$","script","script-0",{"src":"/_next/static/chunks/3fntmmi971322.js","async":true}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":[["$","link",null,{"rel":"preload","href":"/assets/Manrope.woff2","as":"font","type":"font/woff2","crossOrigin":"anonymous"}],["$","link",null,{"rel":"stylesheet","href":"/assets/v2.css"}],["$","link",null,{"rel":"stylesheet","href":"/assets/additions.css"}]]}],["$","body",null,{"className":"no-js","children":[["$","$L12",null,{"parallelRouterKey":"children","template":["$","$L13",null,{}],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]]}],["$","script",null,{"src":"/assets/gsap.min.js","defer":true}],["$","script",null,{"src":"/assets/ScrollTrigger.min.js","defer":true}],["$","script",null,{"src":"/assets/app.js","defer":true}],["$","script",null,{"src":"/assets/section-motion.js","defer":true}],["$","script",null,{"src":"/assets/filmband.js","defer":true}]]}]]}]]}]
 e:null
 b:true
 5:300

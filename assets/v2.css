@@ -1065,3 +1065,64 @@ svg[data-ico="bin"]    { --ico-anim:icoShake; --ico-dur:.75s; }
 .why__item h3{ font-size:16px; font-weight:670; letter-spacing:-.018em; margin-bottom:8px; }
 .why__item p{ font-size:13.8px; color:var(--ink-3); line-height:1.55; text-wrap:pretty; }
 @media (max-width:880px){ .why__row{ grid-template-columns:minmax(0,1fr); } }
+
+/* ═══ CLIENT REVISIONS — 18 September 2026 ═══════════════════
+   Six changes from the client's QA doc of 18 Sep. Kept together and
+   last, so each earlier rule still reads as the signed design and
+   every override is visible in one place. */
+
+/* 5 · About: the film sits under the copy; the section is one column */
+.about__grid--solo{ grid-template-columns:1fr; }
+.about__grid--solo .about__body{ max-width:760px; }
+.sec.about{ padding-bottom:0; }
+.about__film{ margin-top:clamp(40px,5vw,72px); }
+
+/* 4 · Plinks: no illustration or flow cards; the copy takes the width */
+.plinks__grid--solo{ grid-template-columns:1fr; }
+.plinks__grid--solo .plinks__body{ max-width:900px; }
+@media (min-width:821px){
+  .plinks__grid--solo .earn{ grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px clamp(24px,3vw,44px); }
+  .plinks__grid--solo .about__pts{ grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px clamp(18px,2.4vw,32px); }
+}
+
+/* 6 · Did You Know: two boxes, the client's sentence as the box's lead.
+   On a desktop the boxes stack under the heading, in its column, so the
+   column is as tall as the film beside it and there is no dead space where
+   the paragraph used to be; on a phone the order is heading, film, boxes. */
+.impact__grid{ grid-template-rows:auto 1fr; row-gap:0; align-items:start; }
+.impact__grid .sec-head{ grid-column:1; grid-row:1; }
+.impact__grid .shot--impact{ grid-column:2; grid-row:1 / span 2; align-self:center; }
+.impact__grid .stats--two{ grid-column:1; grid-row:2; grid-template-columns:1fr;
+  margin-top:clamp(18px,2.4vw,28px); max-width:none; }
+.stat__c{ margin:0; font-size:clamp(15px,1.15vw,17.5px); font-weight:640; letter-spacing:-.012em;
+  line-height:1.45; color:var(--teal-deep); text-wrap:pretty; }
+@media (max-width:1080px){
+  .impact__grid{ row-gap:clamp(22px,4vw,34px); }
+  .impact__grid .sec-head,.impact__grid .shot--impact,.impact__grid .stats--two{ grid-column:auto; grid-row:auto; }
+  .impact__grid .stats--two{ grid-template-columns:repeat(2,minmax(0,1fr)); margin-top:clamp(22px,3vw,34px); }
+}
+@media (max-width:600px){ .impact__grid .stats--two{ grid-template-columns:1fr; } }
+
+/* 1 · How it works on a phone: Donor and Beneficiary stay side by side,
+   step by step, as on the desktop — scaled down rather than stacked */
+@media (max-width:820px){
+  .ladder{ --inset:0px; }
+  .ladder__head{ display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:6px; }
+  .ladder__head > [aria-hidden], .ladder__foot > [aria-hidden]{ display:none; }
+  .ladder__role--donor, .ladder__role--ben{ text-align:left; padding:0; }
+  .flow__label{ font-size:10px; letter-spacing:.12em; }
+  .rung{ grid-template-columns:1fr 1fr; gap:6px 12px; padding-block:16px 18px; align-items:start; }
+  .rung__node{ grid-column:1 / -1; justify-self:start; order:-1; background:none; padding:0 0 2px; font-size:11px; }
+  .rung__side{ flex-direction:column; align-items:flex-start; gap:8px; min-width:0; }
+  .rung__side--donor, .rung__side--ben{ text-align:left; padding:0 0 0 10px; }
+  .rung__side--donor{ border-left:2px solid var(--teal); }
+  .rung__side--ben{ border-left:2px solid var(--clay); }
+  .rung__tag{ display:none; }
+  .rung__ico{ width:36px; height:36px; margin-top:0; }
+  .rung__ico svg{ width:22px; height:22px; }
+  .rung__txt h3{ font-size:13.5px; line-height:1.25; margin-bottom:4px; }
+  .rung__txt p{ font-size:12px; line-height:1.45; max-width:none; margin-left:0; overflow-wrap:anywhere; }
+  .ladder__foot{ grid-template-columns:1fr 1fr; gap:12px; margin-top:14px; align-items:start; }
+  .ladder__out{ font-size:12px; max-width:none; }
+  .ladder__out--donor, .ladder__out--ben{ text-align:left; justify-self:stretch; padding:0 0 0 10px; }
+}
