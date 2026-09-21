@@ -816,22 +816,55 @@ p{ margin:0; }
 .deal__dots button:hover{ color:var(--ink); border-color:var(--line); }
 .deal__dots button[aria-selected="true"]{ color:var(--ink); border-color:var(--line); background:var(--paper); }
 
+/* On a phone the stage used to stack: Donor, then Fleekart, then the
+   Beneficiary, then the hint - 1,235px tall at 390 wide, so the person saw
+   the Donor and an empty box, the instruction sat two screens down, and the
+   handover happened out of view (user, 21 Sep: "the journey on mobile is
+   difficult to use or imagine"). Now the two people sit side by side with
+   Fleekart between them, as on a desktop, and the thing crosses the screen
+   the person is looking at. The sides become `display:contents` so their
+   parts can be placed on the stage grid directly: people on row 1, shelves
+   on row 2, the one control that matters on row 3, wallets on row 4. The
+   ask row and the accept button take turns in the same cell. */
 @media (max-width:820px){
-  .deal__stage{ grid-template-columns:1fr; gap:0; justify-items:center; }
-  .deal__mid{ padding:16px 0; width:100%; max-width:220px; }
-  .deal__lane i{ width:2px; height:34px; margin-inline:auto; }
-  .deal__lane i::before{ top:auto; bottom:auto; left:-4px; right:auto;
-    border-left:5px solid transparent; border-right:5px solid transparent;
-    border-top:0; border-bottom:0; }
-  .deal__lane--item i::before{ bottom:-7px; border-top:8px solid var(--line); }
-  .deal__lane--plink i::before{ top:-7px; border-bottom:8px solid var(--line); }
-  .deal.is-posted .deal__lane--item i::before,.deal.is-done .deal__lane--item i::before{ border-top-color:var(--teal); border-left-color:transparent; }
-  .deal.is-done .deal__lane--plink i::before{ border-bottom-color:var(--green); border-right-color:transparent; }
-  .deal__lane i::after{ transform:scaleY(0); transform-origin:top; }
-  .deal__lane--plink i::after{ transform-origin:bottom; }
-  .deal.is-posted .deal__lane--item i::after,.deal.is-done .deal__lane i::after{ transform:scaleY(1); }
-  .deal__side{ width:100%; max-width:260px; }
-  .deal__slot{ max-width:200px; }
+  .deal{ padding:18px 12px 16px; }
+  .deal__stage{
+    grid-template-columns:minmax(0,1fr) 78px minmax(0,1fr); column-gap:6px; row-gap:12px;
+    align-items:start; justify-items:center;
+  }
+  .deal__side{ display:contents; }
+  .deal__side--donor .deal__who{ grid-row:1; grid-column:1; }
+  .deal__side--ben .deal__who{ grid-row:1; grid-column:3; }
+  .deal__who{ gap:2px; }
+  .deal__ava{ width:54px; height:54px; margin-bottom:4px; }
+  .deal__role{ font-size:10.5px; }
+  .deal__note{ font-size:12px; text-align:center; }
+  #slotFrom{ grid-row:2; grid-column:1; }
+  #slotTo{ grid-row:2; grid-column:3; }
+  .deal__slot{ max-width:190px; aspect-ratio:1/.86; }
+  .deal__slot--to span{ font-size:11.5px; text-align:center; padding:0 10px; }
+  .deal__mid{ grid-row:1 / 3; grid-column:2; align-self:end; padding:0 0 12px; width:100%; gap:6px; }
+  .deal__lane b{ font-size:9.5px; letter-spacing:.1em; }
+  .deal__hub{ width:52px; height:52px; margin-top:2px; }
+  .deal__hubLab{ font-size:9.5px; letter-spacing:.1em; }
+  .deal__ask,.deal__accept{ grid-row:3; grid-column:1 / 4; justify-self:center; }
+  .deal__accept{ display:none; }
+  .deal.is-posted .deal__accept,.deal.is-done .deal__accept{ display:inline-flex; align-items:center; }
+  .deal.is-posted .deal__ask,.deal.is-done .deal__ask{ display:none; }
+  .deal__chips button,.deal__post,.deal__accept{ height:36px; }
+  .wallet{ grid-row:4; padding:6px 11px 6px 7px; }
+  .wallet__t{ font-size:10.5px; letter-spacing:.07em; }
+  #walletDonor{ grid-column:1 / 3; justify-self:start; }
+  #walletBen{ grid-column:2 / 4; justify-self:end; }
+  .thing{ width:104px; padding:12px 10px 10px; gap:5px; border-radius:14px; }
+  .thing__ico,.thing__ico svg{ width:36px; height:36px; }
+  .thing__name{ font-size:11.5px; }
+  .deal__hint{ margin-top:16px; font-size:14px; }
+}
+/* the two wallets do not fit beside each other under 420px; they stagger */
+@media (max-width:420px){
+  #walletBen{ grid-row:5; }
+  .deal__stage{ row-gap:10px; }
 }
 @media (prefers-reduced-motion:reduce){ .deal.is-idle .thing::after{ animation:none; } }
 
