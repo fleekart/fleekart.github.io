@@ -1077,6 +1077,18 @@ svg[data-ico="bin"]    { --ico-anim:icoShake; --ico-dur:.75s; }
    restated 21 Sep). The street film band is where it was, before About. */
 @media (max-width:820px){ .about__grid .stage{ order:0; } }
 
+/* ═══ MOBILE PASS — 21 September 2026 ═══════════════════════════
+   The page walked at 390px after the QA's note that the three films
+   ran one after another. The street band's move is in filmband.js
+   (it has to happen before the scroll trigger is built); these are
+   the rest. Nothing here reaches a desktop. */
+@media (max-width:820px){
+  :root{ --sec-y:60px; }                       /* 84px both sides read as a blank screen between sections */
+  .ladder__head{ align-items:end; }            /* "For the Donor (give & earn)" wraps; both role labels sit on one baseline */
+  .dl__art{ margin-top:34px; }                 /* the phones were 8px under the store buttons */
+  .filmband{ margin-top:0; }
+}
+
 /* 4 · Plinks: no illustration or flow cards; the copy takes the width */
 .plinks__grid--solo{ grid-template-columns:1fr; }
 .plinks__grid--solo .plinks__body{ max-width:900px; }

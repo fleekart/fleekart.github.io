@@ -25,6 +25,16 @@
   var vid = band.querySelector('.filmband__vid');
   if (!vid) return;
 
+  /* On a phone the page stacks, so the band would follow the hero film
+     with nothing between them (client, 21 Sep). It moves under How it
+     works — the section that ends on the handover it shows — before the
+     trigger below is built, so the trigger measures the band where it
+     actually sits. Desktop keeps the delivered order. */
+  if (window.innerWidth <= 820) {
+    var how = document.getElementById('how');
+    if (how) how.insertAdjacentElement('afterend', band);
+  }
+
   var REDUCED = window.matchMedia &&
                 window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
