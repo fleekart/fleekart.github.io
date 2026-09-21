@@ -1,5 +1,5 @@
 1:"$Sreact.fragment"
-2:Tc564,<a class="skip" href="#main">Skip to content</a>
+2:Td5d2,<a class="skip" href="#main">Skip to content</a>
 <!-- ══ INK ILLUSTRATION LIBRARY ══════════════════════════════════ -->
 <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute;pointer-events:none">
 <defs>
@@ -168,7 +168,7 @@
       <a href="#download">Download</a>
       <a href="#resources">Resources</a>
     </nav>
-    <a class="btn btn--sm nav__cta" href="#download">Get the app</a>
+    <a class="btn btn--sm nav__cta" href="mailto:info@fleekart.com?subject=Notify%20me%20when%20Fleekart%20launches&body=Hi%20Fleekart%2C%0A%0APlease%20let%20me%20know%20when%20the%20app%20launches.%0A%0AMy%20area%3A%20">Get notified</a>
     <button class="burger" id="burger" aria-expanded="false" aria-controls="mnav" aria-label="Open menu">
       <span></span><span></span>
     </button>
@@ -184,7 +184,7 @@
     <a href="#download">Download <span>05</span></a>
     <a href="#resources">Resources <span>06</span></a>
   </nav>
-  <a class="btn" href="#download">Get the app</a>
+  <a class="btn" href="mailto:info@fleekart.com?subject=Notify%20me%20when%20Fleekart%20launches&body=Hi%20Fleekart%2C%0A%0APlease%20let%20me%20know%20when%20the%20app%20launches.%0A%0AMy%20area%3A%20">Get notified at launch</a>
 </div>
 
 <main id="main">
@@ -202,7 +202,7 @@
       </h1>
       <p class="lead" id="heroLead">Give useful things a second life. Find what you need from people around you — and keep good things in circulation.</p>
       <div class="hero__cta" id="heroCta">
-        <a class="btn" href="#download">Download the app <svg class="ar" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2.6 8h10.2M9.2 4.4 12.8 8l-3.6 3.6"/></svg></a>
+        <a class="btn" href="mailto:info@fleekart.com?subject=Notify%20me%20when%20Fleekart%20launches&body=Hi%20Fleekart%2C%0A%0APlease%20let%20me%20know%20when%20the%20app%20launches.%0A%0AMy%20area%3A%20">Get notified at launch <svg class="ar" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2.6 8h10.2M9.2 4.4 12.8 8l-3.6 3.6"/></svg></a>
         <a class="btn btn--ghost" href="#how">How it works</a>
       </div>
       <p class="hero__note" id="heroNote">
@@ -539,6 +539,7 @@
               Welcome Bonus
             </dt>
             <dd>Get 3,000 free Plinks as soon as you sign up so you can start claiming items right away!</dd>
+            <dd class="earn__eg">In the demo above, that is the jacket, the books, the headphones and the camera - with Plinks to spare.</dd>
           </div>
           <div class="earn__tile">
             <dt>
@@ -645,6 +646,46 @@
   </div>
 </section>
 
+<!-- ══ FAQ ══════════════════════════════════════════════════════
+     Six questions a careful visitor asks before installing. Every answer is
+     drawn from the Terms, Privacy Policy and Community Guidelines; nothing
+     here says more than those pages do. Native <details>, so it works with
+     no script and reads in order for a screen reader. -->
+<section class="sec faq" id="faq" aria-labelledby="faqH">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow rv">Before you install</p>
+      <h2 class="d2 rv" id="faqH">Six straight answers.</h2>
+    </div>
+    <div class="faq__list rv">
+      <details class="faq__it">
+        <summary>Is there really zero cash involved?</summary>
+        <p>Yes. Every exchange is in Plinks and nothing else. Asking for cash, UPI, a bank transfer or a gift card is against the rules, and money prices in a listing or chat are removed. There is nothing to pay at handover, so there is nothing to carry.</p>
+      </details>
+      <details class="faq__it">
+        <summary>What if the other person doesn't turn up?</summary>
+        <p>You report the no-show from the exchange in the app. The absent person has 12 hours to contest it. A confirmed no-show releases your held Plinks and costs the person who did not turn up a Plinks penalty; repeated no-shows lead to suspension. Full detail is in the <a href="#resources">Community Guidelines</a>.</p>
+      </details>
+      <details class="faq__it">
+        <summary>Do Plinks ever expire?</summary>
+        <p>No. They stay in your wallet until you use them. The only way to lose them is to delete your account, which forfeits whatever is left.</p>
+      </details>
+      <details class="faq__it">
+        <summary>Can I buy Plinks, or cash them out?</summary>
+        <p>Plinks are not money. They have no cash value and cannot be withdrawn, sold, transferred outside the app or exchanged for money. You earn them by giving, inviting and sharing stories; a top-up option is planned and will be announced in the app.</p>
+      </details>
+      <details class="faq__it">
+        <summary>What can't be listed?</summary>
+        <p>Medicines and supplements; opened or expired cosmetics; unsafe or tampered electrical goods; weapons; live animals; counterfeit, recalled or stolen goods; hazardous materials; alcohol, tobacco, vapes and drugs; food. The full list is in the <a href="#resources">Community Guidelines</a> and listings are checked before they go live.</p>
+      </details>
+      <details class="faq__it">
+        <summary>Who sees my phone number and address?</summary>
+        <p>Nobody. A listing shows your area and a distance band, never your address, map point or number. Once an exchange is accepted, the two of you get a text chat, an agreed pickup point only you two can see, and calls through a masked number. At handover a one-time pickup code, valid for 30 minutes, confirms the exchange.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
 <!-- ══ DOWNLOAD ═════════════════════════════════════════════════ -->
 <section class="sec dl" id="download" aria-labelledby="dlH">
   <div class="wrap dl__grid">
@@ -653,10 +694,10 @@
       <h2 class="d2 rv" id="dlH">Give before you sell. <em>Grab before you buy.</em></h2>
       <p class="lead rv" style="margin-top:18px;max-width:44ch">Fleekart is the step before the marketplace — for the Donor with something useful, and the Beneficiary who needs it.</p>
       <div class="dl__cta rv">
-        <button class="btn" type="button" id="dlBtn" aria-describedby="dlNote">Download Fleekart <svg class="ar ar--down" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2.4v9M4.4 7.8 8 11.4l3.6-3.6M2.6 13.6h10.8"/></svg></button>
+        <a class="btn" id="dlBtn" href="mailto:info@fleekart.com?subject=Notify%20me%20when%20Fleekart%20launches&body=Hi%20Fleekart%2C%0A%0APlease%20let%20me%20know%20when%20the%20app%20launches.%0A%0AMy%20area%3A%20" aria-describedby="dlNote">Get notified at launch <svg class="ar" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2.6 8h10.2M9.2 4.4 12.8 8l-3.6 3.6"/></svg></a>
         <a class="btn btn--ghost" href="#how">How it works</a>
       </div>
-      <p class="rv" id="dlNote" style="margin-top:14px;font-size:13.4px;color:var(--ink-3)">Fleekart is not on the stores yet. The links below go live at launch. By using Fleekart you agree to our <a href="/terms/">Terms of Use</a> and <a href="/privacy/">Privacy Policy</a>.</p>
+      <p class="rv" id="dlNote" style="margin-top:14px;font-size:13.4px;color:var(--ink-3)">Fleekart is not on the stores yet. Leave your email and we will write once, on launch day. The links below go live then. By using Fleekart you agree to our <a href="/terms/">Terms of Use</a> and <a href="/privacy/">Privacy Policy</a>.</p>
       <div class="dl__stores rv">
         <span class="store" aria-label="App Store — coming soon">
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.7c0-2.2 1.8-3.3 1.9-3.3-1-1.5-2.6-1.7-3.2-1.7-1.4-.1-2.7.8-3.4.8s-1.8-.8-2.9-.8c-1.5 0-2.9.9-3.6 2.2-1.6 2.7-.4 6.7 1.1 8.9.7 1.1 1.6 2.3 2.7 2.2 1.1 0 1.5-.7 2.8-.7s1.6.7 2.8.7 1.9-1.1 2.6-2.1c.8-1.2 1.1-2.4 1.2-2.4 0-.1-2.3-.9-2.3-3.5Zm-2.2-6.4c.6-.7 1-1.7.9-2.7-.9 0-2 .6-2.6 1.3-.6.6-1.1 1.7-.9 2.6 1 .1 2-.5 2.6-1.2Z"/></svg>
@@ -701,11 +742,12 @@
           <a href="/terms/">Terms of Use</a>
           <a href="/community-guidelines/">Community Guidelines</a>
           <a href="/delete-account/">Delete your account</a>
+          <a href="#faq">Help / FAQ</a>
           <a href="mailto:info@fleekart.com">Contact</a>
         </div>
         <div class="foot__col">
           <b>Get the app</b>
-          <a href="#download">Download Fleekart</a>
+          <a href="mailto:info@fleekart.com?subject=Notify%20me%20when%20Fleekart%20launches&body=Hi%20Fleekart%2C%0A%0APlease%20let%20me%20know%20when%20the%20app%20launches.%0A%0AMy%20area%3A%20">Get notified at launch</a>
           <a href="#download">App Store — soon</a>
           <a href="#download">Google Play — soon</a>
         </div>
@@ -719,7 +761,7 @@
 </footer>
 </main>
 5:X
-0:{"buildId":"7n4Ql7xwjIz_tHzAEX_IK","data":[{"rsc":["$","$1","c",{"children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],null,"$L3"]}],"isPartial":"$@4","staleTime":"$5","varyParams":null},{"rsc":"$L6","isPartial":"$@7","staleTime":"$5","varyParams":null},{"rsc":"$L8","isPartial":"$@9","staleTime":"$5","varyParams":null}],"isUpgradeableISRFallback":false,"a":"$@a","rootVaryParams":null,"needsRuntimeRequest":"$@b"}
+0:{"buildId":"zGzLeSWvQPytdY7V_kppJ","data":[{"rsc":["$","$1","c",{"children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],null,"$L3"]}],"isPartial":"$@4","staleTime":"$5","varyParams":null},{"rsc":"$L6","isPartial":"$@7","staleTime":"$5","varyParams":null},{"rsc":"$L8","isPartial":"$@9","staleTime":"$5","varyParams":null}],"isUpgradeableISRFallback":false,"a":"$@a","rootVaryParams":null,"needsRuntimeRequest":"$@b"}
 c:I[97367,["/_next/static/chunks/3fntmmi971322.js"],"OutletBoundary"]
 d:"$Sreact.suspense"
 f:I[97367,["/_next/static/chunks/3fntmmi971322.js"],"ViewportBoundary"]
