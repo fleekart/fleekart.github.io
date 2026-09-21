@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A listing on Fleekart</title>
+<meta name="description" content="Someone shared a Fleekart listing with you. Open it in the app.">
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../assets/icon-192.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<meta property="og:title" content="A listing on Fleekart">
+<meta property="og:description" content="Give what you don't use. Get what you need. Open this listing in the Fleekart app.">
+<meta property="og:image" content="https://fleekart.com/assets/og.png">
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  /* The one page on the site with a single job: hand the person to the app.
+     Everything here is the legal pages' stylesheet plus a button pair. */
+  .open { display:flex; flex-wrap:wrap; gap:12px; margin: 26px 0 10px; }
+  .open a { display:inline-flex; align-items:center; justify-content:center; min-height:48px; padding: 0 22px; border-radius: 999px; font-weight: 700; text-decoration: none; }
+  .open .app { background: #0B0B0C; color: #C8FF00; }
+  .open .get { background: transparent; color: #0B0B0C; border: 1.5px solid rgba(11,11,12,0.18); }
+  .quiet { font-size: 14px; color: var(--ink-soft); }
+  .quiet a { color: inherit; }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="bar">
+    <a class="wordmark" href="../"><img src="../assets/img/fk-logo.webp" alt="Fleekart" width="96" height="40" decoding="async"></a>
+    <nav class="site-nav" aria-label="Site">
+      <a class="home" href="../">Home</a>
+      <a href="../privacy/">Privacy</a>
+      <a href="../terms/">Terms</a>
+      <a href="../community-guidelines/">Community</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="page">
+  <h1>Someone shared a listing with you</h1>
+  <p class="lead">It opens in the Fleekart app. If the app is installed, the button below takes you straight to it.</p>
+
+  <div class="open">
+    <a class="app" id="openApp" href="../">Open in the Fleekart app</a>
+    <a class="get" id="getApp" href="../#download">Get the app</a>
+  </div>
+  <p class="quiet" id="note">Fleekart is on Android first. Not on the stores yet — <a href="../#download">leave your email</a> and we will write once, on launch day.</p>
+
+  <script>
+    // The listing id rides on the query: /l/?id=<uuid>. The app registers
+    // https://fleekart.com/l as a verified link, so on a phone with the app
+    // the link that brought you here already opened it and this page is
+    // what the browser shows underneath. On a phone without it, or on a
+    // desktop, this page is the fallback. `intent://` is Android's way to
+    // ask for a specific app and fall back to a URL when it is missing;
+    // `S.browser_fallback_url` is this page itself, so the tap never
+    // dead-ends.
+    (function () {
+      var id = new URLSearchParams(location.search).get('id') || '';
+      var ok = /^[0-9a-f-]{36}$/i.test(id);
+      var open = document.getElementById('openApp');
+      var here = location.origin + '/l/?id=' + encodeURIComponent(id);
+      if (!ok) {
+        document.querySelector('h1').textContent = 'That link is not a listing';
+        document.querySelector('.lead').textContent = 'The address is missing the listing it should point at. Ask whoever sent it to share it again from the app.';
+        open.style.display = 'none';
+        return;
+      }
+      var android = /Android/i.test(navigator.userAgent);
+      if (android) {
+        open.href = 'intent://fleekart.com/l/?id=' + encodeURIComponent(id) +
+          '#Intent;scheme=https;package=in.fleekart.fleekart;S.browser_fallback_url=' +
+          encodeURIComponent(here) + ';end';
+      } else {
+        open.href = 'fleekart://listings/' + encodeURIComponent(id);
+        document.getElementById('note').textContent =
+          'Open this on your Android phone with Fleekart installed, or get the app first.';
+      }
+      // Testers have a build before launch: the same file the QA installs
+      // from. Swap for the Play link on launch day.
+      document.getElementById('getApp').href = '/downloads/fleekart-staging-latest.apk';
+    })();
+  </script>
+</main>
+
+<footer class="site-footer">
+  <div class="bar">
+    <div>© 2026 Fleekart · Chennai, India · <a href="mailto:info@fleekart.com">info@fleekart.com</a></div>
+    <div>
+      <a href="../privacy/">Privacy Policy</a>
+      <a href="../terms/">Terms of Use</a>
+      <a href="../community-guidelines/">Community Guidelines</a>
+      <a href="../delete-account/">Delete your account</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
