@@ -1,5 +1,5 @@
 1:"$Sreact.fragment"
-2:Td5d2,<a class="skip" href="#main">Skip to content</a>
+2:Td549,<a class="skip" href="#main">Skip to content</a>
 <!-- ══ INK ILLUSTRATION LIBRARY ══════════════════════════════════ -->
 <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute;pointer-events:none">
 <defs>
@@ -747,7 +747,7 @@
         </div>
         <div class="foot__col">
           <b>Get the app</b>
-          <a href="mailto:info@fleekart.com?subject=Notify%20me%20when%20Fleekart%20launches&body=Hi%20Fleekart%2C%0A%0APlease%20let%20me%20know%20when%20the%20app%20launches.%0A%0AMy%20area%3A%20">Get notified at launch</a>
+          <a class="foot__cta" href="mailto:info@fleekart.com?subject=Notify%20me%20when%20Fleekart%20launches&body=Hi%20Fleekart%2C%0A%0APlease%20let%20me%20know%20when%20the%20app%20launches.%0A%0AMy%20area%3A%20">Get notified at launch</a>
           <a href="#download">App Store — soon</a>
           <a href="#download">Google Play — soon</a>
         </div>
@@ -755,13 +755,12 @@
     </div>
     <div class="foot__bot">
       <span>© 2026 Fleekart · Chennai, India · <a href="mailto:info@fleekart.com">info@fleekart.com</a></span>
-      <span>Photography via <a href="https://unsplash.com" rel="noopener" style="text-decoration:underline;text-underline-offset:2px">Unsplash</a></span>
     </div>
   </div>
 </footer>
 </main>
 5:X
-0:{"buildId":"zGzLeSWvQPytdY7V_kppJ","data":[{"rsc":["$","$1","c",{"children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],null,"$L3"]}],"isPartial":"$@4","staleTime":"$5","varyParams":null},{"rsc":"$L6","isPartial":"$@7","staleTime":"$5","varyParams":null},{"rsc":"$L8","isPartial":"$@9","staleTime":"$5","varyParams":null}],"isUpgradeableISRFallback":false,"a":"$@a","rootVaryParams":null,"needsRuntimeRequest":"$@b"}
+0:{"buildId":"rjldSJG5OLPTSGj093JzG","data":[{"rsc":["$","$1","c",{"children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],null,"$L3"]}],"isPartial":"$@4","staleTime":"$5","varyParams":null},{"rsc":"$L6","isPartial":"$@7","staleTime":"$5","varyParams":null},{"rsc":"$L8","isPartial":"$@9","staleTime":"$5","varyParams":null}],"isUpgradeableISRFallback":false,"a":"$@a","rootVaryParams":null,"needsRuntimeRequest":"$@b"}
 c:I[97367,["/_next/static/chunks/3fntmmi971322.js"],"OutletBoundary"]
 d:"$Sreact.suspense"
 f:I[97367,["/_next/static/chunks/3fntmmi971322.js"],"ViewportBoundary"]
