@@ -5,7 +5,7 @@
 :HL["/assets/Manrope.woff2","font",{"crossOrigin":"anonymous","type":"font/woff2"}]
 :HL["/assets/v2.css","style"]
 :HL["/assets/additions.css","style"]
-4:Tbdd5,<a class="skip" href="#main">Skip to content</a>
+4:Tc564,<a class="skip" href="#main">Skip to content</a>
 <!-- ══ INK ILLUSTRATION LIBRARY ══════════════════════════════════ -->
 <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute;pointer-events:none">
 <defs>
@@ -153,6 +153,10 @@
   <symbol id="l-layers" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></g></symbol>
   <symbol id="l-box" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></g></symbol>
   <symbol id="l-hourglass" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 22h14"/><path d="M5 2h14"/><path d="M17 22v-4.172a2 2 0 0 0-.586-1.414L12 12l-4.414 4.414A2 2 0 0 0 7 17.828V22"/><path d="M7 2v4.172a2 2 0 0 0 .586 1.414L12 12l4.414-4.414A2 2 0 0 0 17 6.172V2"/></g></symbol>
+  <symbol id="l-swap" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h15"/><path d="m14 4 4 4-4 4"/><path d="M21 16H6"/><path d="m10 12-4 4 4 4"/></g></symbol>
+  <symbol id="l-no-cash" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6h14a2 2 0 0 1 2 2v8"/><path d="M18 18H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2"/><path d="M14.5 10.5A3 3 0 0 0 9.5 13.5"/><path d="m2 2 20 20"/></g></symbol>
+  <symbol id="l-infinity" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 12c-2-2.67-4-4-6-4a4 4 0 1 0 0 8c2 0 4-1.33 6-4Zm0 0c2 2.67 4 4 6 4a4 4 0 0 0 0-8c-2 0-4 1.33-6 4Z"/></g></symbol>
+  <symbol id="l-top-up" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v8"/><path d="M8 12h8"/></g></symbol>
 </defs>
 </svg>
 
@@ -226,18 +230,6 @@
 
       </figure>
     </div>
-  </div>
-</section>
-
-<!-- ══ FILM BAND ════════════════════════════════════════════════ -->
-<section class="filmband" id="street" aria-label="A handover on the street, filmed">
-  <div class="filmband__clip">
-    <video class="filmband__vid" muted loop playsinline preload="none" poster="/assets/hero-street.webp"
-           aria-hidden="true" data-inview>
-      <source data-src="/assets/hero-street.mp4" type="video/mp4">
-    </video>
-    <div class="filmband__veil" aria-hidden="true"></div>
-    <p class="filmband__cap">Ten minutes away. One handover. Nothing sold.</p>
   </div>
 </section>
 
@@ -523,26 +515,69 @@
       <p class="eyebrow rv">Earn Plinks</p>
       <h2 class="d2 rv" id="plinksH">What are Plinks?</h2>
       <p class="lead rv">Plinks are the digital credits used on Fleekart to make every exchange happen!</p>
-      <div class="about__pts rv">
-        <p class="about__pt"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true" style="color:var(--teal-deep)"><use href="#i-check"/></svg><span><b>How they work:</b> Donors collect Plinks when they share pre-loved items, and Beneficiaries use Plinks to claim items they need.</span></p>
-        <p class="about__pt"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true" style="color:var(--teal-deep)"><use href="#i-check"/></svg><span><b>Zero Money Involved:</b> Plinks keep exchanges simple, safe, and fair — no cash, no pricing arguments, and no risk of getting cheated.</span></p>
-        <p class="about__pt"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true" style="color:var(--teal-deep)"><use href="#i-check"/></svg><span><b>Never Expire:</b> Your Plinks stay in your wallet forever until you're ready to use them!</span></p>
-      </div>
+
+      <!-- what they are: three plates, the Plinks green (D219) -->
+      <ul class="pk-what rv" role="list">
+        <li class="pk-what__it">
+          <span class="pk-what__i"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#l-swap"/></svg></span>
+          <b>How they work</b>
+          <p>Donors collect Plinks when they share pre-loved items, and Beneficiaries use Plinks to claim items they need.</p>
+        </li>
+        <li class="pk-what__it">
+          <span class="pk-what__i"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#l-no-cash"/></svg></span>
+          <b>Zero Money Involved</b>
+          <p>Plinks keep exchanges simple, safe, and fair — no cash, no pricing arguments, and no risk of getting cheated.</p>
+        </li>
+        <li class="pk-what__it">
+          <span class="pk-what__i"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#l-infinity"/></svg></span>
+          <b>Never Expire</b>
+          <p>Your Plinks stay in your wallet forever until you're ready to use them!</p>
+        </li>
+      </ul>
+
+      <!-- how to earn: the figure leads each tile -->
       <div class="rv">
-        <h3 class="d3" style="margin-bottom:12px">How to earn Plinks</h3>
-        <dl class="earn">
-          <div><dt>Welcome Bonus</dt><dd>Get 3,000 free Plinks as soon as you sign up so you can start claiming items right away!</dd></div>
-          <div><dt>Give Useful Items</dt><dd>Look around your house for clothes, toys, books, or gadgets you no longer use. Post them on Fleekart and collect Plinks as soon as someone grabs them.</dd></div>
-          <div><dt>Invite Your Friends (1,000 Plinks)</dt><dd>Earn 1,000 Plinks for every friend who signs up on Fleekart using your invite link or code — and they get 1,000 too, released once they complete their first exchange or 14 days pass.</dd></div>
-          <div><dt>Share a "New Life Story" (500 Plinks)</dt><dd>Loved an item you picked up? Post a quick photo or story on your profile and share it on social media to earn 500 Plinks, up to 1,000 a month.</dd></div>
+        <h3 class="d3 pk-h3" id="earnH">How to earn Plinks</h3>
+        <dl class="earn earn--tiles" aria-labelledby="earnH">
+          <div class="earn__tile">
+            <dt>
+              <span class="earn__n"><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#i-plink"/></svg>3,000 <small>on sign-up</small></span>
+              Welcome Bonus
+            </dt>
+            <dd>Get 3,000 free Plinks as soon as you sign up so you can start claiming items right away!</dd>
+          </div>
+          <div class="earn__tile">
+            <dt>
+              <span class="earn__n"><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#i-plink"/></svg><span class="earn__word">Per item</span> <small>someone grabs</small></span>
+              Give Useful Items
+            </dt>
+            <dd>Look around your house for clothes, toys, books, or gadgets you no longer use. Post them on Fleekart and collect Plinks as soon as someone grabs them.</dd>
+          </div>
+          <div class="earn__tile">
+            <dt>
+              <span class="earn__n"><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#i-plink"/></svg>1,000 <small>per friend</small></span>
+              Invite Your Friends (1,000 Plinks)
+            </dt>
+            <dd>Earn 1,000 Plinks for every friend who signs up on Fleekart using your invite link or code — and they get 1,000 too, released once they complete their first exchange or 14 days pass.</dd>
+          </div>
+          <div class="earn__tile">
+            <dt>
+              <span class="earn__n"><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#i-plink"/></svg>500 <small>per story</small></span>
+              Share a "New Life Story" (500 Plinks)
+            </dt>
+            <dd>Loved an item you picked up? Post a quick photo or story on your profile and share it on social media to earn 500 Plinks, up to 1,000 a month.</dd>
+          </div>
         </dl>
       </div>
-      <div class="buy rv">
-        <div>
+
+      <!-- not live yet: grey plate, dashed edge, an ink badge — the one tile that reads differently -->
+      <div class="buy buy--soon rv">
+        <span class="buy__i"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#l-top-up"/></svg></span>
+        <div class="buy__body">
           <p class="buy__t">Top-Up Option</p>
           <p class="buy__d">Need a few extra coins to grab something special? You'll soon be able to purchase additional Plinks directly in the app for a small fee.</p>
         </div>
-        <span class="soon">Coming soon</span>
+        <span class="soon soon--badge"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#l-hourglass"/></svg>Coming soon</span>
       </div>
     </div>
 
@@ -694,7 +729,7 @@
 b:I[97367,["/_next/static/chunks/3fntmmi971322.js"],"ViewportBoundary"]
 d:I[97367,["/_next/static/chunks/3fntmmi971322.js"],"MetadataBoundary"]
 f:I[27201,["/_next/static/chunks/3fntmmi971322.js"],"IconMark"]
-0:{"P":null,"c":["",""],"q":"","i":false,"f":[[["",{"children":["__PAGE__",{},"$undefined","$undefined",4608]},"$undefined","$undefined",4624],[["$","$1","c",{"children":[[["$","script","script-0",{"src":"/_next/static/chunks/3fntmmi971322.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":[["$","link",null,{"rel":"preload","href":"/assets/Manrope.woff2","as":"font","type":"font/woff2","crossOrigin":"anonymous"}],["$","link",null,{"rel":"stylesheet","href":"/assets/v2.css"}],["$","link",null,{"rel":"stylesheet","href":"/assets/additions.css"}]]}],["$","body",null,{"className":"no-js","children":[["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","script",null,{"src":"/assets/gsap.min.js","defer":true}],["$","script",null,{"src":"/assets/ScrollTrigger.min.js","defer":true}],["$","script",null,{"src":"/assets/app.js","defer":true}],["$","script",null,{"src":"/assets/section-motion.js","defer":true}],["$","script",null,{"src":"/assets/filmband.js","defer":true}]]}]]}]]}],{"children":[["$","$1","c",{"children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$4"}}],null,"$L5"]}],{},null,false,null]},null,false,null],"$L6",false]],"m":"$undefined","G":["$7",[]],"S":true,"h":null,"r":"$undefined","s":"$undefined","a":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"IoBK63rZ2wx0Qig49aAb4"}
+0:{"P":null,"c":["",""],"q":"","i":false,"f":[[["",{"children":["__PAGE__",{},"$undefined","$undefined",4608]},"$undefined","$undefined",4624],[["$","$1","c",{"children":[[["$","script","script-0",{"src":"/_next/static/chunks/3fntmmi971322.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":[["$","link",null,{"rel":"preload","href":"/assets/Manrope.woff2","as":"font","type":"font/woff2","crossOrigin":"anonymous"}],["$","link",null,{"rel":"stylesheet","href":"/assets/v2.css"}],["$","link",null,{"rel":"stylesheet","href":"/assets/additions.css"}]]}],["$","body",null,{"className":"no-js","children":[["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","script",null,{"src":"/assets/gsap.min.js","defer":true}],["$","script",null,{"src":"/assets/ScrollTrigger.min.js","defer":true}],["$","script",null,{"src":"/assets/app.js","defer":true}],["$","script",null,{"src":"/assets/section-motion.js","defer":true}]]}]]}]]}],{"children":[["$","$1","c",{"children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$4"}}],null,"$L5"]}],{},null,false,null]},null,false,null],"$L6",false]],"m":"$undefined","G":["$7",[]],"S":true,"h":null,"r":"$undefined","s":"$undefined","a":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"9DXDnTWDDeyX582OhIVVt"}
 5:["$","$L8",null,{"children":["$","$9",null,{"name":"Next.MetadataOutlet","children":"$@a"}]}]
 6:["$","$1","h",{"children":[null,["$","$Lb",null,{"children":"$Lc"}],["$","div",null,{"hidden":true,"children":["$","$Ld",null,{"children":["$","$9",null,{"name":"Next.Metadata","children":"$Le"}]}]}],null]}]
 c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1, viewport-fit=cover"}],["$","meta","2",{"name":"theme-color","content":"#FBFAF7"}]]
