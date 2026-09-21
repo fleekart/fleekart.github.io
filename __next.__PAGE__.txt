@@ -1,5 +1,5 @@
 1:"$Sreact.fragment"
-2:Tbb1d,<a class="skip" href="#main">Skip to content</a>
+2:Tbdd5,<a class="skip" href="#main">Skip to content</a>
 <!-- ══ INK ILLUSTRATION LIBRARY ══════════════════════════════════ -->
 <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute;pointer-events:none">
 <defs>
@@ -223,11 +223,23 @@
   </div>
 </section>
 
+<!-- ══ FILM BAND ════════════════════════════════════════════════ -->
+<section class="filmband" id="street" aria-label="A handover on the street, filmed">
+  <div class="filmband__clip">
+    <video class="filmband__vid" muted loop playsinline preload="none" poster="/assets/hero-street.webp"
+           aria-hidden="true" data-inview>
+      <source data-src="/assets/hero-street.mp4" type="video/mp4">
+    </video>
+    <div class="filmband__veil" aria-hidden="true"></div>
+    <p class="filmband__cap">Ten minutes away. One handover. Nothing sold.</p>
+  </div>
+</section>
+
 <hr class="hr">
 
 <!-- ══ ABOUT ════════════════════════════════════════════════════ -->
 <section class="sec about" id="about" aria-labelledby="aboutH">
-  <div class="wrap about__grid about__grid--solo">
+  <div class="wrap about__grid">
     <div class="about__body">
       <p class="eyebrow rv">About Fleekart</p>
       <h2 class="d2 rv" id="aboutH">Building a global community where every useful item finds a second life.</h2>
@@ -240,19 +252,19 @@
       <p class="rv"><a class="tlink" href="#how">See how a handover works <svg class="ar" width="15" height="15" viewBox="0 0 16 16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2.6 8h10.2M9.2 4.4 12.8 8l-3.6 3.6"/></svg></a></p>
     </div>
 
+    <!-- the About clip: right of the copy on a desktop, under it on a phone (client, 18 Sep + 21 Sep) -->
+    <div class="stage rv">
+      <figure class="shot shot--about">
+        <div class="shot__frame">
+          <video class="shot__reel" muted loop playsinline preload="none" poster="/assets/about-sharing.webp"
+                 aria-label="A pair of headphones on a desk, a book returned to a shelf, and a box passed from one person to another"
+                 data-inview>
+            <source src="/assets/about-sharing.mp4" type="video/mp4">
+          </video>
+        </div>
+      </figure>
+    </div>
   </div>
-
-  <!-- the handover film, below the About copy (client, 18 Sep) -->
-  <section class="filmband about__film" id="street" aria-label="A handover on the street, filmed">
-  <div class="filmband__clip">
-    <video class="filmband__vid" muted loop playsinline preload="none" poster="/assets/hero-street.webp"
-           aria-hidden="true" data-inview>
-      <source data-src="/assets/hero-street.mp4" type="video/mp4">
-    </video>
-    <div class="filmband__veil" aria-hidden="true"></div>
-    <p class="filmband__cap">Ten minutes away. One handover. Nothing sold.</p>
-  </div>
-</section>
 </section>
 
 <!-- ══ HOW IT WORKS ═════════════════════════════════════════════ -->
@@ -672,7 +684,7 @@
 </footer>
 </main>
 5:X
-0:{"buildId":"ply9ZSvtjEzk7Cu56ww4n","data":[{"rsc":["$","$1","c",{"children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],null,"$L3"]}],"isPartial":"$@4","staleTime":"$5","varyParams":null},{"rsc":"$L6","isPartial":"$@7","staleTime":"$5","varyParams":null},{"rsc":"$L8","isPartial":"$@9","staleTime":"$5","varyParams":null}],"isUpgradeableISRFallback":false,"a":"$@a","rootVaryParams":null,"needsRuntimeRequest":"$@b"}
+0:{"buildId":"2diCGumXkQ46QXuAijTs6","data":[{"rsc":["$","$1","c",{"children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],null,"$L3"]}],"isPartial":"$@4","staleTime":"$5","varyParams":null},{"rsc":"$L6","isPartial":"$@7","staleTime":"$5","varyParams":null},{"rsc":"$L8","isPartial":"$@9","staleTime":"$5","varyParams":null}],"isUpgradeableISRFallback":false,"a":"$@a","rootVaryParams":null,"needsRuntimeRequest":"$@b"}
 c:I[97367,["/_next/static/chunks/3fntmmi971322.js"],"OutletBoundary"]
 d:"$Sreact.suspense"
 f:I[97367,["/_next/static/chunks/3fntmmi971322.js"],"ViewportBoundary"]
