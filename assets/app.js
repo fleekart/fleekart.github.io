@@ -331,6 +331,10 @@
     var slotToLab = slotTo ? slotTo.querySelector('span') : null;
     var hub = doc.getElementById('dealHub');
 
+    /* A phone has no Enter key: name the button it does have (21 Sep). */
+    var COARSE = window.matchMedia && window.matchMedia('(pointer: coarse)').matches;
+    var OR_KEY = COARSE ? 'or tap <b>Post it</b>' : 'or press Enter';
+    var OR_KEY_PLAIN = COARSE ? 'or tap Post it' : 'or press Enter';
     var idx = 0, ask = 1, phase = 'idle', held = false, acceptTimer = null;
     var home = { x: 0, y: 0 }, target = { x: 0, y: 0 };
 
@@ -376,7 +380,7 @@
       if (thingAsk) thingAsk.innerHTML = '<b>' + n + '</b> Plinks';
       if (acceptT) acceptT.innerHTML = 'Accept for <b>' + n + '</b> Plinks';
       if (coinN) coinN.textContent = n;
-      thing.setAttribute('aria-label', 'Post ' + THINGS[idx].name + ' for ' + n + ' Plinks. Press Enter to post it, or drag it to Fleekart.');
+      thing.setAttribute('aria-label', 'Post ' + THINGS[idx].name + ' for ' + n + ' Plinks. Drag it to Fleekart, ' + OR_KEY_PLAIN + '.');
     }
 
     function setThing(i) {
@@ -408,7 +412,7 @@
       if (REDUCED || quiet) place(home);
       else gsap.to(thing, { x: home.x, y: home.y, duration: .5, ease: 'power3.out' });
       if (again) again.disabled = true;
-      say('<b>Your turn.</b> Ask for Plinks, then drag ' + THINGS[idx].the + ' to Fleekart — or press Enter.');
+      say('<b>Your turn.</b> Ask for Plinks, then drag ' + THINGS[idx].the + ' to Fleekart — ' + OR_KEY + '.');
     }
 
     /* beat 3: the thing goes to Fleekart and gets its tick */
@@ -528,7 +532,7 @@
         deal.classList.remove('is-armed');
         deal.classList.add('is-idle');
         gsap.to(thing, { x: home.x, y: home.y, duration: .5, ease: 'power3.out' });
-        say('<b>Not quite.</b> Take ' + THINGS[idx].the + ' all the way to Fleekart — or press Enter.');
+        say('<b>Not quite.</b> Take ' + THINGS[idx].the + ' all the way to Fleekart — ' + OR_KEY + '.');
       }
     }
     thing.addEventListener('pointerup', release);

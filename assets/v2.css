@@ -1088,6 +1088,11 @@ svg[data-ico="bin"]    { --ico-anim:icoShake; --ico-dur:.75s; }
   .dl__art{ margin-top:34px; }                 /* the phones were 8px under the store buttons */
   .filmband{ margin-top:0; }
 }
+/* The one sentence that says what Fleekart is was the smallest text in the
+   hero (13.2px, grey). Read as body copy now, every width. */
+.hero__note{ font-size:15px; color:var(--ink-2); align-items:flex-start; line-height:1.5; }
+.hero__note .dot{ margin-top:.55em; }
+.hero__note b{ color:var(--ink); }
 
 /* 4 · Plinks: no illustration or flow cards; the copy takes the width */
 .plinks__grid--solo{ grid-template-columns:1fr; }
