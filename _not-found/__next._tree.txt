@@ -1,4 +1,4 @@
 :HL["/assets/Manrope.woff2","font",{"crossOrigin":"anonymous","type":"font/woff2"}]
 :HL["/assets/v2.css?v=c0a1f6ae","style"]
 :HL["/assets/additions.css?v=dd776835","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"/_not-found","param":null,"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}},"staleTime":300,"buildId":"_R_i5Maygtj02gl1HUqxA"}
+0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"/_not-found","param":null,"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}},"staleTime":300,"buildId":"Uv0PQU0LaiYXnAAwhydpY"}

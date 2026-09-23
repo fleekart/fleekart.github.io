@@ -214,3 +214,72 @@ tr:last-child td { border-bottom: 0; }
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; }
 }
+
+/* ── The main site's look (founder, 23 Sep 2026) ─────────────────────
+   These pages kept the first site's style - Anton capitals, hard ink
+   "sticker" shadows, a yellow contents box - after the landing page moved
+   to Manrope, soft cards and teal links, so they read as another site.
+   Same tokens as the landing page (client/landing-v2 :root). Placed last
+   so it wins over the rules above without rewriting them. */
+:root {
+  --fk-ink: #14181B; --fk-ink-2: #3A4247; --fk-ink-3: #6A737A;
+  --fk-paper: #FBFAF7; --fk-paper-2: #F3F0E9; --fk-card: #FFFFFF;
+  --fk-line: rgba(20,24,27,.11); --fk-teal: #0E8FA6; --fk-teal-deep: #07697C;
+  --fk-teal-tint: #E4F2F5; --fk-r: 14px;
+}
+body { background: var(--fk-paper); color: var(--fk-ink-2); font-weight: 450; }
+a { color: var(--fk-teal-deep); }
+a:hover { color: var(--fk-teal); }
+:where(a, button):focus-visible { outline-color: var(--fk-teal); }
+
+.site-header { background: var(--fk-paper); border-bottom: 1px solid var(--fk-line); }
+.site-nav a { color: var(--fk-ink-3); font-weight: 650; letter-spacing: .12em; }
+.site-nav a:hover { color: var(--fk-ink); border-bottom-color: var(--fk-teal); }
+.site-nav a[aria-current="page"], .site-nav a.home { color: var(--fk-ink); }
+.site-nav a[aria-current="page"] { border-bottom-color: var(--fk-ink); }
+
+.legal-nav a {
+  font-weight: 650; letter-spacing: .08em; color: var(--fk-ink-2);
+  background: var(--fk-card); border: 1px solid var(--fk-line); border-radius: 999px;
+  box-shadow: none; padding: 10px 18px;
+}
+.legal-nav a:hover { transform: none; box-shadow: none; border-color: var(--fk-ink-3); color: var(--fk-ink); }
+.legal-nav a[aria-current="page"] { background: var(--fk-ink); border-color: var(--fk-ink); color: #fff; }
+
+.page h1 {
+  font: 780 clamp(30px, 3.6vw, 44px)/1.08 var(--sans);
+  letter-spacing: -.033em; text-transform: none; color: var(--fk-ink);
+}
+.page h1 em { color: var(--fk-teal-deep); }
+.meta { color: var(--fk-ink-3); font-weight: 650; border-bottom: 1px solid var(--fk-line); }
+.lead { color: var(--fk-ink); font-weight: 450; }
+.page h2 {
+  font: 780 clamp(21px, 1.9vw, 26px)/1.2 var(--sans);
+  letter-spacing: -.024em; text-transform: none; color: var(--fk-ink);
+  border-top: 1px solid var(--fk-line);
+}
+.page h3 { color: var(--fk-ink); font-weight: 750; }
+.page p, .page li { color: var(--fk-ink-2); }
+.page strong { color: var(--fk-ink); }
+
+.toc {
+  background: var(--fk-card); border: 1px solid var(--fk-line); border-radius: var(--fk-r);
+  box-shadow: 0 1px 2px rgba(20,24,27,.04);
+}
+.toc strong { color: var(--fk-ink-3); }
+.toc a { color: var(--fk-ink); text-decoration-color: var(--fk-line); }
+.toc a:hover { color: var(--fk-teal-deep); }
+
+.callout {
+  background: var(--fk-card); border: 1px solid var(--fk-line); border-left: 4px solid var(--fk-teal);
+  border-radius: var(--fk-r); box-shadow: none;
+}
+.callout.warn { border-left-color: #B85C38; background: #FBF4F0; }
+.callout.lime { border-left-color: #2E9E4F; background: #F1F8F2; }
+
+.table-wrap { border: 1px solid var(--fk-line); border-radius: var(--fk-r); box-shadow: none; }
+table { background: var(--fk-card); }
+th { background: var(--fk-paper-2); border-bottom: 1px solid var(--fk-line); color: var(--fk-ink); }
+@media (max-width: 620px) {
+  table.stack tr { border-bottom: 1px solid var(--fk-line); }
+}
