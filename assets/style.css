@@ -320,3 +320,8 @@ th { background: var(--fk-paper-2); border-bottom: 1px solid var(--fk-line); col
   .legal-nav::-webkit-scrollbar { display: none; }
   .legal-nav a { flex: none; }
 }
+
+/* The header listed the same four pages as the tabs under it (founder,
+   23 Sep). The tabs stay; the header keeps the logo and Home on every
+   width, as it already did on phones. */
+body:has(.legal-nav) .site-nav a:not(.home) { display: none; }   /* /l/ has no tabs, so it keeps its links */
