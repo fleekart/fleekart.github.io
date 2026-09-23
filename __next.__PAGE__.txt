@@ -1,5 +1,5 @@
 1:"$Sreact.fragment"
-2:Td517,<a class="skip" href="#main">Skip to content</a>
+2:Td50b,<a class="skip" href="#main">Skip to content</a>
 <!-- ══ INK ILLUSTRATION LIBRARY ══════════════════════════════════ -->
 <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute;pointer-events:none">
 <defs>
@@ -564,7 +564,7 @@
         <span class="buy__i"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#l-top-up"/></svg></span>
         <div class="buy__body">
           <p class="buy__t">Top-Up Option</p>
-          <p class="buy__d">Need a few extra coins to grab something special? You'll soon be able to purchase additional Plinks directly in the app for a small fee.</p>
+          <p class="buy__d">Need a few extra Plinks to grab something special? You'll soon be able to purchase more directly in the app for a small fee.</p>
         </div>
         <span class="soon soon--badge"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#l-hourglass"/></svg>Coming soon</span>
       </div>
@@ -771,7 +771,7 @@
   </div>
 </dialog>
 5:X
-0:{"buildId":"RmCEq6uWBEfL19itoQ-HJ","data":[{"rsc":["$","$1","c",{"children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],null,"$L3"]}],"isPartial":"$@4","staleTime":"$5","varyParams":null},{"rsc":"$L6","isPartial":"$@7","staleTime":"$5","varyParams":null},{"rsc":"$L8","isPartial":"$@9","staleTime":"$5","varyParams":null}],"isUpgradeableISRFallback":false,"a":"$@a","rootVaryParams":null,"needsRuntimeRequest":"$@b"}
+0:{"buildId":"VqfnVeyz3PgNTMxtrlO03","data":[{"rsc":["$","$1","c",{"children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],null,"$L3"]}],"isPartial":"$@4","staleTime":"$5","varyParams":null},{"rsc":"$L6","isPartial":"$@7","staleTime":"$5","varyParams":null},{"rsc":"$L8","isPartial":"$@9","staleTime":"$5","varyParams":null}],"isUpgradeableISRFallback":false,"a":"$@a","rootVaryParams":null,"needsRuntimeRequest":"$@b"}
 c:I[97367,["/_next/static/chunks/3fntmmi971322.js"],"OutletBoundary"]
 d:"$Sreact.suspense"
 f:I[97367,["/_next/static/chunks/3fntmmi971322.js"],"ViewportBoundary"]
