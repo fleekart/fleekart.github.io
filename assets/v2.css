@@ -635,7 +635,17 @@ p{ margin:0; }
 .hero .stage{ padding-block:clamp(14px,2vw,30px); }
 /* the hero film takes the height the full-screen section gives it */
 @media (min-width:821px){
-  .hero .shot--reel .shot__frame{ aspect-ratio:auto; height:clamp(380px,62svh,720px); }
+  .hero .shot--reel .shot__frame{ aspect-ratio:auto; height:clamp(420px,70svh,780px); }
+}
+/* 23 Sep (founder): the film was ~450px wide on a laptop once the hero moved
+   onto the site's container. The copy keeps a fixed column on that container's
+   left edge; the film takes the rest and runs out to the right edge of the
+   window (past the gutter, and past the container on wide screens). */
+@media (min-width:1100px){
+  .hero{ overflow-x:clip; }
+  .hero__grid{ grid-template-columns:minmax(0,clamp(430px,40vw,580px)) minmax(0,1fr); }
+  .hero .stage{ margin-right:calc(-1 * var(--gutter) - max(0px, (100vw - var(--maxw)) / 2)); }
+  .hero .shot--reel .shot__frame{ border-radius:24px 0 0 24px; }
 }
 .about .stage{ padding:clamp(10px,1.6vw,22px) clamp(6px,1.4vw,26px); }
 
