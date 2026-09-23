@@ -1,5 +1,5 @@
 1:"$Sreact.fragment"
-2:Td549,<a class="skip" href="#main">Skip to content</a>
+2:Td5c9,<a class="skip" href="#main">Skip to content</a>
 <!-- ══ INK ILLUSTRATION LIBRARY ══════════════════════════════════ -->
 <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute;pointer-events:none">
 <defs>
@@ -168,7 +168,7 @@
       <a href="#download">Download</a>
       <a href="#resources">Resources</a>
     </nav>
-    <a class="btn btn--sm nav__cta" href="mailto:info@fleekart.com?subject=Notify%20me%20when%20Fleekart%20launches&body=Hi%20Fleekart%2C%0A%0APlease%20let%20me%20know%20when%20the%20app%20launches.%0A%0AMy%20area%3A%20">Get notified</a>
+    <a class="btn btn--sm nav__cta" data-waitlist href="mailto:info@fleekart.com?subject=Notify%20me%20when%20Fleekart%20launches&body=Hi%20Fleekart%2C%0A%0APlease%20let%20me%20know%20when%20the%20app%20launches.%0A%0AMy%20area%3A%20">Get notified</a>
     <button class="burger" id="burger" aria-expanded="false" aria-controls="mnav" aria-label="Open menu">
       <span></span><span></span>
     </button>
@@ -184,7 +184,7 @@
     <a href="#download">Download <span>05</span></a>
     <a href="#resources">Resources <span>06</span></a>
   </nav>
-  <a class="btn" href="mailto:info@fleekart.com?subject=Notify%20me%20when%20Fleekart%20launches&body=Hi%20Fleekart%2C%0A%0APlease%20let%20me%20know%20when%20the%20app%20launches.%0A%0AMy%20area%3A%20">Get notified at launch</a>
+  <a class="btn" data-waitlist href="mailto:info@fleekart.com?subject=Notify%20me%20when%20Fleekart%20launches&body=Hi%20Fleekart%2C%0A%0APlease%20let%20me%20know%20when%20the%20app%20launches.%0A%0AMy%20area%3A%20">Get notified at launch</a>
 </div>
 
 <main id="main">
@@ -194,21 +194,16 @@
   <div class="wrap hero__grid">
 
     <div class="hero__copy">
-      <p class="eyebrow" id="heroBrow">Give · Earn Plinks · Grab</p>
+      <p class="eyebrow" id="heroBrow">Drop · Earn Plinks · Grab</p>
       <h1 class="d1" id="heroH1">
         <span class="ln"><span>Your first choice</span></span>
         <span class="ln"><span>before <em>selling</em> or</span></span>
         <span class="ln"><span><em>buying</em> anything.</span></span>
       </h1>
-      <p class="lead" id="heroLead">Give useful things a second life. Find what you need from people around you — and keep good things in circulation.</p>
       <div class="hero__cta" id="heroCta">
-        <a class="btn" href="mailto:info@fleekart.com?subject=Notify%20me%20when%20Fleekart%20launches&body=Hi%20Fleekart%2C%0A%0APlease%20let%20me%20know%20when%20the%20app%20launches.%0A%0AMy%20area%3A%20">Get notified at launch <svg class="ar" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2.6 8h10.2M9.2 4.4 12.8 8l-3.6 3.6"/></svg></a>
+        <a class="btn" data-waitlist href="mailto:info@fleekart.com?subject=Notify%20me%20when%20Fleekart%20launches&body=Hi%20Fleekart%2C%0A%0APlease%20let%20me%20know%20when%20the%20app%20launches.%0A%0AMy%20area%3A%20">Get notified at launch <svg class="ar" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2.6 8h10.2M9.2 4.4 12.8 8l-3.6 3.6"/></svg></a>
         <a class="btn btn--ghost" href="#how">How it works</a>
       </div>
-      <p class="hero__note" id="heroNote">
-        <span class="dot" aria-hidden="true"></span>
-        <span><b>Donors</b> give what they no longer need. <b>Beneficiaries</b> grab what they do. <b>Plinks</b> move between them.</span>
-      </p>
     </div>
 
     <!-- circulation stage -->
@@ -241,7 +236,6 @@
         <p>Every year, millions of perfectly functional items — from books and electronics to home goods and apparel — sit idle in storage or get thrown away. Meanwhile, someone nearby is actively searching for those exact items.</p>
         <p>Fleekart solves this mismatch by replacing traditional re-commerce friction with a cashless, community-driven ecosystem. We believe sustainability shouldn't be complicated; it should be as simple as passing something along to a neighbour.</p>
       </div>
-      <p class="rv"><a class="tlink" href="#how">See how a handover works <svg class="ar" width="15" height="15" viewBox="0 0 16 16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2.6 8h10.2M9.2 4.4 12.8 8l-3.6 3.6"/></svg></a></p>
     </div>
 
     <!-- the About clip: right of the copy on a desktop, under it on a phone (client, 18 Sep + 21 Sep) -->
@@ -394,7 +388,7 @@
     <div class="journey rv">
       <div class="sec-head">
         <h3 class="d3" id="journeyH">Experience the Fleekart Journey.</h3>
-        <p class="lead">Take our interactive video below for a spin to watch how a pre-loved camera or book travels from a Donor to a Beneficiary, earning credits and saving along the way.</p>
+        <p class="lead">Take our interactive video below for a spin to watch how pre-loved clothing, or any item, travels from a Donor to a Beneficiary, earning credits and saving along the way.</p>
       </div>
     </div>
 
@@ -538,7 +532,7 @@
               <span class="earn__n"><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#i-plink"/></svg>3,000 <small>on sign-up</small></span>
               Welcome Bonus
             </dt>
-            <dd>Get 3,000 free Plinks as soon as you sign up so you can start claiming items right away!</dd>
+            <dd>Get 3,000 free Plinks as soon as you sign up and verify your phone number, so you can start claiming items right away!</dd>
             <dd class="earn__eg">In the demo above, that is the jacket, the books, the headphones and the camera - with Plinks to spare.</dd>
           </div>
           <div class="earn__tile">
@@ -546,21 +540,21 @@
               <span class="earn__n"><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#i-plink"/></svg><span class="earn__word">Per item</span> <small>someone grabs</small></span>
               Give Useful Items
             </dt>
-            <dd>Look around your house for clothes, toys, books, or gadgets you no longer use. Post them on Fleekart and collect Plinks as soon as someone grabs them.</dd>
+            <dd>Look around your house for clothes, toys, books, or gadgets you no longer use. Post them on Fleekart and collect Plinks once the item is handed over (a 10% platform share is kept back).</dd>
           </div>
           <div class="earn__tile">
             <dt>
-              <span class="earn__n"><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#i-plink"/></svg>1,000 <small>per friend</small></span>
-              Invite Your Friends (1,000 Plinks)
+              <span class="earn__n"><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#i-plink"/></svg>100 <small>per friend</small></span>
+              Invite Your Friends (100 Plinks)
             </dt>
-            <dd>Earn 1,000 Plinks for every friend who signs up on Fleekart using your invite link or code — and they get 1,000 too, released once they complete their first exchange or 14 days pass.</dd>
+            <dd>Earn 100 Plinks for every friend who signs up on Fleekart using your invite link or code.</dd>
           </div>
           <div class="earn__tile">
             <dt>
-              <span class="earn__n"><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#i-plink"/></svg>500 <small>per story</small></span>
-              Share a "New Life Story" (500 Plinks)
+              <span class="earn__n"><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#i-plink"/></svg>20 <small>per story</small></span>
+              Share a "New Life Story" (20 Plinks)
             </dt>
-            <dd>Loved an item you picked up? Post a quick photo or story on your profile and share it on social media to earn 500 Plinks, up to 1,000 a month.</dd>
+            <dd>Loved an item you picked up? Post a quick photo or story on your profile to earn 20 Plinks.</dd>
           </div>
         </dl>
       </div>
@@ -635,7 +629,7 @@
           <circle cx="262" cy="66" r="40" fill="none" stroke="var(--green)" stroke-width="2.2"/>
           <path d="m254 20 8 6-8 6M270 112l-8-6 8-6" fill="none" stroke="var(--green)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
           <g font-family="inherit" font-size="10" font-weight="700" letter-spacing="1.4" fill="currentColor" opacity=".85" text-anchor="middle">
-            <text x="262" y="12">GIVE</text><text x="262" y="130">GRAB</text>
+            <text x="262" y="12">DROP</text><text x="262" y="130">GRAB</text>
           </g>
           <text x="262" y="70" font-family="inherit" font-size="10" font-weight="700" letter-spacing="1.4" fill="var(--green)" text-anchor="middle">FLEEKART</text>
         </svg>
@@ -691,13 +685,12 @@
   <div class="wrap dl__grid">
     <div>
       <p class="eyebrow rv">Get the app</p>
-      <h2 class="d2 rv" id="dlH">Give before you sell. <em>Grab before you buy.</em></h2>
+      <h2 class="d2 rv" id="dlH">Drop before you sell. <em>Grab before you buy.</em></h2>
       <p class="lead rv" style="margin-top:18px;max-width:44ch">Fleekart is the step before the marketplace — for the Donor with something useful, and the Beneficiary who needs it.</p>
       <div class="dl__cta rv">
-        <a class="btn" id="dlBtn" href="mailto:info@fleekart.com?subject=Notify%20me%20when%20Fleekart%20launches&body=Hi%20Fleekart%2C%0A%0APlease%20let%20me%20know%20when%20the%20app%20launches.%0A%0AMy%20area%3A%20" aria-describedby="dlNote">Get notified at launch <svg class="ar" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2.6 8h10.2M9.2 4.4 12.8 8l-3.6 3.6"/></svg></a>
+        <a class="btn" id="dlBtn" data-waitlist href="mailto:info@fleekart.com?subject=Notify%20me%20when%20Fleekart%20launches&body=Hi%20Fleekart%2C%0A%0APlease%20let%20me%20know%20when%20the%20app%20launches.%0A%0AMy%20area%3A%20">Get notified at launch <svg class="ar" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2.6 8h10.2M9.2 4.4 12.8 8l-3.6 3.6"/></svg></a>
         <a class="btn btn--ghost" href="#how">How it works</a>
       </div>
-      <p class="rv" id="dlNote" style="margin-top:14px;font-size:13.4px;color:var(--ink-3)">Fleekart is not on the stores yet. Leave your email and we will write once, on launch day. The links below go live then. By using Fleekart you agree to our <a href="/terms/">Terms of Use</a> and <a href="/privacy/">Privacy Policy</a>.</p>
       <div class="dl__stores rv">
         <span class="store" aria-label="App Store — coming soon">
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.7c0-2.2 1.8-3.3 1.9-3.3-1-1.5-2.6-1.7-3.2-1.7-1.4-.1-2.7.8-3.4.8s-1.8-.8-2.9-.8c-1.5 0-2.9.9-3.6 2.2-1.6 2.7-.4 6.7 1.1 8.9.7 1.1 1.6 2.3 2.7 2.2 1.1 0 1.5-.7 2.8-.7s1.6.7 2.8.7 1.9-1.1 2.6-2.1c.8-1.2 1.1-2.4 1.2-2.4 0-.1-2.3-.9-2.3-3.5Zm-2.2-6.4c.6-.7 1-1.7.9-2.7-.9 0-2 .6-2.6 1.3-.6.6-1.1 1.7-.9 2.6 1 .1 2-.5 2.6-1.2Z"/></svg>
@@ -714,7 +707,7 @@
       <div class="dl__phones">
         <div class="phone"><div class="phone__screen"><img src="/assets/story-1.webp" alt="The Fleekart app's create-listing form" width="780" height="1688" loading="lazy" decoding="async"></div></div>
         <div class="phone"><div class="phone__screen"><img src="/assets/story-2.webp" alt="A listing in the Fleekart app with its Request Exchange button" width="780" height="1688" loading="lazy" decoding="async"></div></div>
-        <p class="dl__cap" aria-hidden="true"><span>Give</span><span>Grab</span></p>
+        <p class="dl__cap" aria-hidden="true"><span>Drop</span><span>Grab</span></p>
       </div>
     </div>
   </div>
@@ -747,7 +740,7 @@
         </div>
         <div class="foot__col">
           <b>Get the app</b>
-          <a class="foot__cta" href="mailto:info@fleekart.com?subject=Notify%20me%20when%20Fleekart%20launches&body=Hi%20Fleekart%2C%0A%0APlease%20let%20me%20know%20when%20the%20app%20launches.%0A%0AMy%20area%3A%20">Get notified at launch</a>
+          <a class="foot__cta" data-waitlist href="mailto:info@fleekart.com?subject=Notify%20me%20when%20Fleekart%20launches&body=Hi%20Fleekart%2C%0A%0APlease%20let%20me%20know%20when%20the%20app%20launches.%0A%0AMy%20area%3A%20">Get notified at launch</a>
           <a href="#download">App Store — soon</a>
           <a href="#download">Google Play — soon</a>
         </div>
@@ -759,8 +752,27 @@
   </div>
 </footer>
 </main>
+
+
+<dialog class="wl" id="wl" aria-labelledby="wlH">
+  <div class="wl__in">
+    <button class="wl__x" type="button" data-wl-close aria-label="Close">&times;</button>
+    <h2 id="wlH">Get notified at launch</h2>
+    <p>Fleekart is not on the stores yet. Leave your email and we will write once, on launch day.</p>
+    <form id="wlForm" novalidate>
+      <label for="wlEmail">Email</label>
+      <input id="wlEmail" name="email" type="email" required maxlength="254" autocomplete="email" inputmode="email">
+      <label for="wlArea">Your area <span style="font-weight:400">(optional)</span></label>
+      <input id="wlArea" name="area" type="text" maxlength="80" autocomplete="address-level2" placeholder="e.g. Anna Nagar, Chennai">
+      <div class="wl__hp" aria-hidden="true"><label for="wlSite">Website</label><input id="wlSite" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+      <button class="btn" type="submit">Notify me</button>
+      <p class="wl__fine">We use your email only to tell you when Fleekart launches. See our <a href="/privacy/">Privacy Policy</a>.</p>
+    </form>
+    <p class="wl__status" id="wlStatus" role="status" aria-live="polite"></p>
+  </div>
+</dialog>
 5:X
-0:{"buildId":"X9Xu49VgExiS9q28N52rb","data":[{"rsc":["$","$1","c",{"children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],null,"$L3"]}],"isPartial":"$@4","staleTime":"$5","varyParams":null},{"rsc":"$L6","isPartial":"$@7","staleTime":"$5","varyParams":null},{"rsc":"$L8","isPartial":"$@9","staleTime":"$5","varyParams":null}],"isUpgradeableISRFallback":false,"a":"$@a","rootVaryParams":null,"needsRuntimeRequest":"$@b"}
+0:{"buildId":"N0P-Ug0ud7Hf8bPx5jH-n","data":[{"rsc":["$","$1","c",{"children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],null,"$L3"]}],"isPartial":"$@4","staleTime":"$5","varyParams":null},{"rsc":"$L6","isPartial":"$@7","staleTime":"$5","varyParams":null},{"rsc":"$L8","isPartial":"$@9","staleTime":"$5","varyParams":null}],"isUpgradeableISRFallback":false,"a":"$@a","rootVaryParams":null,"needsRuntimeRequest":"$@b"}
 c:I[97367,["/_next/static/chunks/3fntmmi971322.js"],"OutletBoundary"]
 d:"$Sreact.suspense"
 f:I[97367,["/_next/static/chunks/3fntmmi971322.js"],"ViewportBoundary"]
@@ -769,11 +781,11 @@ f:I[97367,["/_next/static/chunks/3fntmmi971322.js"],"ViewportBoundary"]
 12:I[39756,["/_next/static/chunks/3fntmmi971322.js"],"default"]
 13:I[37457,["/_next/static/chunks/3fntmmi971322.js"],"default"]
 :HL["/assets/Manrope.woff2","font",{"crossOrigin":"anonymous","type":"font/woff2"}]
-:HL["/assets/v2.css?v=fdd87b9d","style"]
+:HL["/assets/v2.css?v=c0a1f6ae","style"]
 :HL["/assets/additions.css?v=dd776835","style"]
 3:["$","$Lc",null,{"children":["$","$d",null,{"name":"Next.MetadataOutlet","children":"$@e"}]}]
 6:["$","$1","h",{"children":[null,["$","$Lf",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1, viewport-fit=cover"}],["$","meta","2",{"name":"theme-color","content":"#FBFAF7"}]]}],["$","div",null,{"hidden":true,"children":["$","$L10",null,{"children":["$","$d",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Fleekart — Your first choice before selling or buying anything"}],["$","meta","1",{"name":"description","content":"Fleekart keeps useful things in circulation. Donors give what they no longer need and earn Plinks. Beneficiaries use Plinks to grab what they need."}],["$","meta","2",{"property":"og:title","content":"Fleekart — Your first choice before selling or buying anything"}],["$","meta","3",{"property":"og:description","content":"Give useful things a second life. Find what you need from people around you — and keep good things in circulation."}],["$","meta","4",{"property":"og:url","content":"https://fleekart.com/"}],["$","meta","5",{"property":"og:image","content":"https://fleekart.com/assets/og.png"}],["$","meta","6",{"property":"og:type","content":"website"}],["$","meta","7",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","8",{"name":"twitter:title","content":"Fleekart — Your first choice before selling or buying anything"}],["$","meta","9",{"name":"twitter:description","content":"Give useful things a second life. Find what you need from people around you — and keep good things in circulation."}],["$","meta","10",{"name":"twitter:image","content":"https://fleekart.com/assets/og.png"}],["$","link","11",{"rel":"icon","href":"/assets/favicon.webp","type":"image/webp"}],["$","link","12",{"rel":"icon","href":"/assets/favicon-32.png","sizes":"32x32","type":"image/png"}],["$","link","13",{"rel":"icon","href":"/assets/icon-192.png","sizes":"192x192","type":"image/png"}],["$","link","14",{"rel":"apple-touch-icon","href":"/assets/apple-touch-icon.png"}],["$","$L11","15",{}]]}]}]}],null]}]
-8:["$","$1","c",{"children":[[["$","script","script-0",{"src":"/_next/static/chunks/3fntmmi971322.js","async":true}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":[["$","link",null,{"rel":"preload","href":"/assets/Manrope.woff2","as":"font","type":"font/woff2","crossOrigin":"anonymous"}],["$","link",null,{"rel":"stylesheet","href":"/assets/v2.css?v=fdd87b9d"}],["$","link",null,{"rel":"stylesheet","href":"/assets/additions.css?v=dd776835"}]]}],["$","body",null,{"className":"no-js","children":[["$","$L12",null,{"parallelRouterKey":"children","template":["$","$L13",null,{}],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]]}],["$","script",null,{"src":"/assets/gsap.min.js?v=2d26f4c0","defer":true}],["$","script",null,{"src":"/assets/ScrollTrigger.min.js?v=489bcf6d","defer":true}],["$","script",null,{"src":"/assets/app.js?v=3f367631","defer":true}],["$","script",null,{"src":"/assets/section-motion.js?v=9591d0c6","defer":true}]]}]]}]]}]
+8:["$","$1","c",{"children":[[["$","script","script-0",{"src":"/_next/static/chunks/3fntmmi971322.js","async":true}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":[["$","link",null,{"rel":"preload","href":"/assets/Manrope.woff2","as":"font","type":"font/woff2","crossOrigin":"anonymous"}],["$","link",null,{"rel":"stylesheet","href":"/assets/v2.css?v=c0a1f6ae"}],["$","link",null,{"rel":"stylesheet","href":"/assets/additions.css?v=dd776835"}]]}],["$","body",null,{"className":"no-js","children":[["$","$L12",null,{"parallelRouterKey":"children","template":["$","$L13",null,{}],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]]}],["$","script",null,{"src":"/assets/gsap.min.js?v=2d26f4c0","defer":true}],["$","script",null,{"src":"/assets/ScrollTrigger.min.js?v=489bcf6d","defer":true}],["$","script",null,{"src":"/assets/app.js?v=3f367631","defer":true}],["$","script",null,{"src":"/assets/section-motion.js?v=9591d0c6","defer":true}],["$","script",null,{"src":"/assets/waitlist.js?v=2d650d2c","defer":true}]]}]]}]]}]
 e:null
 b:true
 5:300

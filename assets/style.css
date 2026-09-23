@@ -51,7 +51,7 @@
 
   --sticker: 4px 4px 0 var(--ink);
   --sticker-lg: 8px 8px 0 var(--ink);
-  --max: 780px;
+  --max: 1288px;   /* the landing page's container (--maxw), 23 Sep: legal pages share its edges */
 }
 
 * { box-sizing: border-box; }
@@ -81,11 +81,11 @@ a:hover { color: var(--ember); }
    rule under it. The old bar was solid black, which read as another site. */
 .site-header { background: var(--paper); border-bottom: 2px solid var(--ink); }
 .site-header .bar {
-  max-width: 1240px; margin: 0 auto; padding: 16px clamp(18px, 4.2vw, 40px);
+  max-width: var(--max); margin: 0 auto; padding: 16px clamp(20px, 5vw, 72px);
   display: flex; align-items: center; justify-content: space-between; gap: 12px 24px; flex-wrap: wrap;
 }
 .wordmark { display: inline-flex; align-items: center; text-decoration: none; }
-.wordmark img { display: block; height: 40px; width: auto; }
+.wordmark img { display: block; height: 52px; /* matches the main site's header logo (.nav__logo img) */ width: auto; }
 
 .site-nav { display: flex; flex-wrap: wrap; gap: 4px 22px; align-items: center; }
 .site-nav a {
@@ -100,7 +100,7 @@ a:hover { color: var(--ember); }
 .site-nav a.home:hover { color: var(--ember-ink); }
 
 /* ── Page ─────────────────────────────────────────── */
-.page { max-width: var(--max); margin: 0 auto; padding: clamp(34px, 6vw, 64px) clamp(18px, 4.2vw, 40px) 88px; }
+.page { max-width: var(--max); margin: 0 auto; padding: clamp(34px, 6vw, 64px) clamp(20px, 5vw, 72px) 88px; }
 
 .legal-nav { display: flex; flex-wrap: wrap; gap: 10px; margin: 0 0 clamp(30px, 4.5vw, 46px); }
 .legal-nav a {
@@ -187,7 +187,7 @@ tr:last-child td { border-bottom: 0; }
 /* ── Footer ───────────────────────────────────────── */
 .site-footer { background: var(--ink); color: rgba(251, 249, 245, 0.72); margin-top: clamp(40px, 6vw, 80px); }
 .site-footer .bar {
-  max-width: 1240px; margin: 0 auto; padding: clamp(28px, 4vw, 48px) clamp(18px, 4.2vw, 40px);
+  max-width: var(--max); margin: 0 auto; padding: clamp(28px, 4vw, 48px) clamp(20px, 5vw, 72px);
   display: flex; flex-wrap: wrap; justify-content: space-between; gap: 14px 32px;
   font: 600 12px/1.7 var(--sans); letter-spacing: 0.06em;
 }

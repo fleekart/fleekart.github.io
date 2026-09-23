@@ -155,7 +155,7 @@ p{ margin:0; }
 .nav__in{ width:100%; max-width:var(--maxw); margin-inline:auto; padding-inline:var(--gutter);
   display:flex; align-items:center; gap:clamp(18px,2.4vw,38px); }
 .nav__logo{ flex:none; display:block; }
-.nav__logo img{ height:44px; width:auto; transition:height .38s var(--ease); }
+.nav__logo img{ height:52px; width:auto; transition:height .38s var(--ease); }
 .nav__links{ display:flex; align-items:center; gap:clamp(14px,1.75vw,27px); margin-left:auto; }
 .nav__links a{
   position:relative; font-size:12.4px; font-weight:620; letter-spacing:.075em; text-transform:uppercase;
@@ -170,7 +170,7 @@ p{ margin:0; }
 .nav__cta{ margin-left:clamp(8px,1.4vw,20px); }
 .nav.is-stuck{ height:60px; background:rgba(251,250,247,.78); backdrop-filter:saturate(1.6) blur(14px);
   -webkit-backdrop-filter:saturate(1.6) blur(14px); box-shadow:0 1px 0 var(--line-2), 0 8px 26px -22px rgba(20,24,27,.6); }
-.nav.is-stuck .nav__logo img{ height:36px; }
+.nav.is-stuck .nav__logo img{ height:42px; }
 .burger{ display:none; }
 
 /* mobile menu */
@@ -190,7 +190,7 @@ p{ margin:0; }
 /* ═══ HERO ═══════════════════════════════════════════════════ */
 .hero{ position:relative; padding-top:calc(var(--nav-h) + clamp(18px,4vw,52px)); padding-bottom:clamp(40px,5vw,72px);
   min-height:100svh; display:grid; align-content:center; }
-.hero .wrap{ max-width:1560px; }
+/* 23 Sep (founder): the hero sits on the same container as the nav and About, so every left edge lines up */
 .hero__grid{ display:grid; grid-template-columns:minmax(0,640px) minmax(0,1fr); gap:clamp(24px,3.4vw,58px); align-items:center; }
 .hero__copy{ display:grid; gap:clamp(18px,1.9vw,25px); max-width:640px; }
 .hero h1{ letter-spacing:-.038em; }
@@ -1066,6 +1066,17 @@ svg[data-ico="bin"]    { --ico-anim:icoShake; --ico-dur:.75s; }
    stage first, above the heading — the client's actual complaint, 18 Sep,
    restated 21 Sep). */
 @media (max-width:820px){ .about__grid .stage{ order:0; } }
+/* 23 Sep (founder): no empty band above and below the About clip. On a
+   two-column layout the clip takes the full height of the copy beside it
+   (cover-cropped; the clip's caption sits in its middle 45%, so it survives). */
+@media (min-width:821px){
+  .about__grid{ align-items:stretch; }
+  .about__body{ max-width:580px; }
+  .about__grid .stage{ display:flex; padding-inline:0; }   /* clip's right edge on the container edge, like the hero film */
+  .about__grid .shot--about{ flex:1; display:flex; margin:0; }
+  .about__grid .shot--about .shot__frame{ flex:1; aspect-ratio:auto; min-height:320px; }
+  .about__grid .shot--about .shot__reel{ width:100%; height:100%; object-fit:cover; }
+}
 
 /* ═══ MOBILE PASS — 21 September 2026 ═══════════════════════════
    The page walked at 390px after the QA's note that the three films
@@ -1228,3 +1239,25 @@ svg[data-ico="bin"]    { --ico-anim:icoShake; --ico-dur:.75s; }
   .foot__bot{ flex-direction:column; align-items:flex-start; gap:8px; margin-top:26px; padding-top:18px; }
   .foot__bot span{ flex-wrap:wrap; line-height:1.6; }
 }
+
+/* Get notified form (founder, 23 Sep 2026) */
+.wl{ border:0; padding:0; border-radius:20px; background:var(--card); color:var(--ink);
+  width:min(440px, calc(100vw - 32px)); box-shadow:0 24px 60px rgba(20,24,27,.22); }
+.wl::backdrop{ background:rgba(20,24,27,.45); }
+.wl__in{ padding:28px 26px 24px; position:relative; }
+.wl__x{ position:absolute; top:12px; right:12px; width:36px; height:36px; border:0;
+  border-radius:50%; background:var(--paper-2); color:var(--ink); font-size:20px; line-height:1; cursor:pointer; }
+.wl h2{ font-size:22px; line-height:1.2; margin:0 36px 6px 0; }
+.wl p{ margin:0 0 18px; color:var(--ink-2); font-size:15px; line-height:1.5; }
+.wl label{ display:block; font-size:13px; font-weight:600; margin:0 0 6px; color:var(--ink-2); }
+.wl input{ display:block; width:100%; box-sizing:border-box; font:inherit; font-size:16px;
+  padding:12px 14px; margin:0 0 14px; border:1px solid var(--line); border-radius:12px; background:var(--paper); color:var(--ink); }
+.wl input:focus{ outline:2px solid var(--teal); outline-offset:1px; }
+.wl .btn{ width:100%; justify-content:center; }
+.wl__hp{ position:absolute !important; left:-9999px !important; width:1px; height:1px; overflow:hidden; }
+.wl__fine{ font-size:12.5px !important; color:var(--ink-3) !important; margin:12px 0 0 !important; }
+.wl__fine a{ color:var(--teal-deep); }
+.wl__status{ margin:12px 0 0; font-size:14px; min-height:1px; }
+.wl__status--ok{ color:var(--green-deep); font-weight:600; font-size:16px; }
+.wl__status--err{ color:var(--clay-deep); }
+.wl__status a{ color:inherit; text-decoration:underline; }
