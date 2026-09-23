@@ -1275,3 +1275,30 @@ svg[data-ico="bin"]    { --ico-anim:icoShake; --ico-dur:.75s; }
 .wl__status--ok{ color:var(--green-deep); font-weight:600; font-size:16px; }
 .wl__status--err{ color:var(--clay-deep); }
 .wl__status a{ color:inherit; text-decoration:underline; }
+
+/* ── One grid for the whole page (visual audit, 23 Sep 2026) ─────────
+   Hero, About, Did You Know and the FAQ each had their own split, so the
+   three films started at three different x positions with three different
+   shapes, the Did You Know film floated beside two short boxes, and the
+   FAQ used 60% of the width. Now every two-column section shares one
+   text column and one media column, every film starts on the same line,
+   ends on the nav's right edge, and is as tall as the text beside it. */
+@media (min-width:1100px){
+  :root{ --col-text:clamp(420px,36vw,540px); --col-gap:clamp(40px,4vw,72px); --sec-y:clamp(56px,5vw,80px); }
+  .hero__grid,.about__grid,.impact__grid,.faq__grid{
+    grid-template-columns:minmax(0,var(--col-text)) minmax(0,1fr); column-gap:var(--col-gap);
+  }
+  /* About: the film fills the height of the copy beside it */
+  .about__grid{ align-items:stretch; }
+  .about .stage{ padding:0; display:flex; }
+  .about .shot--about{ flex:1; display:flex; }
+  body .about .shot--about .shot__frame{ aspect-ratio:auto; height:auto; min-height:460px; flex:1; }
+  /* Did You Know: heading and both boxes on the left, the film the same
+     height on the right */
+  .impact__grid{ align-items:stretch; }
+  .impact__grid .shot--impact{ align-self:stretch; display:flex; }
+  body .impact__grid .shot--impact .shot__frame{ aspect-ratio:auto; height:auto; min-height:420px; flex:1; }
+  /* FAQ: heading in the text column, questions in the media column */
+  .faq__grid{ display:grid; align-items:start; }
+  .faq__grid .faq__list{ margin-top:0; max-width:none; }
+}
