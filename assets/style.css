@@ -51,7 +51,7 @@
 
   --sticker: 4px 4px 0 var(--ink);
   --sticker-lg: 8px 8px 0 var(--ink);
-  --max: 1288px;   /* the landing page's container (--maxw), 23 Sep: legal pages share its edges */
+  --max: 1520px;   /* the landing page's container (--maxw), 23 Sep: legal pages share its edges */
 }
 
 * { box-sizing: border-box; }
