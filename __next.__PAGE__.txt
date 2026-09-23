@@ -1,5 +1,5 @@
 1:"$Sreact.fragment"
-2:Td5d3,<a class="skip" href="#main">Skip to content</a>
+2:Td517,<a class="skip" href="#main">Skip to content</a>
 <!-- ══ INK ILLUSTRATION LIBRARY ══════════════════════════════════ -->
 <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute;pointer-events:none">
 <defs>
@@ -686,7 +686,6 @@
     <div>
       <p class="eyebrow rv">Get the app</p>
       <h2 class="d2 rv" id="dlH">Drop before you sell. <em>Grab before you buy.</em></h2>
-      <p class="lead rv" style="margin-top:18px;max-width:44ch">Fleekart is the step before the marketplace — for the Donor with something useful, and the Beneficiary who needs it.</p>
       <div class="dl__cta rv">
         <a class="btn" id="dlBtn" data-waitlist href="mailto:info@fleekart.com?subject=Notify%20me%20when%20Fleekart%20launches&body=Hi%20Fleekart%2C%0A%0APlease%20let%20me%20know%20when%20the%20app%20launches.%0A%0AMy%20area%3A%20">Get notified at launch <svg class="ar" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2.6 8h10.2M9.2 4.4 12.8 8l-3.6 3.6"/></svg></a>
         <a class="btn btn--ghost" href="#how">How it works</a>
@@ -772,7 +771,7 @@
   </div>
 </dialog>
 5:X
-0:{"buildId":"j9ep8eNSkrGedYVffeqhN","data":[{"rsc":["$","$1","c",{"children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],null,"$L3"]}],"isPartial":"$@4","staleTime":"$5","varyParams":null},{"rsc":"$L6","isPartial":"$@7","staleTime":"$5","varyParams":null},{"rsc":"$L8","isPartial":"$@9","staleTime":"$5","varyParams":null}],"isUpgradeableISRFallback":false,"a":"$@a","rootVaryParams":null,"needsRuntimeRequest":"$@b"}
+0:{"buildId":"RmCEq6uWBEfL19itoQ-HJ","data":[{"rsc":["$","$1","c",{"children":[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],null,"$L3"]}],"isPartial":"$@4","staleTime":"$5","varyParams":null},{"rsc":"$L6","isPartial":"$@7","staleTime":"$5","varyParams":null},{"rsc":"$L8","isPartial":"$@9","staleTime":"$5","varyParams":null}],"isUpgradeableISRFallback":false,"a":"$@a","rootVaryParams":null,"needsRuntimeRequest":"$@b"}
 c:I[97367,["/_next/static/chunks/3fntmmi971322.js"],"OutletBoundary"]
 d:"$Sreact.suspense"
 f:I[97367,["/_next/static/chunks/3fntmmi971322.js"],"ViewportBoundary"]
