@@ -283,3 +283,40 @@ th { background: var(--fk-paper-2); border-bottom: 1px solid var(--fk-line); col
 @media (max-width: 620px) {
   table.stack tr { border-bottom: 1px solid var(--fk-line); }
 }
+
+/* ── Readability (23 Sep 2026) ───────────────────────────────────────
+   Desktop: at the site's 1288px width a line of body text ran to ~140
+   characters. Text now sits in a ~72-character column and the contents
+   move into the spare right-hand column, sticky, so the page still fills
+   the site's width without long lines.
+   Phone: the header links and the four tabs were the same four pages
+   twice, and pushed the first line of the policy 300px down. The header
+   keeps Home only; the tabs are one row that scrolls sideways. */
+@media (min-width: 1100px) {
+  .page {
+    display: grid;
+    grid-template-columns: minmax(0, 700px) minmax(240px, 1fr);
+    column-gap: clamp(40px, 5vw, 80px);
+    align-items: start;
+  }
+  .page > * { grid-column: 1; }
+  .page > .legal-nav { grid-column: 1 / -1; }
+  /* Grid children do not collapse margins; keep paragraph rhythm single. */
+  .page > p, .page > ul, .page > ol { margin: 0 0 16px; }
+  .page > .toc {
+    grid-column: 2; grid-row: 2 / span 400;
+    position: sticky; top: 24px; margin: 0;
+    max-height: calc(100vh - 48px); overflow: auto;
+  }
+  .page > .toc ol { columns: 1; }
+}
+@media (max-width: 720px) {
+  .site-nav a:not(.home) { display: none; }
+  .legal-nav {
+    flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none;
+    margin-inline: calc(-1 * clamp(20px, 5vw, 72px)); padding: 2px clamp(20px, 5vw, 72px);
+    -webkit-overflow-scrolling: touch;
+  }
+  .legal-nav::-webkit-scrollbar { display: none; }
+  .legal-nav a { flex: none; }
+}
