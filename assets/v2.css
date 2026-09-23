@@ -638,14 +638,18 @@ p{ margin:0; }
   .hero .shot--reel .shot__frame{ aspect-ratio:auto; height:clamp(420px,70svh,780px); }
 }
 /* 23 Sep (founder): the film was ~450px wide on a laptop once the hero moved
-   onto the site's container. The copy keeps a fixed column on that container's
-   left edge; the film takes the rest and runs out to the right edge of the
-   window (past the gutter, and past the container on wide screens). */
+   onto the site's container. It stays inside the container - all four corners
+   rounded, right edge on the nav's right edge - and grows by taking width from
+   the copy column and the gap instead. */
 @media (min-width:1100px){
-  .hero{ overflow-x:clip; }
-  .hero__grid{ grid-template-columns:minmax(0,clamp(430px,40vw,580px)) minmax(0,1fr); }
-  .hero .stage{ margin-right:calc(-1 * var(--gutter) - max(0px, (100vw - var(--maxw)) / 2)); }
-  .hero .shot--reel .shot__frame{ border-radius:24px 0 0 24px; }
+  .hero__grid{ grid-template-columns:minmax(0,clamp(420px,36vw,540px)) minmax(0,1fr); gap:clamp(28px,3vw,48px); }
+}
+/* One corner radius for every photo and film on the page (founder, 23 Sep):
+   they were 20, 22 and 24px. */
+body .shot--reel .shot__frame,body .shot--about .shot__frame,body .shot--impact .shot__frame,body .shot--film .shot__frame{ border-radius:24px; }
+@media (max-width:820px){
+  body .shot--reel .shot__frame,body .shot--about .shot__frame,body .shot--impact .shot__frame,body .shot--film .shot__frame{ border-radius:18px; }
+  body .about .stage{ padding-inline:0; }   /* the film on the same edges as the text */
 }
 .about .stage{ padding:clamp(10px,1.6vw,22px) clamp(6px,1.4vw,26px); }
 
