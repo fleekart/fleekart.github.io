@@ -1,6 +1,33 @@
 [
   {
-    "relation": ["delegate_permission/common.handle_all_urls"],
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.fleekart.app",
+      "sha256_cert_fingerprints": [
+        "C2:D5:B8:46:95:B1:1F:44:94:76:F5:2E:85:B8:47:73:4F:4C:67:B6:29:AB:02:55:91:1E:0E:48:B0:4A:EB:6E"
+      ]
+    }
+  },
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.fleekart.app.qa",
+      "sha256_cert_fingerprints": [
+        "73:B2:A9:14:71:6B:11:A4:9A:42:8D:4F:D3:65:83:4C:35:79:17:63:22:9E:69:DF:A8:07:96:6E:59:04:39:BE",
+        "6E:19:A1:34:0A:7C:49:F7:F2:CC:BD:34:33:14:D0:69:B8:01:C3:E8:9A:42:2F:AB:E2:AE:79:A1:1C:E2:37:4A"
+      ]
+    }
+  },
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
     "target": {
       "namespace": "android_app",
       "package_name": "in.fleekart.fleekart",

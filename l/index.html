@@ -71,7 +71,7 @@
       var android = /Android/i.test(navigator.userAgent);
       if (android) {
         open.href = 'intent://fleekart.com/l/?id=' + encodeURIComponent(id) +
-          '#Intent;scheme=https;package=in.fleekart.fleekart;S.browser_fallback_url=' +
+          '#Intent;scheme=https;package=com.fleekart.app.qa;S.browser_fallback_url=' +
           encodeURIComponent(here) + ';end';
       } else {
         open.href = 'fleekart://listings/' + encodeURIComponent(id);
@@ -79,7 +79,8 @@
           'Open this on your Android phone with Fleekart installed, or get the app first.';
       }
       // Testers have a build before launch: the same file the QA installs
-      // from. Swap for the Play link on launch day.
+      // from. Swap for the Play link on launch day - and the intent package
+      // above from com.fleekart.app.qa (the QA app) to com.fleekart.app.
       document.getElementById('getApp').href = '/downloads/fleekart-staging-latest.apk';
     })();
   </script>
