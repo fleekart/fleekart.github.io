@@ -35,7 +35,7 @@
   </nav>
 
   <h1>Privacy Policy</h1>
-  <p class="meta">Version 1.1 · Effective 12 September 2026</p>
+  <p class="meta">Version 1.2 · Effective 29 September 2026</p>
 
   <p class="lead">Fleekart is a local exchange app. To run it we need some of your personal data. This policy says what we collect, why, who sees it, how long we keep it, and how you can control it. We have tried to write it in plain language.</p>
 
@@ -46,6 +46,7 @@
       <li><a href="#collect">What we collect</a></li>
       <li><a href="#why">Why we use it</a></li>
       <li><a href="#permissions">App permissions</a></li>
+      <li><a href="#location">Your location</a></li>
       <li><a href="#public">What other users can see</a></li>
       <li><a href="#share">Who we share data with</a></li>
       <li><a href="#retention">How long we keep it</a></li>
@@ -59,7 +60,7 @@
 
   <h2 id="who">1. Who we are</h2>
   <p>Fleekart ("Fleekart", "we", "us") operates the Fleekart Android app and the website fleekart.com. We are based in Chennai, Tamil Nadu, India. Fleekart is the data fiduciary for the personal data described here under the Digital Personal Data Protection Act, 2023 ("DPDP Act"). Legal entity details will be added to this page when incorporation completes.</p>
-  <p>Questions about this policy: <a href="mailto:info@fleekart.com">info@fleekart.com</a>. Our Grievance Officer is named in <a href="#changes">section 12</a>.</p>
+  <p>Questions about this policy: <a href="mailto:info@fleekart.com">info@fleekart.com</a>. Our Grievance Officer is named in <a href="#changes">section 13</a>.</p>
 
   <h2 id="collect">2. What we collect</h2>
 
@@ -81,7 +82,7 @@
 
   <h3>Location</h3>
   <ul>
-    <li><strong>Your device location (GPS)</strong> only if you choose it for nearby search. You can use the app without it by picking an area or PIN code instead.</li>
+    <li><strong>Your phone's precise location,</strong> only if you allow it, rounded to about 100 m and used only to find what is near you. <a href="#location">Section 5</a> says exactly how it is kept. You can use the app without it by picking an area or PIN code instead.</li>
     <li><strong>Your pickup address</strong> for a listing. We store the exact address, the approximate public area, and the map point separately. Other users see only the area and a distance band.</li>
     <li><strong>The agreed pickup point</strong> for an exchange. It is visible only to the two people in that exchange, and is deleted 90 days after the exchange closes unless a dispute is open.</li>
   </ul>
@@ -118,6 +119,7 @@
   <ul>
     <li>Your contacts or address book. Invitations use your phone's share sheet and a referral code.</li>
     <li>Your microphone, call logs or SMS.</li>
+    <li>A history of where you have been. Your location is kept as one rounded position, never as a log, and never while the app is in the background.</li>
     <li>Government ID or KYC documents.</li>
     <li>Payment card details. Plinks cannot be bought in this version of the app.</li>
   </ul>
@@ -128,7 +130,7 @@
     <thead><tr><th>Purpose</th><th>What it needs</th><th>Basis</th></tr></thead>
     <tbody>
       <tr><td data-label="Purpose">Create and secure your account, sign you in, verify your number</td><td data-label="What it needs">Email, password hash, mobile number, OTP events, device signals</td><td data-label="Basis">Your consent when you sign up; our legitimate need to keep accounts secure</td></tr>
-      <tr><td data-label="Purpose">Show your listings to people nearby and let you find theirs</td><td data-label="What it needs">Listings, media, area, distance band, your chosen location</td><td data-label="Basis">Consent; performing the service you asked for</td></tr>
+      <tr><td data-label="Purpose">Show your listings to people nearby and let you find theirs</td><td data-label="What it needs">Listings, media, area, distance band, your position or chosen area</td><td data-label="Basis">Consent; performing the service you asked for</td></tr>
       <tr><td data-label="Purpose">Run exchanges: requests, chat, calls, pickup codes, confirmations, ratings</td><td data-label="What it needs">Exchange records, messages, pickup point, ledger entries</td><td data-label="Basis">Performing the service; keeping a fair record for both parties</td></tr>
       <tr><td data-label="Purpose">Operate the Plinks ledger, referrals, gifts and penalties</td><td data-label="What it needs">Ledger entries, referral links, device/IP pairs</td><td data-label="Basis">Performing the service; preventing abuse</td></tr>
       <tr><td data-label="Purpose">Keep the community safe: moderation, reports, blocks, disputes</td><td data-label="What it needs">Reports, listings, messages in the disputed exchange, audit records</td><td data-label="Basis">Legal duty to act on unlawful content; our legitimate need to protect users</td></tr>
@@ -145,21 +147,31 @@
   <h2 id="permissions">4. App permissions</h2>
   <p>The app asks for a permission only when you first use the feature that needs it, and works without it where it can.</p>
   <ul>
-    <li><strong>Location</strong> — only when you choose "near me" search or GPS location. Denying it means you pick an area or PIN code instead.</li>
+    <li><strong>Location</strong> — asked on the home screen, after the app has explained what it is for, because the home screen shows what is near you. Denying it means you pick an area or PIN code instead; the app never blocks on it. It is used only while the app is open, never in the background. See <a href="#location">section 5</a>.</li>
     <li><strong>Camera and photos</strong> — only when you add photos or a video to a listing, set an avatar, or submit a story. We use the system picker, not broad storage access.</li>
     <li><strong>Notifications</strong> — asked once, with an explanation. You can change it in Android settings at any time.</li>
     <li><strong>Not requested:</strong> contacts, microphone, phone, call log, SMS.</li>
   </ul>
 
-  <h2 id="public">5. What other users can see</h2>
+  <h2 id="location">5. Your location</h2>
+  <p>Fleekart works by showing you what is close by. To do that well the app uses your phone's precise location, but only if you allow it, and only as set out here.</p>
+  <ul>
+    <li><strong>What we collect.</strong> Your phone's precise location, each time you open the app, if you have allowed it. Before your phone shows the permission prompt, the app explains in its own words what it is for.</li>
+    <li><strong>Why.</strong> To show you what is near you, and to tell a seller roughly how far away your request is. We use it for nothing else.</li>
+    <li><strong>How we keep it.</strong> Rounded to about 100 metres. One position per member, replaced when you open the app (at most once every five minutes). We keep no history of where you have been. A position not refreshed for 30 days is deleted, and it is deleted with your account. When you create a listing, the listing is placed at about 1 km of where you are - never your exact spot.</li>
+    <li><strong>Who sees it.</strong> Nobody. Other users see only a distance band, such as "2–5 km", never an exact distance and never your position. The exact place to meet is shared only inside an accepted exchange, by the listing owner, and only with the other person in it.</li>
+    <li><strong>How to withdraw.</strong> Switch location off for Fleekart in your phone's settings. The app keeps working: you pick an area instead, and "near you" is measured from there. From then on the app sends no position, and the next time you open it the position we hold is deleted.</li>
+  </ul>
+
+  <h2 id="public">6. What other users can see</h2>
   <ul>
     <li><strong>Public profile:</strong> display name, avatar, locality/area, bio, ratings summary, number of completed exchanges, impact badge, approved New Life stories, and your published listings.</li>
     <li><strong>On a listing:</strong> the area and a distance band from the viewer — never the exact address, map point or your phone number.</li>
     <li><strong>Inside an accepted exchange only:</strong> the chat, the agreed pickup point, and the ability to call through a masked number.</li>
-    <li><strong>Never public:</strong> email, mobile number, date of birth, exact address, Plinks balance, reports, blocks, disputes.</li>
+    <li><strong>Never public:</strong> email, mobile number, date of birth, exact address, your position, Plinks balance, reports, blocks, disputes.</li>
   </ul>
 
-  <h2 id="share">6. Who we share data with</h2>
+  <h2 id="share">7. Who we share data with</h2>
   <p><strong>We never sell or rent personal data to anyone.</strong> We share only what each provider needs to do its job, under contract, and they may not use it for their own purposes.</p>
   <div class="table-wrap">
   <table class="stack">
@@ -179,7 +191,7 @@
   <p>We will disclose data to police, courts or regulators when the law requires it, and to protect the safety of a user or the public. We will tell you where the law allows us to.</p>
   <p>If Fleekart is ever acquired or merges with another business, your data may transfer with it. The new owner will be bound by this policy unless you are told otherwise and given a choice.</p>
 
-  <h2 id="retention">7. How long we keep it</h2>
+  <h2 id="retention">8. How long we keep it</h2>
   <p>In short: your data is kept while your account is active, and afterwards only for as long as Indian law and the fair running of the service require — chiefly for fraud prevention and resolving disputes between users. The table gives the exact periods.</p>
   <div class="table-wrap">
   <table class="stack">
@@ -190,6 +202,7 @@
       <tr><td data-label="Data">Chat messages</td><td data-label="Kept for">12 months</td><td data-label="Why">Resolving disputes and reports</td></tr>
       <tr><td data-label="Data">One-time code (OTP) events</td><td data-label="Kept for">12 months</td><td data-label="Why">Detecting abuse</td></tr>
       <tr><td data-label="Data">Agreed pickup point</td><td data-label="Kept for">90 days after the exchange closes</td><td data-label="Why">Disputes; then deleted unless a dispute is open</td></tr>
+      <tr><td data-label="Data">Your position (rounded to about 100 m)</td><td data-label="Kept for">Until your next app open replaces it; deleted with your account</td><td data-label="Why">Finding what is near you</td></tr>
       <tr><td data-label="Data">Plinks ledger entries, exchanges, disputes, penalties, ratings, audit records</td><td data-label="Kept for">8 years</td><td data-label="Why">These are shared records with another person, and are kept for accounting and legal reasons</td></tr>
       <tr><td data-label="Data">Ban records</td><td data-label="Kept for">Indefinitely</td><td data-label="Why">So a banned person cannot simply return</td></tr>
       <tr><td data-label="Data">Anonymised usage events</td><td data-label="Kept for">Indefinitely</td><td data-label="Why">They do not identify you</td></tr>
@@ -199,12 +212,12 @@
   </table>
   </div>
 
-  <h2 id="rights">8. Your rights and choices</h2>
+  <h2 id="rights">9. Your rights and choices</h2>
   <p>Under the DPDP Act you can:</p>
   <ul>
     <li><strong>Access</strong> a summary of the personal data we hold about you and how it has been used.</li>
     <li><strong>Correct or update</strong> it — most of it from your profile in the app.</li>
-    <li><strong>Erase</strong> it by deleting your account (see <a href="#deletion">section 9</a> for exactly what is erased and what is kept).</li>
+    <li><strong>Erase</strong> it by deleting your account (see <a href="#deletion">section 10</a> for exactly what is erased and what is kept).</li>
     <li><strong>Withdraw consent</strong> for optional processing — notifications and analytics — from the app's settings or your phone's settings. Withdrawing consent does not affect what was done before.</li>
     <li><strong>Disconnect a social sign-in</strong> at any time from your Google, Meta (Facebook) or LinkedIn account's security settings, where you can also remove Fleekart's access. Your Fleekart account continues with your email and password.</li>
     <li><strong>Nominate</strong> another person to exercise these rights for you if you are unable to.</li>
@@ -212,13 +225,13 @@
   </ul>
   <p>To exercise a right we cannot serve in the app, email <a href="mailto:info@fleekart.com">info@fleekart.com</a> from your registered email address. We may send a one-time code to your verified number to confirm it is you. We respond within 30 days.</p>
 
-  <h2 id="deletion">9. Deleting your account</h2>
+  <h2 id="deletion">10. Deleting your account</h2>
   <p>You can delete your account from <strong>Profile → Delete my account</strong>, or by following the steps on our <a href="../delete-account/">account deletion page</a>. Deletion is refused while you have an exchange in progress or Plinks held for one, so that the other person is not left stranded.</p>
-  <p>When you delete, we <strong>erase</strong> your name, email, phone number, avatar, date of birth, saved locations, uploaded media, and the text of your chat messages, and we remove your push token. Your remaining Plinks are forfeited.</p>
-  <p>We <strong>keep</strong>, attached to an anonymous placeholder shown as "Deleted user": Plinks ledger entries, exchange records, OTP events, disputes, penalties, ratings and audit records, for the periods in <a href="#retention">section 7</a>. These are records that belong to the other person in each exchange as much as to you, and removing them would falsify the ledger.</p>
+  <p>When you delete, we <strong>erase</strong> your name, email, phone number, avatar, date of birth, saved locations, your stored position, uploaded media, and the text of your chat messages, and we remove your push token. Your remaining Plinks are forfeited.</p>
+  <p>We <strong>keep</strong>, attached to an anonymous placeholder shown as "Deleted user": Plinks ledger entries, exchange records, OTP events, disputes, penalties, ratings and audit records, for the periods in <a href="#retention">section 8</a>. These are records that belong to the other person in each exchange as much as to you, and removing them would falsify the ledger.</p>
   <p>Deletion is immediate and cannot be undone.</p>
 
-  <h2 id="security">10. Security</h2>
+  <h2 id="security">11. Security</h2>
   <ul>
     <li>All traffic between the app and our servers uses TLS 1.2 or higher.</li>
     <li>Sign-in tokens are stored in your phone's secure hardware-backed storage, are short-lived, and are rotated. You can log out of every device from the app.</li>
@@ -228,10 +241,10 @@
   </ul>
   <p>No system is perfectly secure. If we learn of a breach affecting you, we will inform you and the Data Protection Board as the DPDP Act requires.</p>
 
-  <h2 id="children">11. Age limit</h2>
+  <h2 id="children">12. Age limit</h2>
   <p>Fleekart is for adults. You must be 18 or older to create an account, and we check your date of birth at signup. We do not knowingly collect data from anyone under 18. If you believe a minor has an account, email <a href="mailto:info@fleekart.com">info@fleekart.com</a> and we will remove it.</p>
 
-  <h2 id="changes">12. Changes and contact</h2>
+  <h2 id="changes">13. Changes and contact</h2>
   <p>When we change this policy we will update the version and effective date at the top, and tell you in the app before the change takes effect if it is material. Using Fleekart after that date means you accept the updated policy.</p>
   <div class="callout">
     <p><strong>Grievance Officer</strong> (under the Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Rules, 2021, and the DPDP Act, 2023)<br>
