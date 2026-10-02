@@ -41,3 +41,10 @@
 .invite__close{ flex:0 0 auto; width:40px; height:40px; border:0; border-radius:999px; background:transparent; color:#fff;
   font-size:22px; line-height:1; cursor:pointer; }
 .invite__close:hover{ background:rgba(255,255,255,.12); }
+
+/* Narrow phones: the sentence on its own line, Copy and close together under it
+   (the close button wrapped alone onto a third row on the 2 Oct phone walk). */
+@media (max-width:560px){
+  .invite__text{ flex-basis:100%; }
+  .invite__copy{ margin-left:auto; }
+}
