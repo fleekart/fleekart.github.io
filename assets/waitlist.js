@@ -45,7 +45,9 @@
       body: JSON.stringify({
         email: form.email.value.trim(),
         area: form.area.value.trim() || null,
-        website: form.website.value || null
+        website: form.website.value || null,
+        // The invite link's code, when they came by one (invite.js).
+        ref: window.fkInviteCode || null
       })
     })
       .then(function (r) {
