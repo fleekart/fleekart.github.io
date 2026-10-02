@@ -23,3 +23,8 @@
   text-decoration: underline;
   text-underline-offset: 2px;
 }
+
+/* Social links in the footer bar (user, 2 Oct 2026). */
+.foot__social{ display:flex; gap:18px; flex-wrap:wrap; }
+.foot__social a{ display:inline-flex; align-items:center; gap:6px; color:var(--ink-2); transition:color .2s; }
+.foot__social a:hover{ color:var(--teal-deep); }
